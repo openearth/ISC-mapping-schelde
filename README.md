@@ -1,7 +1,11 @@
 # Mapping van Rijkswaterstaat eigen formaat naar Internationale Scheldecommissie.
 
+## Doel
+
+De voorbeeldbestanden zijn handgemaakte mappings van RWS (donar) naar ISC. In dit project gaan we de mappings automatiseren middels vertaaltabellen. 
 
 ## Gegevensbestanden
+
 Het Zip bestand bevat de DONAR export met gegevens van chemische waterkwaliteit.
 Het Transfert de donnees Excel bestand bevat het gevraagde format.
 Het Oct_2025_NL bestand bevat het uiteindelijk geleverde bestand aan ISC
