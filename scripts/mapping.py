@@ -23,17 +23,20 @@ meetdata = meetdata[4:]
 meetdata.columns = new_header
 # %% parameter mapping
 #gewoon paroms mappen naar de ISC tabel die gegeven is, geeft maar 6 matches, dit is dus niet wat je wil gebruiken
+# PARCODE gebruiken om te mappen naar AQUO
 #eerst dan mapping op CAS nummer naar ISC daarna DONAR naar de CAS + ICS tabel
 aquo = aquo[aquo['Status'].isin(['Geldig'])]
-aquo = aquo.rename(columns={'Omschrijving': 'AQUO_Omschrijving'})
+aquo = aquo.rename(columns={'Omschrijving': 'AQUO_Omschrijving',
+                            'Codes': 'AQUO_Codes'})
 aquocols = ['CASnummer', 
-            'Codes', 
+            'AQUO_Codes', 
             'AQUO_Omschrijving'
             ]
 casnummers = aquo[aquocols]
 
-paroms = donar[['PAROMS', 'HDH']].drop_duplicates()
-paroms = paroms.rename(columns = {'PAROMS': 'DONAR_Parameter'})
+paroms = donar[['PAROMS', 'PAR','HDH']].drop_duplicates()
+paroms = paroms.rename(columns = {'PAROMS': 'DONAR_Parameter',
+                                  'PAR': 'DONAR_PARCode'})
 
 # %% # MAP ISC table to CAS nummers
 # casnummers = casnummers[casnummers['CASnummer'] != 'NVT'] #otherwise not one to one mapping
@@ -44,6 +47,7 @@ parameter = parameter.rename(columns={'Identification unique du paramètre mesur
 parameter['CASnummer'] = parameter['CASnummer'].str.strip()
 cols = ['Unieke identificatie gemeten parameter', 
         'CASnummer', 
+        'AQUO_Codes',
         'AQUO_Omschrijving', 
         'ISC_Parameter', 
         'Identification unique de l\'unité'
@@ -63,8 +67,8 @@ print('total parameters =', len(parameter),
 # %%
 # Join DONAR met complete ISC mapping met CAS nummers en kijk wat er wel en niet gemapt kan worden van DONAR naar ISC. 
 # Hebben we alle variabelen die nodig zijn?
-donar_isc_cas = innerjoin.merge(paroms, left_on='AQUO_Omschrijving', right_on='DONAR_Parameter', how='inner') #, validate='one_to_one'
-nomatch_donar_isc_cas = (innerjoin.merge(paroms, left_on='AQUO_Omschrijving', right_on='DONAR_Parameter', how = 'left', indicator=True) #Alle ISC die niet met CASnummers kunnen worden gemapt
+donar_isc_cas = innerjoin.merge(paroms, left_on='AQUO_Codes', right_on='DONAR_PARCode', how='inner') #, validate='one_to_one'
+nomatch_donar_isc_cas = (innerjoin.merge(paroms, left_on='AQUO_Codes', right_on='DONAR_PARCode', how = 'left', indicator=True) #Alle ISC die niet met CASnummers kunnen worden gemapt
                         .query('_merge == "left_only"')
                         .drop('_merge', axis=1))
 
@@ -88,7 +92,6 @@ with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter.xlsx')) as writer
     donar_isc_cas.to_excel(writer, sheet_name='donar_isc_cas', index=False)
     nomatch.to_excel(writer, sheet_name='nomatch_donar_isc_cas', index=False) 
 
-# %%
 # %% location mapping
 lsloc=donar['LOCOMS'].drop_duplicates().to_frame()
 locs= locations[['Identitication unique de la station' , 'Localité']]

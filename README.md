@@ -16,6 +16,7 @@ Het Oct_2025_NL bestand bevat het uiteindelijk geleverde bestand aan ISC
   +	De Donar codes te matchen met de AQUO parametertabel
   +	De CAS codes (AQUO) te matchen met de gevraagde CAS codes. 
   + Mocht niet alle donarcodes matchen met aquo dan kunnen we nog kijken of we dat via de WRD parameter tabel kunnen doen. Anders met de hand
+  -bekijken met PAR kolom ipv PAROMS
   +	Bijzonderheden, zoals opgeloste fractie, halen we uit hdhcod 
     +	als er “nf” in voorkomt, is het opgeloste fractie
     +	als er “pg” in voorkomt pariculair gebonden (wordt niet gerapporteerd)
@@ -23,5 +24,6 @@ Het Oct_2025_NL bestand bevat het uiteindelijk geleverde bestand aan ISC
 -	Locaties mappen door op patronen te matchen met loccod of locoms. Bijv “Vlissingen” moet gematcht worden met “Vlissingen Boei SSVH”. 
 -	Kwaliteitscode staat in Donar (aanname: alles <= 50 is goed, alles daarboven hiaatwaarde)
 -	Kwantificeringsgrens staat in Donar tabel
--	Eenheden vergelijken met gevraagde eenheid. Omrekeningsfactor bepalen wanneer nodig.
+-	!Eenheden vergelijken met gevraagde eenheid. Omrekeningsfactor bepalen wanneer nodig.
+- berekening daggemiddelden (ISC heeft alleen datum, geen datumtijd)
 
