@@ -21,12 +21,6 @@ parameter = gevraagd_format[tables[5]] # parameter
 new_header = meetdata.iloc[3]
 meetdata = meetdata[4:]                 
 meetdata.columns = new_header
-# %% location mapping
-lsloc=donar['LOCOMS'].drop_duplicates().to_frame()
-meetdatalsloc = meetdata['Unieke identiticatie meetpunt'].drop_duplicates().to_frame()
-
-locs= locations[['Identitication unique de la station' , 'Localité']]
-locs=locs.groupby(['Identitication unique de la station' , 'Localité']).count().reset_index()
 # %% parameter mapping
 #gewoon paroms mappen naar de ISC tabel die gegeven is, geeft maar 6 matches, dit is dus niet wat je wil gebruiken
 #eerst dan mapping op CAS nummer naar ISC daarna DONAR naar de CAS + ICS tabel
@@ -48,7 +42,12 @@ parameter = parameter.rename(columns={'Identification unique du paramètre mesur
                                       'n° CAS nr': 'CASnummer'})
 # parameter = parameter[~parameter['CASnummer'].isin(['-',' -'])]
 parameter['CASnummer'] = parameter['CASnummer'].str.strip()
-cols = ['Unieke identificatie gemeten parameter', 'CASnummer', 'AQUO_Omschrijving', 'ISC_Parameter', 'Identification unique de l\'unité'] 
+cols = ['Unieke identificatie gemeten parameter', 
+        'CASnummer', 
+        'AQUO_Omschrijving', 
+        'ISC_Parameter', 
+        'Identification unique de l\'unité'
+        ] 
 innerjoin = parameter.merge(casnummers, on = 'CASnummer', how = 'inner') #alle ISC die wel met CASnummers kunnen worden gemapt
 innerjoin = innerjoin[cols]
 
@@ -72,6 +71,32 @@ nomatch_donar_isc_cas = (innerjoin.merge(paroms, left_on='AQUO_Omschrijving', ri
 print('total can be mapped from DONAR to ISC =', len(donar_isc_cas), 
       '\n Cannot find match for ISC parameters with DONAR', len(nomatch_donar_isc_cas),
       '\n SUM', len(donar_isc_cas)+ len(nomatch_donar_isc_cas))
+
+nomatch =nomatch_donar_isc_cas.merge(leftjoin, on = 'Unieke identificatie gemeten parameter', how='outer', suffixes=("", "_r"))
+
+# Identify overlapping non-key columns that exist on both sides
+overlaps = set(nomatch_donar_isc_cas.columns).intersection(leftjoin.columns) - set(['Unieke identificatie gemeten parameter'])
+
+# Coalesce: prefer left, then right
+for col in overlaps:
+    nomatch[col] = nomatch[col].combine_first(nomatch.pop(f"{col}_r"))
+
+donar_isc_cas.to_csv(Path.joinpath(p.parent,'mappings/donar-isc-cas.csv'), index=False)
+nomatch.to_csv(Path.joinpath(p.parent,'mappings/nomatch-donar-isc-cas.csv'), index=False)
+
+with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter.xlsx')) as writer: 
+    donar_isc_cas.to_excel(writer, sheet_name='donar_isc_cas', index=False)
+    nomatch.to_excel(writer, sheet_name='nomatch_donar_isc_cas', index=False) 
+
 # %%
-up= meetdata['Unieke identificatie gemeten parameter'].drop_duplicates().to_frame()
-# upa = parameter.groupby(['Unieke identificatie gemeten parameter', 'Parameter']).count().reset_index()
+# %% location mapping
+lsloc=donar['LOCOMS'].drop_duplicates().to_frame()
+locs= locations[['Identitication unique de la station' , 'Localité']]
+locs=locs.groupby(['Identitication unique de la station' , 'Localité']).count().reset_index()
+locs=locs[locs['Identitication unique de la station'].str.startswith("NL")]
+
+all_locs = locs.merge(lsloc, left_on='Localité', right_on='LOCOMS', how='outer')
+all_locs.to_csv(Path.joinpath(p.parent,'mappings/locations.csv'), index=False)
+all_locs.to_excel(Path.joinpath(p.parent,'mappings/locations-raw.xlsx'), index=False)
+
+# %%
