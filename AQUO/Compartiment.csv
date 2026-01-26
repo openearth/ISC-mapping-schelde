@@ -1,0 +1,69 @@
+;Codes;Omschrijving;Groep;Cijfercode;Id;"Begin geldigheid";"Eind geldigheid"
+Id-1f3f3f65-c5fe-4813-9960-e5c2ec7604e7;AV;"Afgekrabde verf";Medium;140;61;2021-10-13;2100-01-01
+Id-ca7da971-fa30-4b77-b646-2973bcc9caf3;AL;Afval;Medium;119;40;2016-09-24;2100-01-01
+Id-a200d07a-08bd-46bc-aed9-01c2f7f3935b;AW;Afvalwater;Medium;30;3;2011-06-10;2100-01-01
+Id-6e7511e8-c5db-4b9c-809b-49532d27cefb;AM;"Amfibische Zone";Biotoop;147;68;2025-11-26;2100-01-01
+Id-c86f67f6-c43d-4c4e-b74f-319ae886311d;AQ;"Aquatische Zone";Biotoop;148;69;2025-11-26;2100-01-01
+Id-b2643596-5f07-481a-8443-d0c040c362b6;AT;Asfalt;MilieuCompartiment;116;37;2025-11-26;2100-01-01
+Id-bb206e06-6875-4f9f-bc10-3f4940e0c9a2;BW;Bedrijfswater;Medium;129;50;2018-12-08;2100-01-01
+Id-f6f485c6-d1a2-40fd-a0b1-201b362059a8;BS;Bodem/Sediment;MilieuCompartiment;40;1;2025-11-26;2100-01-01
+Id-df4d0fda-2429-4e40-bbf9-17de76d712cf;BR;Bodemverbeteraar;Medium;117;38;2016-09-24;2100-01-01
+Id-7bc09783-ca4c-4e30-ba97-a61c60838aea;BF;Bouwstof;MilieuCompartiment;109;8;2025-11-26;2100-01-01
+Id-44de317c-ad96-4351-981d-8265087a4fee;BK;"Brak water";Medium;144;65;2023-12-15;2100-01-01
+Id-93b015b2-fe3c-4c7e-bacd-c7c78611f758;BN;Bronwater;Medium;134;55;2020-10-09;2100-01-01
+Id-ef5a2509-a9d9-4aa4-832c-5a1a5afc1f91;CH;"Chemische hulpstoffen";Medium;90;9;2011-06-10;2100-01-01
+Id-055626e3-df48-44bc-a30e-88dfd90b8150;CM;Constructiemateriaal;Medium;123;44;2016-09-24;2100-01-01
+Id-bb7e65ae-ab7e-42aa-bcda-3100adc1f34e;DA;Dialysewater;Medium;135;56;2020-10-09;2100-01-01
+Id-5440f50b-c0e3-8097-ca2c-f677194b0e84;XZ;"Diepe submerse zone";Biotoop;142;63;2022-06-29;2100-01-01
+Id-15877d41-ded2-48eb-99cd-18b949b4b505;DT;Digestaat;Medium;141;62;2022-05-19;2100-01-01
+Id-526814a7-169f-4a5f-95f9-583fd56c4df4;DL;Drijflaag;Medium;103;10;2011-06-10;2100-01-01
+Id-48ce6b90-1dc4-4d57-9b62-b82518ab35b6;DW;Drinkwater;Medium;18;11;2011-06-10;2100-01-01
+Id-4885ab19-34e3-4db7-ab95-6f0d2e42ff4d;DN;Duin;Biotoop;131;52;2019-09-27;2100-01-01
+Id-71c6e4ea-a14b-4302-9fd2-e2e2eb580654;ET;Eluaat;Medium;113;34;2016-09-24;2100-01-01
+Id-23f92207-4760-43a4-aece-dae44a2bee39;EZ;"Emerse zone";Biotoop;110;32;2014-06-28;2100-01-01
+Id-05487595-bc74-4c11-8298-3717e6b5b581;EN;Epilimnion;Biotoop;126;47;2019-09-27;2100-01-01
+Id-96b3c413-aa9d-4b3b-ac76-38056a1ab49d;FU;"Fecale uitwerpselen";Medium;145;66;2024-02-02;2100-01-01
+Id-ae8724ee-b044-4584-b0a7-4d284cbaf214;GS;Gas;Medium;130;51;2019-02-01;2100-01-01
+Id-a2b742d1-cc32-4651-8868-4fd8450f86b7;GT;Granulaat;Medium;122;43;2016-09-24;2100-01-01
+Id-9995b646-4a6a-406b-9b37-b62f622121f5;GW;Grondwater;MilieuCompartiment;15;2;2025-11-26;2100-01-01
+Id-0a70510f-0846-40ec-a259-519a5863ecd5;HW;Hemelwater;MilieuCompartiment;35;12;2025-11-26;2100-01-01
+Id-d53ef54e-d81f-4949-b750-12a848baf702;HY;Hypolimnion;Biotoop;128;49;2019-09-27;2100-01-01
+Id-65594bb2-a67c-425f-a499-46ecb58b1244;YS;IJs;Medium;139;60;2020-10-09;2100-01-01
+Id-774b18a8-9715-4660-a165-b165f45f76d9;KH;Klinkhout;Biotoop;72;13;2011-06-10;2100-01-01
+Id-ce887dab-1ac6-470c-9a2b-7f0a21a6fec8;KL;Koelwater;Medium;138;59;2020-10-09;2100-01-01
+Id-b8545624-f6d2-45cd-af92-e8974ec8f5d1;KS;"Kunstmatig substraat";Biotoop;73;14;2011-06-10;2100-01-01
+Id-75e06963-5a22-4b52-b704-56fd747a3667;LZ;"Limnische zone";Biotoop;125;46;2019-09-27;2100-01-01
+Id-e96449bc-88d1-4578-a51b-54d39da6f69e;LM;Litoraal;Biotoop;85;15;2011-06-10;2100-01-01
+Id-7899e90a-5ebd-430f-8626-4522eafeaaa4;LW;Lozingswater;Medium;31;17;2011-06-10;2100-01-01
+Id-104971aa-8cca-4b97-9134-39f04fa693e9;LT;Lucht;MilieuCompartiment;80;16;2025-11-26;2100-01-01
+Id-197859ae-796f-4fd7-be86-7f4de0581b7e;MN;Metalimnion;Biotoop;127;48;2019-09-27;2100-01-01
+Id-0c41d657-3119-442c-bd27-ac46eee68a41;NT;"Niet van toepassing";(technisch);99;18;2011-06-10;2100-01-01
+Id-edb8d124-d2d2-4770-a538-4e282a394993;OR;Oever;Biotoop;100;21;2011-06-10;2100-01-01
+Id-cfbc9433-8310-4dbb-8afb-91cd543262e9;OL;Olie;Medium;114;35;2016-09-24;2100-01-01
+Id-8948ff4f-d5eb-4008-ae42-d342b534de9b;ON;Onbekend;Medium;199;99;2020-10-09;2100-01-01
+Id-e76938f7-baa0-491c-9ab8-e18ded8b5d7b;OP;"Onderhoudspad (maaipad)";Biotoop;107;20;2011-06-10;2100-01-01
+Id-504dd0af-e065-4162-8cca-eb506188c206;OZ;"Onverzadigde zone";Biotoop;132;53;2019-11-12;2100-01-01
+Id-af1b7299-cc38-4a37-a6e5-ab347c9e717c;OK;Oppervlak;Medium;121;42;2016-09-24;2100-01-01
+Id-ebfe5456-9b14-4925-b444-0b5c98b6642a;OW;Oppervlaktewater;MilieuCompartiment;10;4;2025-11-26;2100-01-01
+Id-fbac1888-c7be-4330-8707-e614e566adb2;OO;"Oppervlaktewater en Oever";Biotoop;124;45;2017-11-14;2100-01-01
+Id-26d88c09-902a-4718-b653-53af34efac2d;OE;"Organisme (biota)";(technisch);60;19;2011-06-10;2100-01-01
+Id-f9753b9f-65be-44a2-8b32-a0897325f92c;PW;Poriewater;MilieuCompartiment;20;23;2025-11-26;2100-01-01
+Id-5aea0f23-0cd7-4282-9942-249e878c108a;PC;Proceswater;Medium;136;57;2020-10-09;2100-01-01
+Id-9f0ec4a3-e90f-4c99-950b-b4bc09706558;PM;Profundaal;Biotoop;86;22;2011-06-10;2100-01-01
+Id-b75e1d43-10f8-428b-8e04-11c8c2cb4584;SR;Siliconenrubber;Biotoop;105;25;2011-06-10;2100-01-01
+Id-6359ffec-746e-4add-8a69-a3a760fc540c;SB;Slib;MilieuCompartiment;112;5;2025-11-26;2100-01-01
+Id-3552eb32-462f-42a3-aaf1-562d7c9d712d;SN;Steen;Biotoop;71;24;2011-06-10;2100-01-01
+Id-8b9af023-ca70-4571-8d14-12be758153ff;SD;"Stof (Lucht)";MilieuCompartiment;118;39;2025-11-26;2100-01-01
+Id-2e950dac-6ecb-4161-8968-485438fccb52;SZ;"Submerse zone";Biotoop;111;33;2014-06-28;2100-01-01
+Id-7a508fe1-001e-45a9-9966-bebaa5b0619c;TD;Talud;Biotoop;106;26;2011-06-10;2100-01-01
+Id-c19d95d1-74b0-40e1-bb68-7ff2ebd57f64;TS;Teeltsubstraat;Medium;120;41;2016-09-24;2100-01-01
+Id-15485d28-0b30-41c9-a2f5-58a686f19bcf;TZ;"Terrestrische zone";Biotoop;146;67;2024-04-19;2100-01-01
+Id-a5710c26-76d4-4dc8-9a4f-797431daefa0;VF;"Vaste stof";Medium;137;58;2020-10-09;2100-01-01
+Id-e5a44b2c-7334-4523-8985-48442a7474c8;VE;Vegetatie;Medium;65;27;2011-06-10;2100-01-01
+Id-31efb096-409c-46e3-ae05-e551758e9172;VP;Vispaaiplaats;Biotoop;143;64;2022-07-28;2100-01-01
+Id-33cad803-ec3f-4f27-845c-618751de32c8;WZ;Wortelzone;Biotoop;133;54;2019-11-12;2100-01-01
+Id-1952a32f-85ad-4abc-a6be-6fda67bef4f3;ZD;Zand;Medium;43;29;2011-06-10;2100-01-01
+Id-395208c9-ffef-4deb-bf26-9cf4f603c63d;ZR;Zeewater;Medium;115;36;2016-09-24;2100-01-01
+Id-bfe1160f-50ca-4f8c-9f2b-64ce1cbc0435;ZB;Zuiveringsslib;Medium;55;28;2011-06-10;2100-01-01
+Id-40aedd2c-8aea-4aa5-8efe-43715d242eb8;ZW;Zwembadwater;Medium;108;31;2011-06-10;2100-01-01
+Id-fe561879-b918-418d-9b6d-9418c0b02d1c;ZS;"Zwevende stof";MilieuCompartiment;50;30;2025-11-26;2100-01-01

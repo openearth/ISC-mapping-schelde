@@ -1,0 +1,268 @@
+;Codes;Omschrijving;Dimensie;Omrekenfactor;Groep;Id;"Begin geldigheid";"Eind geldigheid"
+Id-5b2c241e-7421-493c-8ee6-208c087077d6;B;Beaufort;;;Overig;162;2011-06-10;2100-01-01
+Id-63e28810-4cda-464b-8202-dfc7ec5863bf;oD;"Duitse graad";;;Overig;9;2011-06-10;2100-01-01
+Id-8695ec38-0215-4388-a98f-ea13911cef2d;EBC;"European Brewery Convention Turbidity Unit";;;Overig;286;2013-10-19;2100-01-01
+Id-d4ba5e5d-5c87-45a1-8473-66f53b304a29;FNU;"Formazine Nephelometric Unit";;;Overig;287;2013-10-19;2100-01-01
+Id-aeeb572f-5931-44a7-9b35-df521370308d;FTU;"Formazine Turbidity Unit";;;Overig;179;2011-06-10;2100-01-01
+Id-5a32694e-4f3c-44a2-8873-81398d7a68b5;oF;"Franse graad";;;Overig;358;2020-11-06;2100-01-01
+Id-79f86c5a-f639-43d8-a592-7f8c873074b3;JTU;"Jackson Turbidity Unit";;;Overig;195;2011-06-10;2100-01-01
+Id-776ce270-bd9d-45c8-9901-e58f246e5016;phi;"Krumbein phi";L;;"SI afgeleide eenheid";341;2018-08-08;2100-01-01
+Id-dd435e8d-3679-4478-b061-c04ff071c250;NTU;"Nephelometric Turbidity Unit";;;Overig;258;2011-06-10;2100-01-01
+Id-d3af0fd9-75e3-452e-9952-73e09bbac179;TU;"Toxic Unit";;;Overig;266;2011-06-10;2100-01-01
+Id-71304c15-606e-4332-8612-bc88ecd5f355;A;ampère;I;1;"SI grondeenheid";161;2011-06-10;2100-01-01
+Id-85b7daa8-b0b7-45c0-8323-7bad7dc315c7;bar;bar;M/LT2;100000;"SI niet-SI-eenheid";163;2011-06-10;2100-01-01
+Id-b6c1dab2-0f4c-40f9-86dd-e6b7c46b0abb;Bq/kg;"becquerel per kilogram";/MT;1;"SI afgeleide eenheid";164;2011-06-10;2100-01-01
+Id-de7f0cc9-737d-4a14-85e6-784e7dfce98f;Bq/m3;"becquerel per kubieke meter";/L3T;1;"SI afgeleide eenheid";165;2011-06-10;2100-01-01
+Id-fdab2e40-0094-4d38-9d63-b7c40e47a9a3;Bq/l;"becquerel per liter";/L3T;1000;"SI afgeleide eenheid";342;2019-02-22;2100-01-01
+Id-a5699432-7afa-4fa1-b257-7b5c5b8625ae;cd;candela;J;1;"SI grondeenheid";282;2021-12-10;2100-01-01
+Id-32cb6dd8-cc7c-4431-8dd1-de56bc387a3c;cd/m2;"candela per vierkante meter";J/L2;1;"SI afgeleide eenheid";283;2013-02-09;2100-01-01
+Id-8868d1ec-de2d-4d53-b670-343e927b3680;coC;"centigraad Celsius";O;0.01;"SI afgeleide eenheid";169;2012-12-11;2100-01-01
+Id-8adef82e-89be-4b08-bc91-d9ff37cbf72f;cm;centimeter;L;0.01;"SI afgeleide eenheid";19;2025-11-28;2100-01-01
+Id-fed76a67-bc3d-41d8-b28a-a70e00ff9bf1;cm/s;"centimeter per seconde";L/T;0.01;"SI afgeleide eenheid";166;2012-12-11;2100-01-01
+Id-19cb7ff8-1760-4c62-85d5-9f2c60beaa81;cs;centiseconde;T;0.01;"SI afgeleide eenheid";170;2012-12-11;2100-01-01
+Id-2cdbe6e2-3881-4ded-a178-09e1ffbaad47;d;dag;T;86400;"SI niet-SI-eenheid";171;2020-12-01;2100-01-01
+Id-12348f62-796f-452f-a7df-6c7bc60a7d05;dbar;decibar;M/LT2;10000;"SI niet-SI-eenheid";173;2011-09-27;2100-01-01
+Id-66e2d974-2835-4fa5-b668-4419a7411665;dB;decibel;;;Overig;172;2011-09-27;2100-01-01
+Id-fee09cb8-8b83-4e35-bf50-52960abb1a8d;doC;"decigraad Celsius";O;0.1;"SI afgeleide eenheid";177;2012-12-11;2100-01-01
+Id-60618647-30a1-4f96-9f08-ff26e44af2bf;dl;deciliter;L3;1e-04;"SI niet-SI-eenheid";363;2021-03-17;2100-01-01
+Id-3d946545-0b93-40d6-8f18-2c1d2cfabc60;dm;decimeter;L;0.1;"SI afgeleide eenheid";174;2012-12-11;2100-01-01
+Id-cd1c79d5-18e1-4822-b371-2da5c58485b6;dm/s;"decimeter per seconde";L/T;0.1;"SI afgeleide eenheid";175;2012-12-11;2100-01-01
+Id-d79924f2-8b68-44e4-a50e-4a5be830b8ca;ds;deciseconde;T;0.1;"SI afgeleide eenheid";178;2012-12-11;2100-01-01
+Id-a25c25ec-89c3-47c2-81e0-278ac1f26aed;DIMSLS;dimensieloos;;;Overig;119;2011-06-10;2100-01-01
+Id-7c7d0486-b5bd-4c7b-abb9-f34e5ca7dbbd;euro;euro;;;Overig;383;2025-04-26;2100-01-01
+Id-6426c10f-82fd-486d-a9a2-1fbcf265a1f0;euro/MWh;"euro per megawattuur";;;Overig;375;2023-03-22;2100-01-01
+Id-221f84e7-9fca-40f5-9eb8-f33b7bcd408c;n;exemplaren;X;1;Aantal;116;2011-06-10;2100-01-01
+Id-d3f36e11-d380-4ca7-becf-a8fcf12fab73;n/d;"exemplaren per dag";X/T;1.157407e-05;Aantal;368;2022-01-07;2100-01-01
+Id-d052dbfa-f2f3-4422-9777-f6d54bfb1f87;n/dl;"exemplaren per deciliter";X/L3;10000;Aantal;244;2011-06-10;2100-01-01
+Id-8ab4a4c8-6d8d-4952-99cb-287bea310f04;n/g;"exemplaren per gram";X/M;1000;Aantal;245;2012-05-26;2100-01-01
+Id-c3e9fb11-f8fe-4cf5-bd47-5ef6db1e0448;n/ha;"exemplaren per hectare";X/L2;0.0001;Aantal;246;2012-12-11;2100-01-01
+Id-a7a5cfa8-3f06-43fc-82a6-190699f804cf;n/hm;"exemplaren per hectometer";X/L;0.01;Aantal;323;2015-10-03;2100-01-01
+Id-eb8f1722-d56a-4978-9037-308ea1c94334;n/kg;"exemplaren per kilogram";X/M;1;Aantal;379;2024-08-30;2100-01-01
+Id-437882d7-e01a-4f2a-9bc2-f329aebec91e;n/km;"exemplaren per kilometer";X/L;0.001;Aantal;247;2012-12-11;2100-01-01
+Id-b8145827-ee19-4bdb-800d-5e6567f9b6df;n/m3;"exemplaren per kubieke meter";X/L3;1;Aantal;328;2015-11-07;2100-01-01
+Id-851db590-3a68-4845-8104-50bc2f3bc7cc;n/l;"exemplaren per liter";X/L3;1000;Aantal;249;2011-06-10;2100-01-01
+Id-8a182a2f-2805-4064-9a01-0b0b194cfc96;n/m;"exemplaren per meter";X/L;1;Aantal;250;2011-06-10;2100-01-01
+Id-c7e7634f-0891-4c74-864f-f78ecbe3b246;n/mg;"exemplaren per milligram";X/M;1000000;Aantal;252;2011-06-10;2100-01-01
+Id-cc140caf-4a2e-4097-ae0b-026e7b5b5c8e;n/ml;"exemplaren per milliliter";X/L3;1000000;Aantal;254;2011-06-10;2100-01-01
+Id-b1965ba3-613c-429d-9c44-4a458b21b75e;n/min;"exemplaren per minuut";X/T;0.01666667;Aantal;253;2020-09-11;2100-01-01
+Id-a11862f1-fb04-4442-8691-5150d2d932f2;n/s;"exemplaren per seconde";X/T;1;Aantal;380;2025-04-03;2100-01-01
+Id-8a497905-db3b-49f6-9ae3-58bba966473a;n/km2;"exemplaren per vierkante kilometer";X/L2;0.000001;Aantal;248;2012-12-11;2100-01-01
+Id-9474dfe3-51af-4ec2-88de-10e58a018fdc;n/m2;"exemplaren per vierkante meter";X/L2;1;Aantal;251;2011-06-10;2100-01-01
+Id-c05c93bd-3add-4973-90aa-3740ae6f51d7;GJ;gigajoule;L2M/T2;1000000000;"SI afgeleide eenheid";332;2017-01-31;2100-01-01
+Id-5292774a-aea6-49a7-afd5-e5a0eaf76189;GJ/d;"gigajoule per dag";L2M/T3;11574.07407;"SI afgeleide eenheid";298;2015-07-22;2100-01-01
+Id-98dd716f-0a0e-4c71-9d0d-32999c609350;GJ/m3;"gigajoule per kubieke meter";L2M/L3T2;1000000000;"SI afgeleide eenheid";334;2017-01-31;2100-01-01
+Id-cf10e504-d336-4d95-a0d4-966314856a6a;GJ/s;"gigajoule per seconde";L2M/T3;1000000000;"SI afgeleide eenheid";299;2015-07-22;2100-01-01
+Id-a7beabf7-5623-49de-afe5-616888179770;graad;graad;;;Overig;118;2021-12-10;2100-01-01
+Id-79ac43f0-0d41-4361-83c5-5ed0565e29d5;oC;"graad Celsius";O;1;"SI afgeleide eenheid";8;2011-06-10;2100-01-01
+Id-52587ee6-78fa-4d94-85a2-66f587e431ba;g;gram;M;0.001;"SI afgeleide eenheid";27;2012-12-11;2100-01-01
+Id-169bba2b-b168-4108-a2c8-949f74eb596a;g/d;"gram per dag";M/T;1.157407E-08;"SI afgeleide eenheid";181;2012-12-11;2100-01-01
+Id-b8d90301-55f2-4f80-b08c-df77abadd313;g/dl;"gram per deciliter";M/L3;10;"SI afgeleide eenheid";182;2011-06-10;2100-01-01
+Id-1ff42a83-3542-454e-8de6-f5be51f829e2;g/ie;"gram per inwoner equivalent";;;Overig;183;2011-06-10;2100-01-01
+Id-3a181edc-923d-475f-a327-6f4d9d0dc97a;g/a;"gram per jaar";M/T;;"SI afgeleide eenheid";180;2011-06-10;2100-01-01
+Id-b4720fd1-85ef-431f-bdac-9c6354b58659;g/kg;"gram per kilogram";M/M;0.001;"SI afgeleide eenheid";30;2012-12-11;2100-01-01
+Id-ecaac581-d21e-489d-a84a-0c5ac932c095;g/m3;"gram per kubieke meter";M/L3;0.001;"SI afgeleide eenheid";185;2012-12-11;2100-01-01
+Id-9d662280-34c3-40cd-8f07-9b081333f795;g/l;"gram per liter";M/L3;1;"SI afgeleide eenheid";33;2011-06-10;2100-01-01
+Id-ae52353e-6fea-4bbf-8235-55f7094ed508;g/mnd;"gram per maand";M/T;;"SI afgeleide eenheid";297;2015-07-22;2100-01-01
+Id-d3e00901-18d8-48c5-8fca-67859a1fc5c6;g/ml;"gram per milliliter";M/L3;1000;"SI afgeleide eenheid";34;2011-06-10;2100-01-01
+Id-7fdcee71-f0eb-4808-8661-95ad8721fc36;g/s;"gram per seconde";M/T;0.001;"SI afgeleide eenheid";186;2012-12-11;2100-01-01
+Id-9ea9ef21-84f6-4ed1-a357-e802ecc72bee;g/h;"gram per uur";M/T;2.77778e-07;"SI afgeleide eenheid";376;2023-07-15;2100-01-01
+Id-e608b9ed-56cb-49ab-b8f0-d586c75a4332;g/m2;"gram per vierkante meter";M/L2;0.001;"SI afgeleide eenheid";184;2012-12-11;2100-01-01
+Id-07c50735-0fb8-4d5f-8df3-aa10b1efdcff;ha;hectare;L2;10000;"SI niet-SI-eenheid";187;2011-06-10;2100-01-01
+Id-03d179aa-3e01-4035-ac47-4cd73e2d3b53;hl;hectoliter;L3;0.1;"SI niet-SI-eenheid";344;2020-01-24;2100-01-01
+Id-f525d5f3-13f8-457c-b2ac-464f980e4a9d;hPa;hectopascal;M/LT2;100;"SI afgeleide eenheid";36;2011-06-10;2100-01-01
+Id-109ba9a4-b725-4400-b7e0-84a56ec5a484;Hz;hertz;/T;1;"SI afgeleide eenheid";188;2011-06-10;2100-01-01
+Id-de23f838-741b-48b4-acdc-576e9b8c9a1c;ie;"inwoner equivalent";;;Overig;189;2011-06-10;2100-01-01
+Id-ddb71aee-6024-41e3-b793-dbead1e4a574;a;jaar;T;;"SI niet-SI-eenheid";137;2011-06-10;2100-01-01
+Id-f44b450a-08ed-48f0-9da0-277286fbb4aa;J;joule;L2M/T2;1;"SI afgeleide eenheid";190;2011-06-10;2100-01-01
+Id-19c3ccd4-69b9-4f04-8122-3bc9cd4c85cd;J/d;"joule per dag";L2M/T3;1.157407E-05;"SI afgeleide eenheid";301;2015-07-22;2100-01-01
+Id-6a5eb9de-baa1-44e2-96e2-f1dcf88e2339;J/g;"joule per gram";L2M/MT2;1000;"SI afgeleide eenheid";192;2021-12-10;2100-01-01
+Id-39274d09-a9cd-42b0-993c-419872d7f0c7;J/s;"joule per seconde";L2M/T3;1;"SI afgeleide eenheid";302;2015-07-22;2100-01-01
+Id-6dc079a4-d4a1-481b-b589-a1b3f2af0eac;J/cm2;"joule per vierkante centimeter";L2M/L2T2;10000;"SI afgeleide eenheid";191;2021-12-10;2100-01-01
+Id-152a85f6-dcef-4a63-ab60-241f14bb58ab;keV;"kilo electronvolt";;;"SI niet-SI-eenheid";196;2011-06-10;2100-01-01
+Id-484d95e4-c63e-42a5-a127-b6b2d0948f58;kg;kilogram;M;1;"SI grondeenheid";37;2011-06-10;2100-01-01
+Id-7495c85f-b025-4f1a-9d91-9c5d43c76657;kg/d;"kilogram per dag";M/T;1.157407E-05;"SI afgeleide eenheid";303;2015-07-22;2100-01-01
+Id-0260721d-503b-4a9e-8c62-9a2e92a11857;kg/ha;"kilogram per hectare";M/L2;0.0001;"SI afgeleide eenheid";199;2012-12-11;2100-01-01
+Id-ecca3959-5adc-4869-b5ca-4f54896b4b53;kg/ha.a;"kilogram per hectare per jaar";M/L2T;;"SI afgeleide eenheid";284;2012-11-28;2100-01-01
+Id-3fd6f98f-d285-4f07-9231-764d0d57a2d8;kg/a;"kilogram per jaar";M/T;;"SI afgeleide eenheid";197;2011-06-10;2100-01-01
+Id-62aba3e2-0c82-405b-98b5-d8734fa484ff;kg/km;"kilogram per kilometer";M/L;0.001;"SI afgeleide eenheid";369;2022-01-07;2100-01-01
+Id-f9f1e1b8-262a-452c-ba75-963fdca6d666;kg/kWh;"kilogram per kilowattuur";MT2/L2M;2.777778e-07;"SI afgeleide eenheid";385;2025-08-09;2100-01-01
+Id-0be66977-4d08-4376-9223-977f5dadcd10;kg/m3;"kilogram per kubieke meter";M/L3;1;"SI afgeleide eenheid";38;2011-06-10;2100-01-01
+Id-127436d5-6066-4779-ab15-932f5427b0bc;kg/l;"kilogram per liter";M/L3;1000;"SI afgeleide eenheid";304;2015-07-22;2100-01-01
+Id-bcbb555b-4d13-4da1-b289-f187c8d11477;kg/s;"kilogram per seconde";M/T;1;"SI afgeleide eenheid";305;2015-07-22;2100-01-01
+Id-dbff8479-272f-413d-883d-9c54a9c993f5;kg/ton;"kilogram per ton";M/M;0.001;"SI afgeleide eenheid";201;2012-12-11;2100-01-01
+Id-3eeae790-999e-457a-a510-df74a6e3ee0b;kg/h;"kilogram per uur";M/T;2.777780E-04;"SI afgeleide eenheid";198;2012-12-11;2100-01-01
+Id-2aed0e3f-dc70-44c2-bf6c-2067af6baae9;kg/km2;"kilogram per vierkante kilometer";M/L2;0.000001;"SI afgeleide eenheid";200;2012-12-11;2100-01-01
+Id-cc650f9a-efc7-46b3-8bf9-a2fcbf2377f4;kHz;kilohertz;/T;1000;"SI afgeleide eenheid";202;2011-06-10;2100-01-01
+Id-99939b7e-dfcb-4323-8705-29679331a385;kJ/d;"kilojoule per dag";L2M/T3;1.157407E-02;"SI afgeleide eenheid";306;2015-07-22;2100-01-01
+Id-5bbefcc4-2057-480d-9844-466e5a06c892;kJ/g;"kilojoule per gram";L2M/MT2;1000000;"SI afgeleide eenheid";203;2011-06-10;2100-01-01
+Id-fc51943c-8db2-401c-9331-72d4a52f1a78;kJ/kg;"kilojoule per kilogram";L2M/MT2;1000;"SI afgeleide eenheid";362;2021-03-10;2100-01-01
+Id-03cd7e3d-4a1a-453e-a72a-f7f131524819;kJ/s;"kilojoule per seconde";L2M/T3;1000;"SI afgeleide eenheid";307;2015-07-22;2100-01-01
+Id-1b0fac77-0a23-49ae-b351-26e39bae00b7;km;kilometer;L;1000;"SI afgeleide eenheid";204;2011-06-10;2100-01-01
+Id-f187350d-5c8b-4f70-8c73-ac22ce40ef17;kPa;kilopascal;M/LT2;1000;"SI afgeleide eenheid";336;2017-01-31;2100-01-01
+Id-932ba7f7-70bf-4dd7-9eb2-99f5a7cf0091;kV;kilovolt;L2M/T3I;1000;"SI afgeleide eenheid";205;2011-06-10;2100-01-01
+Id-3746f774-f185-4a96-85d0-8747b085bdd5;kW;kilowatt;L2M/T3;1000;"SI afgeleide eenheid";135;2011-06-10;2100-01-01
+Id-9b53265b-90e2-4065-9259-775f427664c2;kWh;kilowattuur;L2M/T2;3600000;"SI afgeleide eenheid";206;2021-12-10;2100-01-01
+Id-eaaaeda5-9a03-4a3d-b6c7-4384544f0678;kWh/d;"kilowattuur per dag";;;Overig;343;2020-01-17;2100-01-01
+Id-9b803df2-6bdb-40c0-a0a2-0294598dcfa6;kWh/dam3;"kilowattuur per kubieke decameter";L2M/L3T2;3600;"SI afgeleide eenheid";207;2021-12-10;2100-01-01
+Id-1e788327-af4e-41db-bfc5-89c356de8292;kWh/m3;"kilowattuur per kubieke meter";L2M/L3T2;3600000;"SI afgeleide eenheid";208;2011-06-10;2100-01-01
+Id-50f7a895-952d-4cd1-baba-afb67e1ce352;kWh/m3.km;"kilowattuur per kubieke meter per kilometer";M/T2L2;3600;"SI afgeleide eenheid";381;2025-04-26;2100-01-01
+Id-05e31ac3-462e-476b-b996-1c806af3e4fb;cm3/kg;"kubieke centimeter per kilogram";L3/M;1e-06;"SI afgeleide eenheid";367;2022-01-05;2100-01-01
+Id-c57c1fd9-24d2-457a-8f9d-d068c35679e1;dm3/s;"kubieke decimeter per seconde";L3/T;0.001;"SI afgeleide eenheid";176;2012-12-11;2100-01-01
+Id-df8d00fa-7abc-41ec-9ffc-6be83a5fd651;hm3/d;"kubieke hectometer per dag";L3/T;11.57407407;"SI afgeleide eenheid";300;2015-07-22;2100-01-01
+Id-b4a962e6-1e8b-4df3-95d1-6d1d05f472c1;m3;"kubieke meter";L3;1;"SI afgeleide eenheid";52;2011-06-10;2100-01-01
+Id-988d1aee-7bd3-4df5-a082-ff1c22ab1af7;m3/d;"kubieke meter per dag";L3/T;1.157407E-05;"SI afgeleide eenheid";218;2012-12-11;2100-01-01
+Id-a6417bfa-33f4-4c60-961c-15e93fe5ebdd;m3/ie;"kubieke meter per inwoner equivalent";;;Overig;220;2011-06-10;2100-01-01
+Id-2fa2937f-c3c0-4b44-810f-ea47ccccc5a4;m3/a;"kubieke meter per jaar";L3/T;;"SI afgeleide eenheid";217;2011-06-10;2100-01-01
+Id-12cc1831-effe-45fd-b27d-c5f961cc911f;m3/m3;"kubieke meter per kubieke meter";L3/L3;1;"SI afgeleide eenheid";339;2017-06-23;2100-01-01
+Id-e7385e19-fd7f-4ce5-8099-36d15f733907;m3/min;"kubieke meter per minuut";L3/T;1.666667E-02;"SI afgeleide eenheid";221;2012-12-11;2100-01-01
+Id-a65ddc26-da41-440a-ab80-b7b02e6c9eaf;m3/s;"kubieke meter per seconde";L3/T;1;"SI afgeleide eenheid";222;2011-06-10;2100-01-01
+Id-6327f503-4e3b-4b7b-bd8d-9cd72a062fb5;m3/ton;"kubieke meter per ton";L3/M;0.001;"SI afgeleide eenheid";338;2017-03-28;2100-01-01
+Id-315b7646-3b9d-45c4-a387-d0ebb8d6c04b;m3/h;"kubieke meter per uur";L3/T;2.777778E-04;"SI afgeleide eenheid";219;2012-12-11;2100-01-01
+Id-bcf1abd4-205f-444e-a83b-41d75cb8b7e5;m3/w;"kubieke meter per week";L3/T;1.653439E-06;"SI afgeleide eenheid";309;2015-07-22;2100-01-01
+Id-0f0e3834-1844-4ac9-a226-17a95e912720;um3;"kubieke micrometer";L3;1E-18;"SI afgeleide eenheid";352;2020-03-11;2100-01-01
+Id-bd3b3dc0-10b8-4767-b49b-b8795ea57d0d;um3/ml;"kubieke micrometer per milliliter";L3/L3;1e-12;"SI afgeleide eenheid";366;2021-04-23;2100-01-01
+Id-75ae3c00-aeec-432b-83e6-1f766146bc2f;mm3/m3;"kubieke millimeter per kubieke meter";L3/L3;1e-09;"SI afgeleide eenheid";365;2021-04-23;2100-01-01
+Id-bbb52526-bb14-4f7c-8ce1-0f9dc6a72beb;mm3/l;"kubieke millimeter per liter";L3/L3;0.000001;"SI afgeleide eenheid";235;2012-12-11;2100-01-01
+Id-e9be6c2d-1ccc-44ad-99f7-fbf961720b8c;mm3/ml;"kubieke millimeter per milliliter";L3/L3;0.001;"SI afgeleide eenheid";236;2012-12-11;2100-01-01
+Id-09993ecf-b224-4ebf-9021-c12d1aa95c44;q;kwartaal;T;;"SI niet-SI-eenheid";261;2011-06-10;2100-01-01
+Id-a9054868-61c7-4bf0-93c9-7ddf26ce7859;l;liter;L3;0.001;"SI niet-SI-eenheid";44;2012-12-11;2100-01-01
+Id-214d4055-1821-4a4a-8096-734542ff1b05;l/d;"liter per dag";L3/T;1.157407E-08;"SI afgeleide eenheid";291;2014-04-17;2100-01-01
+Id-b2341745-2159-47b9-8a3c-012a6c16e144;l/g;"liter per gram";L3/M;1;"SI afgeleide eenheid";355;2020-08-28;2100-01-01
+Id-730a107a-bcb6-4bf2-928c-386f67702395;l/ie;"liter per inwoner equivalent";;;Overig;210;2011-06-10;2100-01-01
+Id-486e479f-51e8-4237-a395-7db655e3dae2;l/a;"liter per jaar";L3/T;;"SI afgeleide eenheid";308;2015-07-22;2100-01-01
+Id-803e3fd5-efbe-4b0e-8494-7408164617e0;l/kg;"liter per kilogram";L3/M;0.001;"SI afgeleide eenheid";211;2012-12-11;2100-01-01
+Id-be8839a3-8114-4c18-b64f-2e9e6a0709ba;l/m3;"liter per kubieke meter";L3/L3;0.001;"SI afgeleide eenheid";213;2012-12-11;2100-01-01
+Id-0a59dbeb-1e11-4392-9901-49c01eb85f9d;l/min;"liter per minuut";L3/T;1.666667E-05;"SI afgeleide eenheid";214;2012-12-11;2100-01-01
+Id-9b2ee374-e992-4f7c-a4ab-e3ec4df70e80;l/s;"liter per seconde";L3/T;0.001;"SI afgeleide eenheid";216;2012-12-11;2100-01-01
+Id-b939c3c1-6907-464a-bae9-d85a105da315;l/s.ha;"liter per seconde per hectare";L3/L2T;10;"SI afgeleide eenheid";278;2013-08-03;2100-01-01
+Id-fab8c071-b25c-40b6-afde-e990acb1f532;l/m2.s;"liter per seconde per vierkante meter";L3/L2T;0.001;"SI afgeleide eenheid";359;2020-11-25;2100-01-01
+Id-8f982b3b-9360-4db8-81ff-47493b74d928;l/h;"liter per uur";L3/T;2.777778E-07;"SI afgeleide eenheid";209;2012-12-11;2100-01-01
+Id-9f601c50-1165-4438-9ea5-b21b00e6ae0b;mnd;maand;T;;"SI niet-SI-eenheid";238;2011-06-10;2100-01-01
+Id-cd3de311-51da-4ee7-b568-24d8465921fc;Mm3/a;"mega kubieke meter per jaar";L3/T;;"SI afgeleide eenheid";317;2015-07-22;2100-01-01
+Id-1ac15494-17a0-4773-8d8e-39aa79ec95f4;MJ;megajoule;L2M/T2;1000000;"SI afgeleide eenheid";331;2017-01-31;2100-01-01
+Id-422f6140-5ed0-4e59-b2e2-2c0cbd4c1034;MJ/d;"megajoule per dag";L2M/T3;11.57407407;"SI afgeleide eenheid";314;2015-07-22;2100-01-01
+Id-09e8f704-4cda-4fee-b00d-546f7a2d5488;MJ/a;"megajoule per jaar";L2M/T3;;"SI afgeleide eenheid";313;2015-07-22;2100-01-01
+Id-234aa4ef-d7f2-41a5-8bf9-644edc4b60f3;MJ/m3;"megajoule per kubieke meter";L2M/L3T2;1000000;"SI afgeleide eenheid";333;2017-01-31;2100-01-01
+Id-f170d063-2972-4735-b881-4d242a8aadb8;MJ/s;"megajoule per seconde";L2M/T3;1000000;"SI afgeleide eenheid";230;2011-06-10;2100-01-01
+Id-4fc6440c-6b8a-4c63-b520-d2d91963fbb3;MJ/ton;"megajoule per ton";L2M/T2M;1000;"SI afgeleide eenheid";315;2015-07-22;2100-01-01
+Id-70af9f38-c34d-4863-a02e-0672707d0828;Mpa;megapascal;M/LT2;1e+06;"SI afgeleide eenheid";360;2020-11-25;2100-01-01
+Id-dd74da99-96b4-4ead-9fe3-a7e4ea05f8cd;Mpa/m;"megapascal per meter";M/T2;1e+06;"SI afgeleide eenheid";361;2020-11-25;2100-01-01
+Id-65764c28-1b52-4283-b220-b7d4ce1ecf94;MW;megawatt;L2M/T3;1000000;"SI afgeleide eenheid";335;2017-01-31;2100-01-01
+Id-e4f0663e-5fb8-4e6b-b22f-f8a2115ded28;MWh;megawattuur;L2M/T2;3.6e+09;"SI afgeleide eenheid";374;2023-03-22;2100-01-01
+Id-1e83c2e7-f6ca-4104-9343-a367e6739330;m;meter;L;1;"SI grondeenheid";115;2011-06-10;2100-01-01
+Id-4536dc75-2460-4341-89b1-f419b0925e9b;m/d;"meter per dag";L/T;1.157407e-05;"SI afgeleide eenheid";373;2022-08-03;2100-01-01
+Id-45c245f9-6a40-4f2e-a4b5-f75ef9ca839b;m/s;"meter per seconde";L/T;1;"SI afgeleide eenheid";117;2011-06-10;2100-01-01
+Id-e1fb499e-097f-4bdb-969c-4b1412c40fa4;uBq/l;"microbecquerel per liter";/L3T;1e-04;"SI afgeleide eenheid";371;2022-04-12;2100-01-01
+Id-ed1d0a96-4099-4b99-a35a-ccff3f380651;uE;microeinstein;;;Overig;267;2011-06-10;2100-01-01
+Id-bd37d25e-b1e8-4c5e-ac7d-c3b34f41b742;ug;microgram;M;1e-09;"SI afgeleide eenheid";289;2014-09-13;2100-01-01
+Id-721025f1-03c1-4b53-82e5-9d15244c8c21;ug/kg;"microgram per kilogram";M/M;0.000000001;"SI afgeleide eenheid";131;2013-03-16;2100-01-01
+Id-37b37cdb-b0c6-487d-8660-6b7e3ef8f795;ug/m3;"microgram per kubieke meter";M/L3;0.000000001;"SI afgeleide eenheid";296;2015-02-12;2100-01-01
+Id-caf6e819-2aed-4f5b-8ef3-0b5c9995f822;ug/l;"microgram per liter";M/L3;1e-06;"SI afgeleide eenheid";14;2025-11-28;2100-01-01
+Id-57da02c1-c81a-492f-bb07-d061bec25889;ug/mg;"microgram per milligram";M/M;0.001;"SI afgeleide eenheid";268;2012-12-11;2100-01-01
+Id-1e663f84-e564-44a0-bbca-a426eaceb95b;ug/ml;"microgram per milliliter";M/L3;0.001;"SI afgeleide eenheid";346;2020-01-24;2100-01-01
+Id-8b4a86d5-a99a-48d8-8260-ff96375f30df;ug/cm2;"microgram per vierkante centimeter";M/L2;0.00001;"SI afgeleide eenheid";345;2020-01-24;2100-01-01
+Id-b358d97c-9d53-43af-bfc3-e20980ad0e60;ug/m2;"microgram per vierkante meter";M/L2;0.000000001;"SI afgeleide eenheid";327;2015-10-31;2100-01-01
+Id-52df19c2-1604-4760-9835-b4e0c79d2688;ul;microliter;L3;1e-09;"SI niet-SI-eenheid";353;2021-12-10;2100-01-01
+Id-19cd28d0-678b-425e-bc3d-c218bd8bf066;ul/l;"microliter per liter";L3/L3;1e-06;;16;2021-12-10;2100-01-01
+Id-c43d76e1-34da-417c-b990-080c2cfcd085;um;micrometer;L;0.000001;"SI afgeleide eenheid";17;2012-12-11;2100-01-01
+Id-e0857c3b-4c23-4cb7-8876-28e3ad24e790;umol/kg;"micromol per kilogram";N/M;0.000001;"SI afgeleide eenheid";269;2012-12-11;2100-01-01
+Id-06bb797a-5f2d-46d2-9025-ef399d0fd34a;umol/l;"micromol per liter";N/L3;0.001;"SI afgeleide eenheid";270;2012-12-11;2100-01-01
+Id-45cfd8fd-fc67-4bea-a70c-4449c65eab67;umol/m2.s;"micromol per vierkante meter per seconde";N/L2T;0.000001;"SI afgeleide eenheid";280;2013-02-12;2100-01-01
+Id-65a4ec69-0e3c-427b-b184-aad6bf1c6fc7;us;microseconde;T;0.000001;"SI afgeleide eenheid";271;2012-12-11;2100-01-01
+Id-bc4a8993-bd86-408c-b6ef-be14a510b4d6;uS/cm;"microsiemens per centimeter";T3I2/L3M;0.0001;"SI afgeleide eenheid";18;2012-12-11;2100-01-01
+Id-8dda0192-c2fc-403d-abe9-6b7b7eb6ff4b;uS/m;"microsiemens per meter";T3I2/L3M;0.000001;"SI afgeleide eenheid";322;2015-07-22;2100-01-01
+Id-c4ff569b-9274-4cca-8d7e-a7120cb88cb5;mbar;millibar;M/LT2;100;"SI niet-SI-eenheid";223;2011-06-10;2100-01-01
+Id-320bedeb-32a5-4daf-bfe5-d3f1f20e709e;mBq/l;"millibecquerel per liter";/L3T;1;"SI afgeleide eenheid";224;2019-02-22;2100-01-01
+Id-4fd7c382-98e9-4290-b0a9-0907ff8dc39e;meq/l;"milliequivalent per liter";;;Overig;55;2011-06-10;2100-01-01
+Id-90cc03b6-5ef6-4edf-ad62-61c55e6b69ef;mg;milligram;M;0.000001;"SI afgeleide eenheid";288;2014-09-13;2100-01-01
+Id-848bfc76-72fa-4ba8-a317-e1e3d7dd08ca;mg/d;"milligram per dag";M/T;1.157407E-11;"SI afgeleide eenheid";311;2015-07-22;2100-01-01
+Id-072cda7b-107b-46e3-a62f-ad50c1458ab3;mg/g;"milligram per gram";M/M;0.001;"SI afgeleide eenheid";225;2012-12-11;2100-01-01
+Id-b5d70c6a-e657-47be-adc6-9428461b293a;mg/g.h;"milligram per gram uur";M/MT;2.777778E-07;"SI afgeleide eenheid";226;2012-12-11;2100-01-01
+Id-99b2af7b-60af-4bf1-a2cc-ef0619e186d5;mg/a;"milligram per jaar";M/T;;"SI afgeleide eenheid";310;2015-07-22;2100-01-01
+Id-95bac2d2-e5c8-48dc-9b43-354d0e87e70c;mg/kg;"milligram per kilogram";M/M;1e-06;"SI afgeleide eenheid";58;2025-11-28;2100-01-01
+Id-5340f3d1-0981-4f84-9df5-c2e8cacc0306;mg/m3;"milligram per kubieke meter";M/L3;0.000001;"SI afgeleide eenheid";61;2012-12-11;2100-01-01
+Id-ad35f8ce-76bc-4b5a-8919-4509a9739274;mg/l;"milligram per liter";M/L3;0.001;"SI afgeleide eenheid";60;2025-11-28;2100-01-01
+Id-e31f38ff-b003-43da-accd-4229299b1bc8;mg/ml;"milligram per milliliter";M/L3;1;"SI afgeleide eenheid";227;2011-09-27;2100-01-01
+Id-b278d559-0be6-43d5-ac54-b876a6755ef5;mg/s;"milligram per seconde";M/T;0.000001;"SI afgeleide eenheid";312;2015-07-22;2100-01-01
+Id-de80ca31-2e98-497d-90f2-00d5222e639e;mg/h;"milligram per uur";M/T;2.77778e-10;"SI afgeleide eenheid";378;2024-06-05;2100-01-01
+Id-ea40a17f-16d6-4a69-a278-05bfe4c7a66e;mg/cm2;"milligram per vierkante centimeter";M/L2;0.01;"SI afgeleide eenheid";347;2020-01-24;2100-01-01
+Id-91c99cc7-8596-47dc-b684-3a79af1a4c5b;mg/m2;"milligram per vierkante meter";M/L2;0.000001;"SI afgeleide eenheid";276;2013-08-23;2100-01-01
+Id-b82cdc91-4d43-4a00-a540-317238b18e91;mg/m2.d;"milligram per vierkante meter per dag";M/L2T;1.157407E-11;"SI afgeleide eenheid";279;2013-05-15;2100-01-01
+Id-ba2a3978-85b7-47dc-8f11-58f58a3b57c4;mHz;millihertz;/T;0.001;"SI afgeleide eenheid";228;2012-12-11;2100-01-01
+Id-ca292400-d538-4831-828f-bc3f5eb180ce;ml;milliliter;L3;1e-06;"SI niet-SI-eenheid";63;2021-12-10;2100-01-01
+Id-278f52d0-8b4d-4f64-a7a6-4169d4511c05;ml/d;"milliliter per dag";L3/T;1.157407E-11;"SI afgeleide eenheid";316;2015-07-22;2100-01-01
+Id-b83c2f7f-dd94-482a-8248-717ed765475c;ml/g;"milliliter per gram";L3/M;0.001;"SI afgeleide eenheid";64;2012-12-11;2100-01-01
+Id-77891f60-8d8c-46be-8a9f-ba3ac2f81579;ml/m3;"milliliter per kubieke meter";L3/L3;1e-06;"SI afgeleide eenheid";348;2021-12-10;2100-01-01
+Id-5bc9a83e-a04b-44cf-85c5-4e9b51cd5ae6;ml/l;"milliliter per liter";L3/L3;0.001;"SI niet-SI-eenheid";65;2021-12-10;2100-01-01
+Id-6b60164b-430f-444c-8986-ccb30a968782;ml/min;"milliliter per minuut";L3/T;1.67E-08;"SI niet-SI-eenheid";349;2020-01-24;2100-01-01
+Id-9afa1014-fb4a-4ace-9512-11a901674393;mm;millimeter;L;0.001;"SI afgeleide eenheid";66;2012-12-11;2100-01-01
+Id-6e0d2b39-9a41-46ce-a349-28fab191d9b8;mm/d;"millimeter per dag";L/T;1.157407E-08;"SI afgeleide eenheid";231;2012-12-11;2100-01-01
+Id-fd50f1fb-01b4-44a6-9779-8816e53b7710;mm/a;"millimeter per jaar";L/T;;"SI afgeleide eenheid";292;2014-10-28;2100-01-01
+Id-c9d43f4f-5164-4014-af11-83406c0e84c8;mm/mnd;"millimeter per maand";L/T;;"SI afgeleide eenheid";294;2014-10-28;2100-01-01
+Id-98f47341-6905-42fe-a45c-2f4a5531a42f;mm/h;"millimeter per uur";L/T;2.777778E-07;"SI afgeleide eenheid";293;2014-10-28;2100-01-01
+Id-4fa91ace-cbdb-436c-8db1-dd514a65eb62;mm/w;"millimeter per week";L/T;1.653439E-09;"SI afgeleide eenheid";233;2012-12-11;2100-01-01
+Id-efaa063e-9769-4552-95b7-0b1b36c7a739;mmol;millimol;N;0.001;"SI afgeleide eenheid";237;2012-12-11;2100-01-01
+Id-f8b423ed-4b3c-4d9e-a82e-39c1f5aadb2e;mmol/kg;"millimol per kilogram";N/M;0.001;"SI afgeleide eenheid";68;2012-12-11;2100-01-01
+Id-9ad9f9b7-2b94-4203-85d0-3ea44bd2ea0c;mmol/kg.h;"millimol per kilogram per uur";N/M/T;2.78E-07;"SI afgeleide eenheid";372;2022-05-19;2100-01-01
+Id-2071a33d-6c2c-40f7-b985-b922d51e78e0;mmol/l;"millimol per liter";N/L3;1;"SI afgeleide eenheid";69;2020-11-06;2100-01-01
+Id-863486b0-610c-4583-9186-fdce3b25a49b;mPa.s;"millipascal seconde";M/LT;0.001;"SI afgeleide eenheid";242;2012-12-11;2100-01-01
+Id-bd8be2b3-111a-4160-8032-19cdb6cd6191;mS/cm;"millisiemens per centimeter";T3I2/L3M;0.1;"SI afgeleide eenheid";243;2012-12-11;2100-01-01
+Id-7bfad892-9234-4e5f-8aa9-de8234c8e747;mS/m;"millisiemens per meter";T3I2/L3M;0.001;"SI afgeleide eenheid";74;2012-12-11;2100-01-01
+Id-de6c67fd-f8f8-460c-9503-ad50ec647009;mV;millivolt;L2M/T3I;0.001;"SI afgeleide eenheid";75;2012-12-11;2100-01-01
+Id-ee93907b-d3e6-45a7-ad05-a1ac97e59ebd;min;minuut;T;60;"SI niet-SI-eenheid";229;2020-11-06;2100-01-01
+Id-5a90d959-ad71-45b6-8267-78e9f9ec5c54;mol;mol;N;1;"SI grondeenheid";239;2011-06-10;2100-01-01
+Id-0508ac6c-ef52-4d3c-bed5-35d970ca687f;mol/m3;"mol per kubieke meter";N/L3;1;"SI afgeleide eenheid";240;2011-06-10;2100-01-01
+Id-0f1f0ea8-c96f-42cf-83fd-a0aaed8ce1bd;mol/l;"mol per liter";N/L3;1000;"SI afgeleide eenheid";72;2021-12-10;2100-01-01
+Id-dfc131dc-e94f-4a50-b291-908eaf2f6cbb;mol/l.bar;"mol per liter per bar";NT2/L2M;0.01;"SI niet-SI-eenheid";384;2025-07-26;2100-01-01
+Id-64cf5efa-0475-4a38-acef-116aa45056fb;mol/mol;"mol per mol";N/N;1;"SI afgeleide eenheid";241;2011-06-10;2100-01-01
+Id-74cebc79-38d3-4228-bba2-fd4b266b6dad;ng;nanogram;M;1e-12;"SI afgeleide eenheid";290;2014-09-13;2100-01-01
+Id-bb0d82b2-2361-4f78-a2c3-faaff43135ab;ng/g;"nanogram per gram";M/M;0.000000001;"SI afgeleide eenheid";255;2013-03-16;2100-01-01
+Id-de2c0f50-343b-437a-a48c-7ab6f961f071;ng/kg;"nanogram per kilogram";M/M;1e-12;"SI afgeleide eenheid";77;2013-03-16;2100-01-01
+Id-e9985ff1-4e1c-409c-9eae-a5e0f18a95fb;ng/m3;"nanogram per kubieke meter";M/L3;1e-12;"SI afgeleide eenheid";354;2020-07-01;2100-01-01
+Id-de2da65d-b9ac-4cec-b2ab-da7a144ed2ce;ng/l;"nanogram per liter";M/L3;0.000000001;"SI afgeleide eenheid";79;2013-02-09;2100-01-01
+Id-49c627c2-14ba-4530-88cb-8a00a9515e0a;ng/ml;"nanogram per milliliter";M/L3;0.000001;"SI afgeleide eenheid";256;2013-02-09;2100-01-01
+Id-10ba852e-501c-4d01-b69f-3985aea07f68;ng/m2;"nanogram per vierkante meter";M/L2;1E-12;"SI afgeleide eenheid";326;2015-10-31;2100-01-01
+Id-933f1c36-86a1-4689-a24c-9bfda6104beb;nmol/mg;"nanomol per milligram";N/M;0.001;"SI afgeleide eenheid";257;2012-12-11;2100-01-01
+Id-a2044be3-9cb4-495f-9f3d-6d84bbb15193;Nm;newtonmeter;ML2/T2;1;"SI afgeleide eenheid";386;2026-01-07;2100-01-01
+Id-ddb3186b-0d0c-445e-809a-f5e8b43b55d5;ohm;ohm;ML2/I2T3;1;"SI afgeleide eenheid";99;2021-12-10;2100-01-01
+Id-88a99cb4-efa0-46ed-87ae-b057d9ac9f77;ppm;"parts per million";;;Overig;132;2011-06-10;2100-01-01
+Id-d85fd073-408b-41c6-90b5-7df5a41a9477;Pa;pascal;M/LT2;1;"SI afgeleide eenheid";259;2011-06-10;2100-01-01
+Id-11475037-6380-4de2-8b40-ea61778bdeaf;/a;"per jaar";/T;;"SI niet-SI-eenheid";329;2015-12-10;2100-01-01
+Id-cf7d2cd7-2a5e-437f-83a5-4bf3f07bb463;/m;"per meter";/L;1;"SI afgeleide eenheid";281;2013-02-09;2100-01-01
+Id-518c45fb-70c2-4f59-9e42-d529861f8dbc;pg/g;"picogram per gram";M/M;1E-12;"SI afgeleide eenheid";330;2016-01-09;2100-01-01
+Id-730dc7f2-fa8b-4c61-b1c8-c5614ecbdcf5;pg/kg;"picogram per kilogram";M/M;1E-15;"SI afgeleide eenheid";324;2015-10-31;2100-01-01
+Id-d0f0887b-aa99-431c-89a6-e7f2b1decc00;pg/l;"picogram per liter";M/L3;1e-12;"SI afgeleide eenheid";295;2014-11-06;2100-01-01
+Id-a6326294-c543-448b-b4dc-9c29de4d611d;pg/ml;"picogram per milliliter";M/L3;0.000000001;"SI niet-SI-eenheid";351;2020-01-24;2100-01-01
+Id-2d434580-01ec-4567-8d83-e63735a52f9c;pg/cm2;"picogram per vierkante centimeter";M/L2;1E-11;"SI afgeleide eenheid";350;2020-01-24;2100-01-01
+Id-4d3b2dcd-77a9-4f0f-9895-74f63ca6e0d1;pg/m2;"picogram per vierkante meter";M/L2;1E-15;"SI afgeleide eenheid";325;2015-10-31;2100-01-01
+Id-47c90ad8-a6f4-4ad9-9c2c-b64e58df3c1a;pmol/mg;"picomol per milligram";N/M;0.000001;"SI afgeleide eenheid";260;2012-12-11;2100-01-01
+Id-7b0364d4-c8a6-4087-9bab-d9f0710ea1d9;%;procent;;;Overig;1;2025-11-28;2100-01-01
+Id-21af89b1-5d03-4870-81ac-23c83a407a50;‰;promille;;;Overig;160;2011-06-10;2100-01-01
+Id-4c7bb045-8e50-48e3-a5cf-0f46f9d73d3e;r;rotatie;;;Overig;356;2020-09-11;2100-01-01
+Id-9254a5bd-c0d2-4522-ba1a-2a6753ec10d6;r/min;"rotatie per minuut";;;Overig;357;2020-09-11;2100-01-01
+Id-6744ca20-918d-46de-a0c6-51ad7aacade4;s;seconde;T;1;"SI grondeenheid";262;2011-06-10;2100-01-01
+Id-2ebfda58-7c03-4084-9b28-afc75a10bfbf;S/m;"siemens per meter";T3I2/L3M;1;"SI afgeleide eenheid";82;2011-06-10;2100-01-01
+Id-430c8f0e-4a40-49c8-81f7-95063363b247;TJ;terajoule;L2M/T2;1e+12;"SI afgeleide eenheid";263;2012-12-11;2100-01-01
+Id-5ffd6450-cf26-418c-960e-ca3b30ac581c;TJ/d;"terajoule per dag";L2M/T3;11574074.07;"SI afgeleide eenheid";321;2015-07-22;2100-01-01
+Id-2c9cb677-86da-43c5-88b3-3faf690ac0d4;TJ/a;"terajoule per jaar";L2M/T3;;"SI afgeleide eenheid";320;2015-07-22;2100-01-01
+Id-f6c93746-9f9d-4759-bf79-df859aa1d34e;ton;ton;M;1000;"SI afgeleide eenheid";264;2011-06-10;2100-01-01
+Id-8ac9c166-9e57-4b60-80dd-9b64cb994415;ton/d;"ton per dag";M/T;0.01157407;"SI afgeleide eenheid";318;2021-12-10;2100-01-01
+Id-f1a3f470-863b-4117-afef-061c419a14ff;ton/a;"ton per jaar";M/T;;"SI afgeleide eenheid";265;2011-06-10;2100-01-01
+Id-52080130-2bc9-48fd-88bf-5ef59d763e11;ton/mnd;"ton per maand";M/T;;"SI afgeleide eenheid";319;2021-12-10;2100-01-01
+Id-f43b984f-a52e-4be2-ae06-d50306c31d51;h;uur;T;3600;"SI niet-SI-eenheid";35;2020-11-06;2100-01-01
+Id-0a013804-07cf-4590-aea1-8d551dded303;ve;vervuilingseenheden;;;Overig;272;2011-06-10;2100-01-01
+Id-8ba1c045-9c86-4282-9b9b-8570ea7d37ff;cm2;"vierkante centimeter";L2;0.0001;"SI afgeleide eenheid";20;2012-12-11;2100-01-01
+Id-027fb58b-2123-4118-b274-2df39006926a;cm2/Hz;"vierkante centimeter per hertz";L2T;0.0001;"SI afgeleide eenheid";167;2012-12-11;2100-01-01
+Id-8b85479c-d6bb-44f6-af46-fd0cb16119ab;cm2/cm3;"vierkante centimeter per kubieke centimeter";L2/L3;100;"SI afgeleide eenheid";340;2021-12-10;2100-01-01
+Id-06e0f92a-9adc-4317-bbdb-ab159c707655;cm2s;"vierkante centimeter seconde";L2T;0.0001;"SI afgeleide eenheid";168;2012-12-11;2100-01-01
+Id-54920b75-e8f6-407e-823e-29b1b7c2cff5;km2;"vierkante kilometer";L2;1000000;"SI afgeleide eenheid";277;2013-08-03;2100-01-01
+Id-1cf532be-1d2a-4f9b-8342-38fea2fd879e;m2;"vierkante meter";L2;1;"SI afgeleide eenheid";51;2011-06-10;2100-01-01
+Id-de2c81fa-51dc-4bbf-bc07-6c18b209984c;m2/g;"vierkante meter per gram";L2/M;1000;"SI afgeleide eenheid";364;2021-04-13;2100-01-01
+Id-094863d4-9564-460d-b96a-8d4126c2feb7;mm2;"vierkante millimeter";L2;0.000001;"SI afgeleide eenheid";234;2012-12-11;2100-01-01
+Id-75a4131f-6361-4b7d-9d91-675c15800db9;V;volt;L2M/T3I;1;"SI afgeleide eenheid";84;2011-06-10;2100-01-01
+Id-38765c99-a182-47f2-ad05-68fc901623bd;W/m2;"watt per vierkante meter";L2M/T3L2;1;"SI afgeleide eenheid";370;2022-02-12;2100-01-01
+Id-98fd970b-a6fe-4700-a06c-9d26f928c249;Wh/ie;"wattuur per inwoner equivalent";;;Overig;274;2011-06-10;2100-01-01
+Id-08eab4c7-de66-42a3-84df-ded55d08ebe0;Wh/kg;"wattuur per kilogram";L2M/MT2;3600;"SI afgeleide eenheid";275;2020-11-06;2100-01-01
+Id-76520da8-1055-4ee5-ab30-a87e30226eec;Wh/m3;"wattuur per kubieke meter";L2M/L3T2;3600;"SI afgeleide eenheid";337;2017-01-31;2100-01-01
+Id-340c83e7-75f6-48e3-bd99-752fb770ab95;Wh/m3.km;"wattuur per kubieke meter per kilometer";M/T2L2;3.6;"SI afgeleide eenheid";382;2025-04-26;2100-01-01
+Id-92b7a4d7-7de9-4902-bdec-68eacab9a307;w;week;T;604800;"SI afgeleide eenheid";273;2020-12-01;2100-01-01

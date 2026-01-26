@@ -1,0 +1,34 @@
+;Codes;Omschrijving;Groep;Id;"Begin geldigheid";"Eind geldigheid"
+Id-260b5484-1c83-41e4-9519-c287ad30e098;79;"Afgekeurde waarde agv rapportage lager dan rapportagegrens";Afwijkend;79;2016-12-07;2100-01-01
+Id-1e3dd266-5dbb-48e1-bb6f-0009b02a0b5d;76;"Afgekeurde waarde o.b.v. correlatie tussen meetlocaties";Afwijkend;76;2016-12-07;2100-01-01
+Id-ac018ee4-931d-48e6-be1f-8e3a6f345b4b;81;"Afgekeurde waarde op basis van controlemeting";Afwijkend;81;2016-12-07;2100-01-01
+Id-747d5a1b-80f0-433e-9ca4-df825e61c16c;77;"Afgekeurde waarde op basis van correlatie tussen parameters";Afwijkend;77;2016-12-07;2100-01-01
+Id-2cea2434-4e5e-49ac-84c0-b321a3a572ba;71;"Afgekeurde waarde op basis van harde grenzen";Afwijkend;71;2016-12-07;2100-01-01
+Id-193e1d75-005e-4533-8999-99340220eec4;72;"Afgekeurde waarde op basis van ionenbalans";Afwijkend;72;2016-12-07;2100-01-01
+Id-f0d0ad64-b35a-4bf4-8719-d55cd5944ff4;74;"Afgekeurde waarde op basis van levendigheid";Afwijkend;74;2016-12-07;2100-01-01
+Id-57d744e0-11c6-4410-b567-4599504c2912;73;"Afgekeurde waarde op basis van springerigheid";Afwijkend;73;2016-12-07;2100-01-01
+Id-1d55e752-4506-4b78-b6fc-d0e063b60dce;80;"Afgekeurde waarde op basis van trendbreuk";Afwijkend;80;2016-12-07;2100-01-01
+Id-5ee99bd0-32ec-4d64-8e4c-ac3e0e3090bc;70;"Afgekeurde waarde op basis van trendgedrag";Interpolatie;70;2016-12-07;2100-01-01
+Id-589fbcc7-5616-424c-89e1-18d14f217493;75;"Afgekeurde waarde op basis van uitbijter";Afwijkend;75;2016-12-07;2100-01-01
+Id-83cfdb31-9bdc-42f2-93e9-c5ead5153304;82;"Afgekeurde waarde op basis van waterbalans";Afwijkend;82;2016-12-07;2100-01-01
+Id-ee2b10fb-ee15-4f31-841c-eca07ea6c6c1;78;"Afgekeurde waarde opgeloste parameter is hoger dan totaal";Afwijkend;78;2016-12-07;2100-01-01
+Id-6fe52182-4371-4b35-a941-89ee6b5c3a66;83;"Afwijkende waarde als gevolg van buiten meetbereik";Normaal;83;2016-12-07;2100-01-01
+Id-8b089e20-0224-413e-8c08-6700f2773e63;84;"Afwijkende waarde als gevolg van foutieve nulpunt";Afwijkend;84;2016-12-07;2100-01-01
+Id-3f262a4b-f501-4399-8918-baafdd26f335;91;"Afwijkende waarde i.v.m. extreme situatie (calamiteit)";Afwijkend;91;2016-12-07;2100-01-01
+Id-a5cee9f5-2911-4e09-b764-7eec03aa771f;90;"Afwijkende waarde na validatie goedgekeurd";Normaal;90;2016-12-07;2100-01-01
+Id-a2b24a7e-65ed-4268-8ba9-11521ce0bdd0;05;"Bepaald met halve detectiegrens";Detectiegrens;5;2011-06-11T00:00:00;2100-01-01T00:00:00
+Id-0cdff91a-3ed9-4feb-8604-497b1e8fe95f;04;"Bepaald met hele detectiegrens";Detectiegrens;4;2011-06-11T00:00:00;2100-01-01T00:00:00
+Id-21b1c11e-0124-4a1b-be49-e529688ead12;06;"Bepaald met nul waarde voor detectiegrens";Detectiegrens;6;2011-06-11T00:00:00;2100-01-01T00:00:00
+Id-e73f492b-d055-4400-8b92-b444e0af5361;61;"Gecorrigeerde waarde op basis van systematische fout";Interpolatie;61;2016-12-07;2100-01-01
+Id-8f2f6905-8d80-4705-95dc-20440d95160c;55;"Gevlagde waarde, bepaald met halve detectiegrens";Afwijkend;55;2014-09-11T00:00:00;2100-01-01T00:00:00
+Id-d5826b6a-552d-4c6c-b678-5db696c17eb3;56;"Gevlagde waarde, bepaald met nul waarde voor detectiegrens";Afwijkend;56;2014-08-21;2100-01-01
+Id-f20824d4-16df-4a0b-aa8b-374712960ccf;99;"Hiaat waarde";Afwijkend;99;2025-11-28;2100-01-01
+Id-c797ba37-675d-4f91-92b6-c031a9c03526;10;"In de ruimte geïnterpoleerde waarde";Interpolatie;10;2025-11-28;2100-01-01
+Id-54396715-7449-4a3c-a47d-9d22d411b610;20;"In de tijd geïnterpoleerde waarde";Interpolatie;20;2025-11-28;2100-01-01
+Id-2e7677ea-8647-4538-8024-67ea3c58ef69;25;"In ruimte en tijd geïnterpoleerde waarde";Interpolatie;25;2025-11-28;2100-01-01
+Id-b45a66e5-e868-4d54-bbdb-77bbfba8a358;50;"Niet-plausibele waarde";Afwijkend;50;2025-11-28;2100-01-01
+Id-900c8680-2878-4eeb-8795-484696c047e8;00;"Normale waarde";Normaal;0;2011-06-11T00:00:00;2100-01-01T00:00:00
+Id-a973580d-6878-4833-be64-ea917802dab9;98;"Waarde bepaald op onvolledige basis";Afwijkend;98;2025-11-28;2100-01-01
+Id-7e6517ad-6f16-43f6-a15b-91f230713980;30;"Waarde beïnvloedt door ruimtelijke activiteiten";Afwijkend;30;2025-11-28;2100-01-01
+Id-00637f36-469e-4ab7-829e-3a1b9f929b7e;03;"Waarde heeft een grotere spreiding dan beschreven";Afwijkend;3;2011-06-11T00:00:00;2100-01-01T00:00:00
+Id-8ef28250-1bb2-4c34-84b9-d2a51dfa2caf;07;"Waarde is verhoogde rapportagegrens";Detectiegrens;7;2011-06-11T00:00:00;2100-01-01T00:00:00

@@ -1,0 +1,872 @@
+;Codes;Omschrijving;Groep;Id;"Begin geldigheid";"Eind geldigheid"
+Id-9e012ce7-98de-4189-a66d-c3ab4a72e449;dBZV;"BZV verwijderd";HoedanigheidFractieBasis;163;2011-06-10;2100-01-01
+Id-22a9a793-8c05-4bca-9dea-3a41f065128d;dBZVdg;"BZV verwijderd / drooggewicht";HoedanigheidCombinatie;164;2011-06-10;2100-01-01
+Id-f7d7fa1e-6089-4adf-aa3e-7533d932f22d;BACTRISLT;Bacterieisolaat;HoedanigheidFractieBasis;973;2023-04-27;2100-01-01
+Id-9858e678-be73-4196-bf84-72ef85b68291;dCZV;"CZV verwijderd";HoedanigheidFractieBasis;165;2011-06-10;2100-01-01
+Id-0ff384eb-ad79-4bcd-a3e4-a1798ea60fc5;dCZVdg;"CZV verwijderd / drooggewicht";HoedanigheidCombinatie;166;2011-06-10;2100-01-01
+Id-cd8c6e43-bfd4-407a-b688-60fcdc8b8a0d;DRIJVD;"Drijvende fractie";HoedanigheidFractieBasis;221;2011-08-05;2100-01-01
+Id-d7fe5154-5dfa-4b41-8f4e-ca362f0228a5;EPSG:23031;ED50/UTM31;ReferentiePlaats;230;2016-12-01;2100-01-01
+Id-3bd20e3a-078b-4bb0-8b58-85adddbe79dd;EPSG:23032;ED50/UTM32;ReferentiePlaats;231;2016-12-01;2100-01-01
+Id-e02d6193-2abd-4943-8109-52de3e4050bb;EPSG:4258;"ETRS89 lengte- en breedtegraden";ReferentiePlaats;503;2016-12-01;2100-01-01
+Id-562f1a50-ca81-4c66-b210-25ced4c3f7fc;EPSG:3034;ETRS89-LambertConformConic;ReferentiePlaats;234;2016-12-01;2100-01-01
+Id-6483a779-17fc-4589-854e-647abc16f3f8;EPSG:19986;ETRS89-LambertEqualArea;ReferentiePlaats;229;2016-12-01;2100-01-01
+Id-d285e9a4-2824-46b1-9e9b-7b68f8f197c5;EMS;"Emerse fractie";HoedanigheidFractieBasis;228;2011-08-05;2100-01-01
+Id-cce8805e-e36b-4b40-8241-73705ab5af56;INSU;"In situ";"niet gebruiken";297;2013-03-16;2100-01-01
+Id-94610af2-78b2-45b0-8bf9-62028374a17e;LS-0-0.1;"LS-waarde 0 tot 0.1 ml/g";UitloogFractie;21;2016-08-20;2100-01-01
+Id-cbe36d0a-174c-47eb-bd9e-c485929fe0c0;LS-0-1;"LS-waarde 0 tot 1 ml/g";UitloogFractie;29;2016-08-20;2100-01-01
+Id-00e1d858-afca-47f8-8c8f-8cdc73e54b1e;LS-0-2;"LS-waarde 0 tot 2 ml/g";UitloogFractie;31;2016-09-01;2100-01-01
+Id-d68a32ef-31ee-4637-a3c8-9433bcaf2278;LS-0.1-0.2;"LS-waarde 0.1 tot 0.2 ml/g";UitloogFractie;22;2016-08-20;2100-01-01
+Id-9dba0ef3-827b-44b5-9152-a88985bdbb81;LS-0.2-0.5;"LS-waarde 0.2 tot 0.5 ml/g";UitloogFractie;23;2016-08-20;2100-01-01
+Id-9571d5df-7f09-4f2f-b128-cd7c24a2f09d;LS-0.5-1;"LS-waarde 0.5 tot 1 ml/g";UitloogFractie;24;2016-08-20;2100-01-01
+Id-c9560421-69db-4faa-9636-b0470ed7dc10;LS-1-10;"LS-waarde 1 tot 10 ml/g";UitloogFractie;30;2016-09-01;2100-01-01
+Id-c5a68eee-2ce0-4bad-a4ac-ef257ffaf225;LS-1-2;"LS-waarde 1 tot 2 ml/g";UitloogFractie;25;2016-08-20;2100-01-01
+Id-1e316a53-3055-4822-be94-cbca6d27c822;LS-2-10;"LS-waarde 2 tot 10 ml/g";UitloogFractie;32;2016-09-01;2100-01-01
+Id-649110c3-e0bb-44cc-a917-ca265b41ceda;LS-2-5;"LS-waarde 2 tot 5 ml/g";UitloogFractie;26;2016-08-20;2100-01-01
+Id-be2b05c6-24ff-425b-a5e1-5837812021f7;LS-5-10;"LS-waarde 5 tot 10 ml/g";UitloogFractie;27;2016-08-20;2100-01-01
+Id-f857f6ac-58ad-4e67-b440-686dc648d892;LS-10;"LS-waarde cumulatief 10.0 ± 0.1 ml/g";UitloogFractie;42;2013-10-30;2100-01-01
+Id-7efffe89-5fdb-4763-9b48-999e83e0d7d4;LS-10dg;"LS-waarde cumulatief 10.0 ± 0.1 ml/g / drooggewicht";HoedanigheidCombinatie;453;2013-10-30;2100-01-01
+Id-40c1bc27-9924-4e05-85df-19d36c0a450b;LS-10nf;"LS-waarde cumulatief 10.0 ±0.1 ml/g / opgeloste fractie";HoedanigheidCombinatie;454;2016-11-29;2100-01-01
+Id-be46b113-bd06-48a9-85e2-e6a66ac230b0;LS-100;"LS-waarde cumulatief 100.0 ± 0.1 ml/g";UitloogFractie;47;2016-08-20;2100-01-01
+Id-7aab99a8-cb5d-430f-acdb-d878c006496e;LS-2;"LS-waarde cumulatief 2.0 ± 0.1 ml/g";UitloogFractie;804;2021-01-20;2100-01-01
+Id-fda1ec36-5205-4f68-8972-5ded8668172f;LS-2dg;"LS-waarde cumulatief 2.0 ± 0.1 ml/g / drooggewicht";HoedanigheidCombinatie;805;2021-01-20;2100-01-01
+Id-a73eae3e-5da3-468c-a3b5-b8ef29dc24b6;LS-2nf;"LS-waarde cumulatief 2.0 ± 0.1 ml/g / opgeloste fractie";HoedanigheidCombinatie;806;2021-01-20;2100-01-01
+Id-d2885b5e-e7ef-4710-b826-698aefd88fc9;LS-20;"LS-waarde cumulatief 20.0 ± 0.1 ml/g";UitloogFractie;43;2016-08-20;2100-01-01
+Id-c29fde69-971f-4160-837d-6f77c7e7b44e;LS-40;"LS-waarde cumulatief 40.0 ± 0.1 ml/g";UitloogFractie;44;2016-08-20;2100-01-01
+Id-7d1b55f9-eb9e-4599-9f7d-eb1a633af154;LS-60;"LS-waarde cumulatief 60.0 ± 0.1 ml/g";UitloogFractie;45;2016-08-20;2100-01-01
+Id-c59eb9f5-a557-4189-aea2-486a32a0639c;LS-8;"LS-waarde cumulatief 8.0 ± 0.1 ml/g";UitloogFractie;807;2021-01-20;2100-01-01
+Id-072f1ac5-dd96-4f1a-9bf5-3cf06086ac91;LS-8dg;"LS-waarde cumulatief 8.0 ± 0.1 ml/g / drooggewicht";HoedanigheidCombinatie;808;2021-01-20;2100-01-01
+Id-63c3b3ff-3f85-47dc-96a6-a7a0146c9e9b;LS-8nf;"LS-waarde cumulatief 8.0 ± 0.1 ml/g / opgeloste fractie";HoedanigheidCombinatie;809;2021-01-20;2100-01-01
+Id-cbadabd3-49ef-4915-87f2-5a20374c3cae;LS-80;"LS-waarde cumulatief 80.0 ± 0.1 ml/g";UitloogFractie;46;2016-08-20;2100-01-01
+Id-ac48aed6-c0ec-47d4-b1c6-f87f6e6353a6;NVT;"Niet van toepassing";(technisch);8;2013-03-16;2100-01-01
+Id-f219a8b1-234c-4dfc-8353-4db129903ab4;EPSG:28992;Rijksdriehoekstelsel-Nieuw;ReferentiePlaats;233;2016-12-01;2100-01-01
+Id-b8d5eff6-e4da-475c-a119-578c118cc5df;EPSG:28991;Rijksdriehoekstelsel-Oud;ReferentiePlaats;232;2016-12-01;2100-01-01
+Id-e696991c-949b-4a5d-a31b-076c662a2a68;SUBMS;"Submerse fractie";HoedanigheidFractieBasis;410;2011-08-05;2100-01-01
+Id-03de8b4c-6745-4953-ae83-37ead5008310;dTZV;"TZV verwijderd";HoedanigheidFractieBasis;222;2011-06-10;2100-01-01
+Id-07804461-b682-4982-97b5-590225f540ad;dTZVdg;"TZV verwijderd / drooggewicht";HoedanigheidCombinatie;223;2011-06-10;2100-01-01
+Id-46391f0b-7051-43c7-bf8d-d0be8224fe1a;BROEDPRN;"Uitgedrukt in broedparen";HoedanigheidEquivalent;998;2025-07-18;2100-01-01
+Id-1a34026d-4eb4-45bd-af5b-63ab518fe6a6;Medxpgtract;"Uitgedrukt in medroxyprogesteronacetaat equivalenten";HoedanigheidEquivalent;982;2024-05-31;2100-01-01
+Id-0eabe82e-c99b-4618-930c-543fbc00b561;Nicdpn;"Uitgedrukt in nicardipine equivalenten";HoedanigheidEquivalent;980;2024-05-31;2100-01-01
+Id-1a38933c-4272-4246-8628-72c7e2601955;PFOA;"Uitgedrukt in perfluoroctaanzuur equivalenten";HoedanigheidEquivalent;981;2024-05-31;2100-01-01
+Id-5dcc0b1b-efa7-420c-9183-37e7b07a1c7a;TC4ySnactt;"Uitgedrukt in tributyltinacetaat equivalenten";HoedanigheidEquivalent;983;2024-05-31;2100-01-01
+Id-4274264a-c91f-436f-8a84-a1484a45f1d0;antpgnnf;"antropogeen / opgeloste fractie";HoedanigheidCombinatie;810;2021-01-26;2100-01-01
+Id-44a46323-02c5-451c-84c0-b62074d591a1;adg;"asvrij drooggewicht";HoedanigheidFractieBasis;72;2011-08-26;2100-01-01
+Id-29474fb0-f28c-4cbe-9ed5-1d050b9cb8a7;Dg00005;"diameter groter dan 0,5 um";KorrelgrootteFractie;876;2021-10-12;2100-01-01
+Id-0cb5aab6-3306-4cf0-a546-f467c0e3ea22;Dg1000;"diameter groter dan 1000 um";KorrelgrootteFractie;732;2020-02-04;2100-01-01
+Id-3a9e7e4c-bda4-4f26-bc82-f30721ce8340;Dg1000dg;"diameter groter dan 1000 um / drooggewicht";KorrelgrootteFractie;997;2025-03-21;2100-01-01
+Id-2362ebfb-c98e-477e-b8ab-4e2f2acff536;Dg1024E3;"diameter groter dan 1024 mm";KorrelgrootteFractie;658;2017-01-26;2100-01-01
+Id-ab665228-fb1a-44cf-bd77-c5d96af5dfe0;Dg1180;"diameter groter dan 1180 um";KorrelgrootteFractie;733;2020-02-04;2100-01-01
+Id-434d2446-3114-434f-9d49-a26962a3dcb5;Dg0125;"diameter groter dan 125 um";KorrelgrootteFractie;721;2020-02-04;2100-01-01
+Id-6d55a1dc-cc4b-4a9c-afd4-a867328f95b1;Dg1250;"diameter groter dan 1250 um";KorrelgrootteFractie;734;2020-02-04;2100-01-01
+Id-2e923477-297c-4ea5-80e5-f43c6b002329;Dg1400;"diameter groter dan 1400 um";KorrelgrootteFractie;735;2020-02-04;2100-01-01
+Id-e95639cd-5535-4ba8-9039-e4982e5a97cd;Dg0150;"diameter groter dan 150 um";KorrelgrootteFractie;172;2011-06-10;2100-01-01
+Id-2daa2e02-fc09-4904-aa94-a374b67336f1;Dg0016dg;"diameter groter dan 16 um / drooggewicht";KorrelgrootteFractie;801;2020-10-09;2100-01-01
+Id-cc24450e-9c7b-43f2-912f-2cdb45d53d41;Dg1700;"diameter groter dan 1700 um";KorrelgrootteFractie;736;2020-02-04;2100-01-01
+Id-ad3cc4c8-0644-46ea-a8e6-0c4525ed5d0c;Dg0180;"diameter groter dan 180 um";KorrelgrootteFractie;722;2020-02-04;2100-01-01
+Id-95aabbf7-731a-4ea1-b6d0-5b216139e006;Dg1800;"diameter groter dan 1800 um";KorrelgrootteFractie;737;2020-02-04;2100-01-01
+Id-09ff7464-b9ba-4608-8633-9acdbf30fe51;Dg0200;"diameter groter dan 200 um";KorrelgrootteFractie;901;2022-05-03;2100-01-01
+Id-11c11598-4f95-4dfe-8c1e-08749d74f37c;Dg2000;"diameter groter dan 2000 um";KorrelgrootteFractie;176;2011-06-10;2100-01-01
+Id-0c953abb-fa37-4804-84cb-09d89aebc27a;Dg2000dg;"diameter groter dan 2000 um / drooggewicht";KorrelgrootteFractie;784;2020-10-09;2100-01-01
+Id-be6bfee6-81c7-4f55-918f-6f1fff50b5a2;Dg2000md;"diameter groter dan 2000 um / minerale delen";KorrelgrootteFractie;177;2011-06-10;2100-01-01
+Id-f4464429-85f8-4c3d-b352-0d35995c120e;Dg0210;"diameter groter dan 210 um";KorrelgrootteFractie;173;2011-06-10;2100-01-01
+Id-70ffe7e3-53e3-4e61-a8c6-634e9fec707e;Dg0210dg;"diameter groter dan 210 um / drooggewicht";KorrelgrootteFractie;802;2020-10-09;2100-01-01
+Id-497bce35-b46a-425f-b65b-cffa9c5b6dce;Dg0212;"diameter groter dan 212 um";KorrelgrootteFractie;723;2020-02-04;2100-01-01
+Id-84c5788c-90bc-4e43-b40d-6b453c170146;Dg2360;"diameter groter dan 2360 um";KorrelgrootteFractie;738;2020-02-04;2100-01-01
+Id-d6f156e3-2166-4fbd-b1a0-e2175dddbf6e;Dg0250;"diameter groter dan 250 um";KorrelgrootteFractie;174;2011-06-10;2100-01-01
+Id-a26d1ef7-7343-49c4-a752-572614a640c4;Dg2500;"diameter groter dan 2500 um";KorrelgrootteFractie;739;2020-02-04;2100-01-01
+Id-83115709-65fe-4e8e-b984-8736fed8fc4e;Dg256E3;"diameter groter dan 256 mm";KorrelgrootteFractie;709;2019-03-29;2100-01-01
+Id-2b3a37bb-05c4-4581-ab68-ffa650b3a371;Dg2800;"diameter groter dan 2800 um";KorrelgrootteFractie;740;2020-02-04;2100-01-01
+Id-0142ace0-f073-41af-905f-1ae067b5d606;Dg0300;"diameter groter dan 300 um";KorrelgrootteFractie;724;2020-02-04;2100-01-01
+Id-1d1549ed-be12-4878-958f-796e499ff256;Dg3150;"diameter groter dan 3150 um";KorrelgrootteFractie;741;2020-02-04;2100-01-01
+Id-c1c0989f-8dfb-48fe-b0e7-2a5a344083f2;Dg032;"diameter groter dan 32 mm";KorrelgrootteFractie;578;2014-05-24;2100-01-01
+Id-28b6d2c6-cc41-4470-bec9-1c957a5f5cf8;Dg032dg;"diameter groter dan 32 mm / drooggewicht";KorrelgrootteFractie;515;2014-09-13;2100-01-01
+Id-36192c40-1420-45d7-bce5-b1925c5bdc74;Dg3350;"diameter groter dan 3350 um";KorrelgrootteFractie;742;2020-02-04;2100-01-01
+Id-1101ba60-45a7-4951-939d-c3787edbdc5a;Dg0355;"diameter groter dan 355 um";KorrelgrootteFractie;725;2020-02-04;2100-01-01
+Id-09c67316-abc5-473a-a328-2648d9cbc729;Dg0038;"diameter groter dan 38 um";KorrelgrootteFractie;167;2012-12-08;2100-01-01
+Id-c5109f6e-e5a1-4bd6-b4eb-0d2d516b2d7e;Dg4000;"diameter groter dan 4000 um";KorrelgrootteFractie;743;2020-02-04;2100-01-01
+Id-20fd8b9c-ff5f-49eb-a4f3-c89c6b23fa23;Dg0425;"diameter groter dan 425 um";KorrelgrootteFractie;175;2011-06-10;2100-01-01
+Id-74bca0c2-0657-471b-9ec8-0121d0836e96;Dg0043;"diameter groter dan 43 um";KorrelgrootteFractie;168;2011-06-10;2100-01-01
+Id-aa65b9dc-3e30-45ab-9e2f-ce426d14fc3a;Dg4750;"diameter groter dan 4750 um";KorrelgrootteFractie;744;2020-02-04;2100-01-01
+Id-36e2c02b-897d-4a71-a771-a8986e860545;Dg0005;"diameter groter dan 5 um";KorrelgrootteFractie;753;2020-03-11;2100-01-01
+Id-8b05c2d9-f6e1-40d0-9476-f3f639b2c971;Dg0050;"diameter groter dan 50 um";KorrelgrootteFractie;169;2011-06-10;2100-01-01
+Id-6ac69003-424b-410f-92eb-934a1ae70990;Dg0500;"diameter groter dan 500 um";KorrelgrootteFractie;726;2020-02-04;2100-01-01
+Id-174e1316-8555-4dff-9bff-1bd049a657ad;Dg0053;"diameter groter dan 53 um";KorrelgrootteFractie;170;2011-06-10;2100-01-01
+Id-c100c3f9-f201-4b21-a4ab-1ba619c9e774;Dg0600;"diameter groter dan 600 um";KorrelgrootteFractie;727;2020-02-04;2100-01-01
+Id-eb7736c9-8e92-4f84-bdad-76cce99b7364;Dg0063;"diameter groter dan 63 um";KorrelgrootteFractie;171;2011-06-10;2100-01-01
+Id-a235d71a-ec8a-4e5a-9996-8d3725efef19;Dg0063dg;"diameter groter dan 63 um / drooggewicht";KorrelgrootteFractie;803;2020-10-09;2100-01-01
+Id-885b0ce9-0752-4997-8c17-3983ad24ef3f;Dg64E3;"diameter groter dan 64 mm";KorrelgrootteFractie;659;2017-01-26;2100-01-01
+Id-1dc7ae38-64a9-427a-8fad-2ffc6b78af07;Dg6700;"diameter groter dan 6700 um";KorrelgrootteFractie;745;2020-02-04;2100-01-01
+Id-d15dedf6-6a59-4a7e-b480-7cc46ada90f2;Dg0710;"diameter groter dan 710 um";KorrelgrootteFractie;728;2020-02-04;2100-01-01
+Id-b9a31428-54c9-4079-884f-af166986ffdc;Dg0800;"diameter groter dan 800 um";KorrelgrootteFractie;729;2020-02-04;2100-01-01
+Id-c9bb4f29-d58e-474f-a7d6-ae5fe8cd62f4;Dg8000;"diameter groter dan 8000 um";KorrelgrootteFractie;746;2020-02-04;2100-01-01
+Id-d4aeef26-ea2c-47bf-8127-fee0c101a726;Dg0850;"diameter groter dan 850 um";KorrelgrootteFractie;730;2020-02-04;2100-01-01
+Id-0302f824-e5c6-4950-90da-7e9c2c3643af;Dg0900;"diameter groter dan 900 um";KorrelgrootteFractie;731;2020-02-04;2100-01-01
+Id-26c84b78-3c03-4d87-aa69-a8b2e1ee6a7a;Dk0010;"diameter kleiner dan 10 um";KorrelgrootteFractie;182;2011-06-10;2100-01-01
+Id-cab88260-19ce-4fdb-a37a-9d7abb7b8f9b;Dk0010dg;"diameter kleiner dan 10 um / drooggewicht";KorrelgrootteFractie;785;2020-10-09;2100-01-01
+Id-3603ffc6-b9de-4a30-a003-a966c3fad42c;Dk0010md;"diameter kleiner dan 10 um / minerale delen";KorrelgrootteFractie;918;2022-10-05;2100-01-01
+Id-d892bf80-8471-4313-90e3-c0c5a939da0c;Dk1000;"diameter kleiner dan 1000 um";KorrelgrootteFractie;214;2011-06-10;2100-01-01
+Id-d10206f7-98c7-4394-b2e6-15b2efd8f021;Dk1000dg;"diameter kleiner dan 1000 um / drooggewicht";KorrelgrootteFractie;692;2018-02-03;2100-01-01
+Id-95ffa865-62fb-4832-89c9-3e31a3bd112f;Dk1000md;"diameter kleiner dan 1000 um / minerale delen";KorrelgrootteFractie;215;2011-06-10;2100-01-01
+Id-ed504ddf-248c-40ee-82d7-3dd5c97ea2fc;Dk0105;"diameter kleiner dan 105 um";KorrelgrootteFractie;201;2011-06-10;2100-01-01
+Id-ccaceb4f-0dab-42a4-804b-42eecaf91a8c;Dk0106;"diameter kleiner dan 106 um";KorrelgrootteFractie;202;2011-06-10;2100-01-01
+Id-71ef775f-fa55-4c14-bd07-ede3df958fcd;Dk0125;"diameter kleiner dan 125 um";KorrelgrootteFractie;203;2011-06-10;2100-01-01
+Id-6cd84087-e52d-4b94-9a1d-aa0319819c6f;Dk0125dg;"diameter kleiner dan 125 um / drooggewicht";KorrelgrootteFractie;688;2018-02-03;2100-01-01
+Id-8978e648-c905-4269-ba5b-d22f243d61d1;Dk0125md;"diameter kleiner dan 125 um / minerale delen";KorrelgrootteFractie;204;2011-06-10;2100-01-01
+Id-c18da3de-44e7-4ce5-9f77-4ecb3391782f;Dk1400dg;"diameter kleiner dan 1400 um / drooggewicht";KorrelgrootteFractie;693;2018-02-03;2100-01-01
+Id-9a5ffd08-4317-48a9-8374-0c2c13a621ff;Dk1400md;"diameter kleiner dan 1400 um / minerale delen";KorrelgrootteFractie;915;2022-10-05;2100-01-01
+Id-abc2f916-6348-49c8-a7ce-a0269862020e;Dk0016;"diameter kleiner dan 16 um";KorrelgrootteFractie;183;2011-06-10;2100-01-01
+Id-956266dc-c568-4c4e-85be-d978a1e31440;Dk0016dg;"diameter kleiner dan 16 um / drooggewicht";KorrelgrootteFractie;184;2012-05-26;2100-01-01
+Id-461b6af8-f32b-451f-b170-fc0eaf58cb47;Dk0016md;"diameter kleiner dan 16 um / minerale delen";KorrelgrootteFractie;185;2011-06-10;2100-01-01
+Id-8a478cb2-db71-4a9d-a8af-955be2db2708;Dk16000;"diameter kleiner dan 16000 um";KorrelgrootteFractie;699;2018-12-18;2100-01-01
+Id-47568858-01af-4b83-a89f-a74a8ed2e6e4;Dk0180;"diameter kleiner dan 180 um";KorrelgrootteFractie;205;2011-06-10;2100-01-01
+Id-f99e014c-09db-4d39-b84b-af110a2470c2;Dk0180dg;"diameter kleiner dan 180 um / drooggewicht";KorrelgrootteFractie;689;2018-02-03;2100-01-01
+Id-80f0bacd-8dd1-40e0-b44b-22e7cd477509;Dk0180md;"diameter kleiner dan 180 um / minerale delen";KorrelgrootteFractie;206;2012-12-08;2100-01-01
+Id-2e401179-0e8d-4dce-9e59-27085e31ec40;Dk0002;"diameter kleiner dan 2 um";KorrelgrootteFractie;2;2011-06-10;2100-01-01
+Id-c743fe32-10bd-4988-89c4-c95bda2045b7;Dk0002dg;"diameter kleiner dan 2 um / drooggewicht";KorrelgrootteFractie;3;2012-05-26;2100-01-01
+Id-481b6876-a194-40ec-bde3-2f7cb00371d1;Dk0002md;"diameter kleiner dan 2 um / minerale delen";KorrelgrootteFractie;179;2011-06-10;2100-01-01
+Id-eb4cc0d7-e949-41fb-a00e-71cec3b48f30;Dk20E3dg;"diameter kleiner dan 20 mm / drooggewicht";KorrelgrootteFractie;696;2018-02-03;2100-01-01
+Id-d8543754-1cb3-48a3-9fd4-e41bb0ca8df6;Dk0020;"diameter kleiner dan 20 um";KorrelgrootteFractie;186;2011-06-10;2100-01-01
+Id-90f143f3-7cd5-4f90-a7d9-19ef7d69e8e7;Dk0020dg;"diameter kleiner dan 20 um / drooggewicht";KorrelgrootteFractie;686;2018-02-03;2100-01-01
+Id-a5d96a86-22ca-4425-ad27-2309f0315bfb;Dk0020md;"diameter kleiner dan 20 um / minerale delen";KorrelgrootteFractie;681;2018-02-03;2100-01-01
+Id-581e7047-cd0d-4386-b283-78de4b9e36d7;Dk0200;"diameter kleiner dan 200 um";KorrelgrootteFractie;704;2019-03-15;2100-01-01
+Id-c73305e0-22cc-4fda-b28e-babbc60c858a;Dk0200md;"diameter kleiner dan 200 um / minerale delen";KorrelgrootteFractie;685;2018-02-03;2100-01-01
+Id-b234eecb-0626-4b84-9637-91e7e7e820e1;Dk2000;"diameter kleiner dan 2000 um";KorrelgrootteFractie;216;2011-06-10;2100-01-01
+Id-c2d1c74c-2734-448a-ba38-e613cc204fb3;Dk2000dg;"diameter kleiner dan 2000 um / drooggewicht";KorrelgrootteFractie;694;2018-02-03;2100-01-01
+Id-687df5ff-4e95-44fb-be39-393c26e87007;Dk2000md;"diameter kleiner dan 2000 um / minerale delen";KorrelgrootteFractie;217;2011-06-10;2100-01-01
+Id-ac4b03f5-7005-45d7-9ef2-45f8853b97da;Dk0210;"diameter kleiner dan 210 um";KorrelgrootteFractie;207;2011-06-10;2100-01-01
+Id-56819ad0-dde4-4fe4-b445-c234cc406c3a;Dk0210dg;"diameter kleiner dan 210 um / drooggewicht";KorrelgrootteFractie;788;2020-10-09;2100-01-01
+Id-0c1ceed4-0403-402c-b6cb-3340b905cf32;Dk0210md;"diameter kleiner dan 210 um / minerale delen";KorrelgrootteFractie;917;2022-10-05;2100-01-01
+Id-349e1d62-5725-4d1f-9471-d5e425c5f541;Dk0212dg;"diameter kleiner dan 212 um / drooggewicht";KorrelgrootteFractie;677;2017-06-27;2100-01-01
+Id-39f04ca0-02d8-402c-80dc-d636b584e4a4;Dk0212md;"diameter kleiner dan 212 um / minerale delen";KorrelgrootteFractie;676;2017-06-27;2100-01-01
+Id-0d26e6fd-e4db-4b3a-8f0c-a42afb70263f;Dk0224dg;"diameter kleiner dan 224 um / drooggewicht";KorrelgrootteFractie;690;2018-02-03;2100-01-01
+Id-cfacc7bc-7d64-411a-8d88-fcd6c80b9a51;Dk0025md;"diameter kleiner dan 25 um / minerale delen";KorrelgrootteFractie;682;2018-02-03;2100-01-01
+Id-875c8f97-6276-406b-8a99-3aa5f838204a;Dk0250;"diameter kleiner dan 250 um";KorrelgrootteFractie;208;2011-06-10;2100-01-01
+Id-e608c550-650e-454f-ac00-698eda870b0d;Dk0250dg;"diameter kleiner dan 250 um / drooggewicht";KorrelgrootteFractie;789;2020-10-09;2100-01-01
+Id-919afe40-f679-4449-9330-2054eeb68042;Dk0250md;"diameter kleiner dan 250 um / minerale delen";KorrelgrootteFractie;209;2011-06-10;2100-01-01
+Id-b6148abc-cb7b-4702-b597-e695497b85dc;Dk0030;"diameter kleiner dan 30 um";KorrelgrootteFractie;749;2020-03-11;2100-01-01
+Id-393d9777-cd66-4ce5-a83b-d2947117ee0b;Dk0315E2dg;"diameter kleiner dan 31.5 mm / drooggewicht";KorrelgrootteFractie;910;2022-08-17;2100-01-01
+Id-3072d1e8-ab4e-472c-b8cc-d2aace7895e1;Dk0315dg;"diameter kleiner dan 315 um / drooggewicht";KorrelgrootteFractie;691;2018-02-03;2100-01-01
+Id-11fc4a96-662b-43fa-ae8b-e7e51bad1343;Dk31500;"diameter kleiner dan 31500 um";KorrelgrootteFractie;700;2018-12-18;2100-01-01
+Id-20a1eaf4-ab52-48bf-b4e6-85c41062681b;Dk0032;"diameter kleiner dan 32 um";KorrelgrootteFractie;187;2011-06-10;2100-01-01
+Id-0005bde7-f8fe-4b4f-b406-7a0aeb6f026e;Dk0032dg;"diameter kleiner dan 32 um / drooggewicht";KorrelgrootteFractie;517;2014-09-13;2100-01-01
+Id-e1fbdf43-2b47-4568-8b6a-59866c0b5046;Dk0032md;"diameter kleiner dan 32 um / minerale delen";KorrelgrootteFractie;188;2011-06-10;2100-01-01
+Id-f9c82ff3-798f-4f72-ba0d-78d05e835c80;Dk0035;"diameter kleiner dan 35 um";KorrelgrootteFractie;189;2012-05-26;2100-01-01
+Id-525de6d8-c720-4f2d-ac8c-9f38599339e2;Dk0035dg;"diameter kleiner dan 35 um / drooggewicht";KorrelgrootteFractie;687;2018-02-03;2100-01-01
+Id-992af509-0b90-4815-91b4-a060b40cc5e9;Dk0355;"diameter kleiner dan 355 um";KorrelgrootteFractie;210;2011-06-10;2100-01-01
+Id-646819d5-97bc-4c8b-b2b1-74a8aab2e0f7;Dk0355dg;"diameter kleiner dan 355 um / drooggewicht";KorrelgrootteFractie;791;2020-10-09;2100-01-01
+Id-78aa7d15-a577-4948-a197-5833688cb563;Dk0355md;"diameter kleiner dan 355 um / minerale delen";KorrelgrootteFractie;211;2012-12-08;2100-01-01
+Id-3283299d-0e77-4404-90b5-d19441ce5468;Dk0038;"diameter kleiner dan 38 um";KorrelgrootteFractie;190;2012-12-08;2100-01-01
+Id-80304c75-088a-409c-8a0b-9ffc63acb7cf;Dk0038md;"diameter kleiner dan 38 um / minerale delen";KorrelgrootteFractie;191;2012-12-08;2100-01-01
+Id-87225adf-f4cf-454d-b220-9f7d2ba3cb0d;Dk0004;"diameter kleiner dan 4 um";KorrelgrootteFractie;180;2011-06-10;2100-01-01
+Id-ad0396a0-6796-4a77-9894-ea95c9f222c5;Dk0004dg;"diameter kleiner dan 4 um / drooggewicht";KorrelgrootteFractie;792;2020-10-09;2100-01-01
+Id-52dc7b98-00e8-4779-860e-fa1e2a7d5ed2;Dk4000;"diameter kleiner dan 4000 um";KorrelgrootteFractie;218;2011-06-10;2100-01-01
+Id-56fc9408-a9bc-434a-a581-fe0827e28d38;Dk4000dg;"diameter kleiner dan 4000 um / drooggewicht";KorrelgrootteFractie;695;2018-02-03;2100-01-01
+Id-8503d6a2-34d9-49b8-8c8b-576980339e46;Dk0045;"diameter kleiner dan 45 um";KorrelgrootteFractie;192;2011-06-10;2100-01-01
+Id-242e3b6c-9912-4b09-85f9-5d92e260fe26;Dk0045dg;"diameter kleiner dan 45 um / drooggewicht";KorrelgrootteFractie;793;2020-10-09;2100-01-01
+Id-c6114a98-cc5b-4318-92ba-0992c2dd057c;Dk0045md;"diameter kleiner dan 45 um / minerale delen";KorrelgrootteFractie;683;2018-02-03;2100-01-01
+Id-a89ca50a-bb32-473a-84ad-3ab96de539cf;Dk0005;"diameter kleiner dan 5 um";KorrelgrootteFractie;752;2020-03-11;2100-01-01
+Id-e10590d4-6846-4456-a415-bcfa01a3d05a;Dk0050;"diameter kleiner dan 50 um";KorrelgrootteFractie;193;2011-06-10;2100-01-01
+Id-8427bcc0-0a62-4201-9217-fb87ecd980bf;Dk0050dg;"diameter kleiner dan 50 um / drooggewicht";KorrelgrootteFractie;794;2020-10-09;2100-01-01
+Id-3443728a-72ce-4b13-b64c-0b4b0638d07b;Dk0050md;"diameter kleiner dan 50 um / minerale delen";KorrelgrootteFractie;194;2011-06-10;2100-01-01
+Id-2796c068-b2ed-4ccc-b483-72714919ec49;Dk0500;"diameter kleiner dan 500 um";KorrelgrootteFractie;212;2011-06-10;2100-01-01
+Id-3979304b-381b-40db-a969-c0184adfb56f;Dk0500dg;"diameter kleiner dan 500 um / drooggewicht";KorrelgrootteFractie;795;2020-10-09;2100-01-01
+Id-a39da5bd-56c5-4a15-b8b0-b92c259f2d43;Dk0500md;"diameter kleiner dan 500 um / minerale delen";KorrelgrootteFractie;213;2011-06-10;2100-01-01
+Id-a7b0c68a-683b-4c02-93af-d14fa7b44de0;Dk0053;"diameter kleiner dan 53 um";KorrelgrootteFractie;195;2011-06-10;2100-01-01
+Id-09f63f4a-8e2c-47c4-94c9-340b270ead1e;Dk0053dg;"diameter kleiner dan 53 um / drooggewicht";KorrelgrootteFractie;897;2022-03-09;2100-01-01
+Id-dbd631be-b517-4d89-8d80-5aaffe7005f8;Dk0060md;"diameter kleiner dan 60 um / minerale delen";KorrelgrootteFractie;684;2018-02-03;2100-01-01
+Id-7975e6ef-9d48-4283-9d65-6aa7b891f78f;Dk0600dg;"diameter kleiner dan 600 um / drooggewicht";KorrelgrootteFractie;899;2022-04-09;2100-01-01
+Id-c8e8b410-e182-4723-8d07-61786c88b44b;Dk0063;"diameter kleiner dan 63 um";KorrelgrootteFractie;196;2011-06-10;2100-01-01
+Id-dc43ef2e-4753-46c3-ad29-092ae49b34c7;Dk0063dg;"diameter kleiner dan 63 um / drooggewicht";KorrelgrootteFractie;511;2013-11-21;2100-01-01
+Id-6d7f19ac-a982-4eaa-a6cb-c12dd318d167;Dk0063md;"diameter kleiner dan 63 um / minerale delen";KorrelgrootteFractie;197;2011-06-10;2100-01-01
+Id-bce5e65e-c33a-4f4e-a777-4d783b397517;Dk63000;"diameter kleiner dan 63000 um";KorrelgrootteFractie;701;2018-12-18;2100-01-01
+Id-ef7ace3b-e3b5-4d11-81f3-3c6f22e55047;Dk0710;"diameter kleiner dan 710 um";KorrelgrootteFractie;919;2022-10-05;2100-01-01
+Id-c0c99c53-5193-4a42-a216-c3c3764db36d;Dk0710dg;"diameter kleiner dan 710 um / drooggewicht";KorrelgrootteFractie;909;2022-08-17;2100-01-01
+Id-77205957-e3f3-46aa-96d8-70016c10e267;Dk0710md;"diameter kleiner dan 710 um / minerale delen";KorrelgrootteFractie;916;2022-10-05;2100-01-01
+Id-a31cd550-1fd4-401c-9d58-f758810d23ce;Dk0008;"diameter kleiner dan 8 um";KorrelgrootteFractie;181;2011-06-10;2100-01-01
+Id-37e50d91-7751-47ca-b7c5-645294c5a3ea;Dk0008dg;"diameter kleiner dan 8 um / drooggewicht";KorrelgrootteFractie;798;2020-10-09;2100-01-01
+Id-1df1a486-dcae-4596-a6d9-af57b6bef003;Dk0008md;"diameter kleiner dan 8 um / minerale delen";KorrelgrootteFractie;680;2018-02-03;2100-01-01
+Id-8c80328c-a0c2-4a0d-aef2-26f3a62a66a8;Dk0080;"diameter kleiner dan 80 um";KorrelgrootteFractie;198;2011-06-10;2100-01-01
+Id-46feb12e-2d93-4dfc-9a57-8a122d0ebfd5;Dk8000;"diameter kleiner dan 8000 um";KorrelgrootteFractie;219;2011-06-10;2100-01-01
+Id-501f8bd1-a5ab-480f-8c8f-7adbe3a2df4a;Dk8000dg;"diameter kleiner dan 8000 um / drooggewicht";KorrelgrootteFractie;799;2020-10-09;2100-01-01
+Id-1367b420-df0f-4a73-ae85-5eef0659627a;Dk0090;"diameter kleiner dan 90 um";KorrelgrootteFractie;199;2011-06-10;2100-01-01
+Id-b3ce0f53-9388-4ae8-aa7d-8c9842021a58;Dk0090dg;"diameter kleiner dan 90 um / drooggewicht";KorrelgrootteFractie;800;2020-10-09;2100-01-01
+Id-b3e43fba-3ab2-4140-a3d0-e09112d7ed18;Dk0090md;"diameter kleiner dan 90 um / minerale delen";KorrelgrootteFractie;200;2012-12-08;2100-01-01
+Id-3447588d-90be-4e01-b3d7-be2e9b4a22e6;D00001-001;"diameter tussen 0.01 en 1 um";KorrelgrootteFractie;625;2017-01-26;2100-01-01
+Id-2ee33672-4e5a-456f-a3ab-38e6bfb9709d;D00003-00005;"diameter tussen 0.03 en 0.05 um";KorrelgrootteFractie;862;2021-10-12;2100-01-01
+Id-23efaced-7b2f-4e88-8e1c-5a8e3ac6192d;D00005-00006;"diameter tussen 0.05 en 0.06 um";KorrelgrootteFractie;863;2021-10-12;2100-01-01
+Id-b1e30a9c-4c6c-41dc-8aa1-39804e4718c0;D00006-00007;"diameter tussen 0.06 en 0.07 um";KorrelgrootteFractie;864;2021-10-12;2100-01-01
+Id-f6fc372e-2d09-43ee-ac25-ee63fc59e584;D00007-00008;"diameter tussen 0.07 en 0.08 um";KorrelgrootteFractie;865;2021-10-12;2100-01-01
+Id-525b6722-4c4e-4103-923f-f49b55a858e0;D00008-00009;"diameter tussen 0.08 en 0.09 um";KorrelgrootteFractie;866;2021-10-12;2100-01-01
+Id-dda22c76-8501-4abd-8ceb-561af2d4c82e;D00009-00010;"diameter tussen 0.09 en 0.1 um";KorrelgrootteFractie;867;2021-10-12;2100-01-01
+Id-a8280932-c1ad-421d-ac07-b31ba1e76951;D00010-00012;"diameter tussen 0.1 en 0.12 um";KorrelgrootteFractie;868;2021-10-12;2100-01-01
+Id-ce719985-129d-4140-a954-41ee9f4bb702;D00012-00014;"diameter tussen 0.12 en 0.14 um";KorrelgrootteFractie;869;2021-10-12;2100-01-01
+Id-f246ee66-1064-4386-8564-8797b0805d17;D00014-00016;"diameter tussen 0.14 en 0.16 um";KorrelgrootteFractie;870;2021-10-12;2100-01-01
+Id-995ce148-ff51-4881-9bd7-d82b589df91b;D00016-00018;"diameter tussen 0.16 en 0.18 um";KorrelgrootteFractie;871;2021-10-12;2100-01-01
+Id-c64778c4-4b84-47be-828f-2748786cef7e;D00018-00020;"diameter tussen 0.18 en 0.2 um";KorrelgrootteFractie;872;2021-10-12;2100-01-01
+Id-507854a5-e4f5-41ae-ae4b-b6aaf1a83b5e;D00020-00030;"diameter tussen 0.2 en 0.3 um";KorrelgrootteFractie;873;2021-10-12;2100-01-01
+Id-9df17a24-fdae-4b49-b9b5-61116a326bca;D00030-00040;"diameter tussen 0.3 en 0.4 um";KorrelgrootteFractie;874;2021-10-12;2100-01-01
+Id-b7fe2c4a-ec2d-4613-8ef3-b6e52927e8ed;D00040-00050;"diameter tussen 0.4 en 0.5 um";KorrelgrootteFractie;875;2021-10-12;2100-01-01
+Id-205aac7a-d653-4041-b03e-8ce56a6994b3;D1000-1190;"diameter tussen 1 en 1.19 mm";KorrelgrootteFractie;648;2017-01-26;2100-01-01
+Id-38d95bb0-a684-4506-a060-9c403c15d463;D001-002;"diameter tussen 1 en 2 um";KorrelgrootteFractie;626;2017-01-26;2100-01-01
+Id-a97c2f57-35a6-4c8a-a78f-e865d074f713;D001-003;"diameter tussen 1 en 3 um";KorrelgrootteFractie;702;2019-01-30;2100-01-01
+Id-f3e7effc-4b37-4942-aeab-7ccdc10b9b30;D1190-1410;"diameter tussen 1.19 en 1.41 mm";KorrelgrootteFractie;649;2017-01-26;2100-01-01
+Id-f5af6f31-7447-45f0-9f22-04e14907b917;D1410-1680;"diameter tussen 1.41 en 1.68 mm";KorrelgrootteFractie;650;2017-01-26;2100-01-01
+Id-60d7f316-619d-4fe6-8e95-188abd7e7828;D1680-2000;"diameter tussen 1.68 en 2 mm";KorrelgrootteFractie;651;2017-01-26;2100-01-01
+Id-ec56fa7d-2f44-49f7-b7ff-d61efc368778;D100-500;"diameter tussen 100 en 500 um";KorrelgrootteFractie;751;2020-03-11;2100-01-01
+Id-87985e73-6f1b-420c-bac4-4f5c6ac95699;D1E3-1400;"diameter tussen 1000 en 1400 um";KorrelgrootteFractie;768;2020-10-09;2100-01-01
+Id-2f98f8be-24d1-4cd8-b4a0-77a598843dc6;D1E3-1400dg;"diameter tussen 1000 en 1400 um / drooggewicht";KorrelgrootteFractie;781;2020-10-09;2100-01-01
+Id-a7a7fc85-6e5a-43de-9044-2826e5d96b38;D1E3-2E3;"diameter tussen 1000 en 2000 um";KorrelgrootteFractie;155;2011-06-10;2100-01-01
+Id-562e849b-104c-4fdd-9ed4-c09d45af9a76;D1E3-4E3;"diameter tussen 1000 en 4000 um";KorrelgrootteFractie;766;2020-10-07;2100-01-01
+Id-020970e4-aa65-47f5-9b1b-b68595684871;D105-125;"diameter tussen 105 en 125 um";KorrelgrootteFractie;636;2017-01-26;2100-01-01
+Id-f27d617a-7392-43d2-b27e-da87934d552a;D106-150;"diameter tussen 106 en 150 um";KorrelgrootteFractie;150;2011-06-10;2100-01-01
+Id-f81fa201-8154-4867-bfc2-aaf24e4250c4;D125-150;"diameter tussen 125 en 150 um";KorrelgrootteFractie;637;2017-01-26;2100-01-01
+Id-95d02b31-9dee-45fb-a0e4-9a7602d88581;D125-180;"diameter tussen 125 en 180 um";KorrelgrootteFractie;151;2011-06-10;2100-01-01
+Id-0c700348-58bc-4fd2-a007-8c861391aeca;D125-180dg;"diameter tussen 125 en 180 um / drooggewicht";KorrelgrootteFractie;775;2020-10-09;2100-01-01
+Id-5b367124-f6a6-4852-8f43-9fbe8f6a1a9f;D125-250;"diameter tussen 125 en 250 um";KorrelgrootteFractie;152;2011-06-10;2100-01-01
+Id-871cf089-e085-4573-b1e8-4045d38de622;D125-250dg;"diameter tussen 125 en 250 um / drooggewicht";KorrelgrootteFractie;776;2020-10-09;2100-01-01
+Id-abf4b0d7-6072-446a-81c1-41bdd7381876;D1400-2000;"diameter tussen 1400 en 2000 um";KorrelgrootteFractie;708;2019-03-15;2100-01-01
+Id-771fd588-7896-4e9e-9a30-d66d8901f308;D1400-2000dg;"diameter tussen 1400 en 2000 um / drooggewicht";KorrelgrootteFractie;782;2020-10-09;2100-01-01
+Id-7d5e5c3b-a135-4cd3-834a-14983d4b4d0f;D150-177;"diameter tussen 150 en 177 um";KorrelgrootteFractie;638;2017-01-26;2100-01-01
+Id-0ebb1767-636a-4825-bc56-6e365da1e8e3;D150-212;"diameter tussen 150 en 212 um";KorrelgrootteFractie;153;2011-06-10;2100-01-01
+Id-ce7d9935-535c-4f9f-a5d7-5d02146a3015;D016-2000;"diameter tussen 16 en 2000 um";KorrelgrootteFractie;760;2020-08-12;2100-01-01
+Id-09233363-9437-445e-87f6-6ad712226b7c;D016-2000dg;"diameter tussen 16 en 2000 um / drooggewicht";KorrelgrootteFractie;786;2020-10-09;2100-01-01
+Id-27246cf5-4b94-4c5e-b901-6be724c235ea;D016-025;"diameter tussen 16 en 25 um";KorrelgrootteFractie;630;2017-01-26;2100-01-01
+Id-260ca7a8-7fa1-4315-96d0-de0a037ffdab;D16E3-32E3;"diameter tussen 16 en 32 mm";KorrelgrootteFractie;903;2022-07-27;2100-01-01
+Id-665d2cdd-f79e-4c85-8213-8dad8799ac20;D016-032;"diameter tussen 16 en 32 um";KorrelgrootteFractie;757;2020-06-17;2100-01-01
+Id-8b3a70bf-a770-43d7-8762-530ab0c5e3eb;D016-045;"diameter tussen 16 en 45 um";KorrelgrootteFractie;762;2020-09-09;2100-01-01
+Id-3a23a1f4-5a33-4e25-83cf-7ba9fcd13478;D016-045dg;"diameter tussen 16 en 45 um / drooggewicht";KorrelgrootteFractie;771;2020-10-09;2100-01-01
+Id-bd714bb0-7bf6-4e14-b9f0-8af9c51b6514;D016-063dg;"diameter tussen 16 en 63 um / drooggewicht";KorrelgrootteFractie;787;2020-10-09;2100-01-01
+Id-5fbcf409-5a20-4e50-8d93-e9c6e398a14c;D177-210;"diameter tussen 177 en 210 um";KorrelgrootteFractie;639;2017-01-26;2100-01-01
+Id-2f5e5915-9256-4955-8bbe-674b928c9c40;D180-250;"diameter tussen 180 en 250 um";KorrelgrootteFractie;154;2011-06-10;2100-01-01
+Id-96088a57-e5eb-4069-b66c-8d4d1df92a2d;D180-250dg;"diameter tussen 180 en 250 um / drooggewicht";KorrelgrootteFractie;895;2022-03-09;2100-01-01
+Id-f7f4e559-c2a7-4d34-90a0-d7e3885ead59;D002-016;"diameter tussen 2 en 16 um";KorrelgrootteFractie;767;2020-09-09;2100-01-01
+Id-5af134c3-4bfa-46e4-929e-8076eddbd587;D002-016dg;"diameter tussen 2 en 16 um / drooggewicht";KorrelgrootteFractie;783;2020-10-09;2100-01-01
+Id-d44abb82-4c0e-4713-959a-66c707155333;D002-032;"diameter tussen 2 en 32 mm";KorrelgrootteFractie;579;2014-05-24;2100-01-01
+Id-56859a75-df09-474c-ac2c-f8cb818f2dcb;D002-032dg;"diameter tussen 2 en 32 mm / drooggewicht";KorrelgrootteFractie;516;2014-09-13;2100-01-01
+Id-ab4acf18-4644-4c56-aa20-71fe0687ded9;D002-004;"diameter tussen 2 en 4 um";KorrelgrootteFractie;627;2017-01-26;2100-01-01
+Id-9e293a47-52e3-4764-ac6a-6c60e35dedcc;D002-008;"diameter tussen 2 en 8 um";KorrelgrootteFractie;755;2020-06-17;2100-01-01
+Id-d68094c1-6609-42a4-972b-af4c0feb51c0;D002-008dg;"diameter tussen 2 en 8 um / drooggewicht";KorrelgrootteFractie;769;2020-10-09;2100-01-01
+Id-e2e82bbe-4c97-4d16-8a62-b5bd02a6d81f;D200-400;"diameter tussen 200 en 400 um";KorrelgrootteFractie;705;2019-03-15;2100-01-01
+Id-dbbbb1ea-80ff-44e8-8260-ae2939acb74a;D2E3-4E3;"diameter tussen 2000 en 4000 um";KorrelgrootteFractie;653;2017-01-26;2100-01-01
+Id-fa81db8b-767c-4691-a546-235578455fba;D210-250;"diameter tussen 210 en 250 um";KorrelgrootteFractie;640;2017-01-26;2100-01-01
+Id-948f7e67-9d4b-4e16-893c-3d97c69fac4a;D212-250;"diameter tussen 212 en 250 um";KorrelgrootteFractie;156;2011-06-10;2100-01-01
+Id-a1c497bf-3417-4484-8605-d11a523a32f6;D025-035;"diameter tussen 25 en 35 um";KorrelgrootteFractie;631;2017-01-26;2100-01-01
+Id-440604e2-0486-4719-927a-4ba58167a514;D250-300;"diameter tussen 250 en 300 um";KorrelgrootteFractie;157;2011-06-10;2100-01-01
+Id-95a5a156-dbf5-440e-9a2c-17d5732a14ca;D250-355;"diameter tussen 250 en 355 um";KorrelgrootteFractie;158;2011-06-10;2100-01-01
+Id-4eaaee96-044f-48dd-8af9-471870b13b9b;D250-355dg;"diameter tussen 250 en 355 um / drooggewicht";KorrelgrootteFractie;777;2020-10-09;2100-01-01
+Id-713c7e73-4558-4005-bc32-95c5802a5132;D250-500;"diameter tussen 250 en 500 um";KorrelgrootteFractie;159;2011-06-10;2100-01-01
+Id-1e912892-38bc-4c68-8e2f-7d4fc024ac8a;D250-500dg;"diameter tussen 250 en 500 um / drooggewicht";KorrelgrootteFractie;790;2020-10-09;2100-01-01
+Id-763fc7f1-e23d-4ea9-b6c9-d6204e4b8573;D255-500dg;"diameter tussen 255 en 500 um / drooggewicht";KorrelgrootteFractie;896;2022-03-09;2100-01-01
+Id-88d93eec-cbbb-4ed7-bfbc-93000c02c4b7;D256E3-512E3;"diameter tussen 256 en 512 mm";KorrelgrootteFractie;656;2017-01-26;2100-01-01
+Id-f04fba03-3c54-4578-b97a-70eb967c5bc6;D004-063;"diameter tussen 3.90625 en 62.5 um";KorrelgrootteFractie;906;2022-07-27;2100-01-01
+Id-c20b9749-3c93-4539-96df-e7f7806bf8e8;D030-100;"diameter tussen 30 en 100 um";KorrelgrootteFractie;750;2020-03-11;2100-01-01
+Id-a4e89b9f-52d4-4fca-b575-5bdd9c3f1f9f;D300-354;"diameter tussen 300 en 354 um";KorrelgrootteFractie;641;2017-01-26;2100-01-01
+Id-5f291aa2-c7a0-4b18-8e0f-7efd6df3ead2;D300-425;"diameter tussen 300 en 425 um";KorrelgrootteFractie;160;2011-06-10;2100-01-01
+Id-398038f3-ec5a-4d05-bccd-3fa1fccbbf87;D032-063;"diameter tussen 32 en 63 um";KorrelgrootteFractie;758;2020-06-17;2100-01-01
+Id-669f93ab-d007-49e6-bb54-eca7bc1c0d11;D32E3-64E3;"diameter tussen 32 en 64 mm";KorrelgrootteFractie;902;2022-07-27;2100-01-01
+Id-c498172b-f9ca-4af3-a9eb-50753ea987c2;D035-050;"diameter tussen 35 en 50 um";KorrelgrootteFractie;632;2017-01-26;2100-01-01
+Id-abd76420-fb0d-4669-8705-2c2a51d46d6c;D354-420;"diameter tussen 354 en 420 um";KorrelgrootteFractie;642;2017-01-26;2100-01-01
+Id-ff69eb86-2f41-4987-9c2a-8ee0df4ba77f;D355-500;"diameter tussen 355 en 500 um";KorrelgrootteFractie;161;2011-06-10;2100-01-01
+Id-f25e2ce6-95da-44d3-adcb-3b7cfd700abb;D355-500dg;"diameter tussen 355 en 500 um / drooggewicht";KorrelgrootteFractie;778;2020-10-09;2100-01-01
+Id-78bbe5e4-30d5-406c-bcb3-a71dd2c00ecd;D038-050;"diameter tussen 38 en 50 um";KorrelgrootteFractie;144;2011-06-10;2100-01-01
+Id-d1559158-87d9-4d30-9a0a-9e2873d22470;D038-063;"diameter tussen 38 en 63 um";KorrelgrootteFractie;145;2011-06-10;2100-01-01
+Id-d0409c6a-6fe9-4b53-a3f8-a6ec56b15e12;D4E3-8E3;"diameter tussen 4 en 8 mm";KorrelgrootteFractie;905;2022-07-27;2100-01-01
+Id-ccec420f-2faa-4da7-b80d-21cb93a113c9;D004-008;"diameter tussen 4 en 8 um";KorrelgrootteFractie;628;2017-01-26;2100-01-01
+Id-28a9571c-59cd-48b1-9788-d6f731e121c1;D400-600;"diameter tussen 400 en 600 um";KorrelgrootteFractie;706;2019-03-15;2100-01-01
+Id-dfc5d1b0-91ee-4e9e-af3b-092fc0bdd042;D420-500;"diameter tussen 420 en 500 um";KorrelgrootteFractie;643;2017-01-26;2100-01-01
+Id-2b28313c-fe00-4ce4-aa2c-94870cf8158b;D045-063;"diameter tussen 45 en 63 um";KorrelgrootteFractie;763;2020-09-09;2100-01-01
+Id-a039ad54-93f1-41b2-9dd0-93e72ff179b9;D045-063dg;"diameter tussen 45 en 63 um / drooggewicht";KorrelgrootteFractie;772;2020-10-09;2100-01-01
+Id-1d3f7cf3-18ee-4c84-9a97-e4947f672b5b;D050-2000md;"diameter tussen 50 en 2000 um / minerale delen";KorrelgrootteFractie;907;2022-08-17;2100-01-01
+Id-fc344468-fac0-460b-9feb-2e84da7fb45e;D050-063;"diameter tussen 50 en 63 um";KorrelgrootteFractie;146;2011-06-10;2100-01-01
+Id-329dafe0-8e84-497f-8e03-e24c3afbecb1;D500-1E3;"diameter tussen 500 en 1000 um";KorrelgrootteFractie;162;2011-06-10;2100-01-01
+Id-2172f582-c253-4626-9eab-1e37d7ea6cd9;D500-1E3dg;"diameter tussen 500 en 1000 um / drooggewicht";KorrelgrootteFractie;796;2020-10-09;2100-01-01
+Id-34956fb0-fc20-4003-83c2-3f6989d86347;D500-2E3;"diameter tussen 500 en 2000 um";KorrelgrootteFractie;697;2018-06-13;2100-01-01
+Id-7e29c739-ffea-4425-ba78-ac3eff2c8186;D500-600;"diameter tussen 500 en 600 um";KorrelgrootteFractie;644;2017-01-26;2100-01-01
+Id-d034f2ab-56f1-42c4-b4a7-a6981ed282a3;D500-710;"diameter tussen 500 en 710 um";KorrelgrootteFractie;764;2020-09-09;2100-01-01
+Id-16cce7bb-c3d7-4984-b86f-582f0ffce79a;D500-710dg;"diameter tussen 500 en 710 um / drooggewicht";KorrelgrootteFractie;779;2020-10-09;2100-01-01
+Id-ba114098-58b8-4eb2-a3cc-cc989822406d;D512E3-1024E;"diameter tussen 512 en 1024 mm";KorrelgrootteFractie;657;2017-01-26;2100-01-01
+Id-f6d0a886-83e8-4997-9557-b571e5fc832f;D600-1400;"diameter tussen 600 en 1400 um";KorrelgrootteFractie;707;2019-03-15;2100-01-01
+Id-cf7a5e5f-4689-4680-bba7-4fc88b4da5b8;D600-707;"diameter tussen 600 en 707 um";KorrelgrootteFractie;645;2017-01-26;2100-01-01
+Id-e18dd895-fdbd-4195-a1b5-09c2885cfadd;D063-125;"diameter tussen 63 en 125 um";KorrelgrootteFractie;148;2011-06-10;2100-01-01
+Id-c24dcc17-0b72-4478-a1b3-40f7363d4b45;D063-125dg;"diameter tussen 63 en 125 um / drooggewicht";KorrelgrootteFractie;797;2020-10-09;2100-01-01
+Id-f5492d25-0768-4248-8313-77b1905d17e4;D063-2000;"diameter tussen 63 en 2000 um";KorrelgrootteFractie;652;2017-01-26;2100-01-01
+Id-9b5bc237-2552-4694-be7c-aeef3195093f;D063-2000dg;"diameter tussen 63 en 2000 um / drooggewicht";KorrelgrootteFractie;898;2022-04-09;2100-01-01
+Id-c95e6978-13c6-4683-8714-cd0f6ccab527;D063-2000md;"diameter tussen 63 en 2000 um / minerale delen";KorrelgrootteFractie;908;2022-08-17;2100-01-01
+Id-977aed98-e6e8-4b1e-a80c-f7e276311a07;D063-075;"diameter tussen 63 en 75 um";KorrelgrootteFractie;633;2017-01-26;2100-01-01
+Id-d92d8441-adce-4ce3-ad1c-cfd6066c6f05;D063-090;"diameter tussen 63 en 90 um";KorrelgrootteFractie;147;2011-06-10;2100-01-01
+Id-b6284de1-f3bf-45bb-92fe-9b42722cd8e8;D063-090dg;"diameter tussen 63 en 90 um / drooggewicht";KorrelgrootteFractie;773;2020-10-09;2100-01-01
+Id-7c55b9ae-f8b3-4dba-9446-7fca780c58c9;D64E3-256E3;"diameter tussen 64 en 256 mm";KorrelgrootteFractie;655;2017-01-26;2100-01-01
+Id-5ee008f9-998f-4cf3-88e2-fe0d528fcd4c;D707-850;"diameter tussen 707 en 850 um";KorrelgrootteFractie;646;2017-01-26;2100-01-01
+Id-14bb8d8a-377b-4310-aedd-e984b00662c6;D710-1E3;"diameter tussen 710 en 1000 um";KorrelgrootteFractie;765;2020-09-09;2100-01-01
+Id-b4a367a0-434a-4c99-87a2-40a7f5dde1d6;D710-1E3dg;"diameter tussen 710 en 1000 um / drooggewicht";KorrelgrootteFractie;780;2020-10-09;2100-01-01
+Id-fcb4301d-8897-46ce-8dbf-2b8965e3cb77;D075-088;"diameter tussen 75 en 88 um";KorrelgrootteFractie;634;2017-01-26;2100-01-01
+Id-05db7d2d-934a-404b-b9cc-ae307f440777;D8E3-16E3;"diameter tussen 8 en 16 mm";KorrelgrootteFractie;904;2022-07-27;2100-01-01
+Id-9e746d50-3cde-40ad-b328-bf851e924444;D008-016;"diameter tussen 8 en 16 um";KorrelgrootteFractie;629;2018-07-06;2100-01-01
+Id-ac1126c5-bbb7-47e9-9704-8f18240484fa;D008-016dg;"diameter tussen 8 en 16 um / drooggewicht";KorrelgrootteFractie;770;2020-10-09;2100-01-01
+Id-759ebe85-b2a8-4dfd-810d-56390c854d24;D008-032;"diameter tussen 8 en 32 um";KorrelgrootteFractie;756;2020-06-17;2100-01-01
+Id-9033fa9e-5be9-458f-83c5-e351272347b3;D8E3-64E3;"diameter tussen 8 en 64 mm";KorrelgrootteFractie;654;2017-01-26;2100-01-01
+Id-7b169dba-e941-4b47-aca8-002456b45602;D850-1000;"diameter tussen 850 en 1000 um";KorrelgrootteFractie;647;2017-01-26;2100-01-01
+Id-eb24df78-b957-44c3-b341-f0aa1b8e0c2b;D088-105;"diameter tussen 88 en 105 um";KorrelgrootteFractie;635;2018-07-06;2100-01-01
+Id-e222a8bf-198d-44a3-b41e-dd8e01e5da68;D090-125;"diameter tussen 90 en 125 um";KorrelgrootteFractie;149;2011-06-10;2100-01-01
+Id-19b63dbd-eb20-4a06-883f-a2cb81d61504;D090-125dg;"diameter tussen 90 en 125 um / drooggewicht";KorrelgrootteFractie;774;2020-10-09;2100-01-01
+Id-65ccaa27-3cd6-42d7-9f8f-3ee6555b4137;DICHT;dicht;HoedanigheidFractieBasis;446;2013-08-07;2100-01-01
+Id-982e5efd-c1d5-4002-a4df-62fe34a4183d;asbf0005-001;"fractie 0,5 - 1 mm";AsbestFractie;56;2016-02-25;2100-01-01
+Id-699988ab-c1d3-4e9b-9c03-14e89906d5ac;af0005-001dg;"fractie 0,5 - 1 mm / drooggewicht";HoedanigheidCombinatie;877;2021-11-19;2100-01-01
+Id-a7ade230-65ad-4626-8b64-bb939d6aac7a;asbf001-002;"fractie 1 - 2 mm";AsbestFractie;55;2016-02-25;2100-01-01
+Id-60490f90-d428-4be6-bb8e-d0cf3d48ae05;af001-002dg;"fractie 1 - 2 mm / drooggewicht";HoedanigheidCombinatie;878;2021-11-19;2100-01-01
+Id-eb4c0220-0385-4494-b6e0-0ae756d0ae0c;asbf002-004;"fractie 2 - 4 mm";AsbestFractie;54;2016-02-25;2100-01-01
+Id-cbfb95a9-f34e-4be4-9d3c-2cb812a17d29;af002-004dg;"fractie 2 - 4 mm / drooggewicht";HoedanigheidCombinatie;879;2021-11-19;2100-01-01
+Id-7094e3cd-a2d2-4b32-bd1f-46d7604501ad;asbf004-008;"fractie 4 - 8 mm";AsbestFractie;53;2016-02-25;2100-01-01
+Id-e384d82d-dd56-4bdd-9248-51bc4d2cd381;af004-008dg;"fractie 4 - 8 mm / drooggewicht";HoedanigheidCombinatie;880;2021-11-19;2100-01-01
+Id-a2028704-8878-42f4-af76-2de66697fd7c;asbf008-016;"fractie 8 - 16 mm";AsbestFractie;52;2016-02-25;2100-01-01
+Id-d59b75c4-1e41-4f71-a880-0c716f775cd5;af008-016dg;"fractie 8 - 16 mm / drooggewicht";HoedanigheidCombinatie;881;2021-11-19;2100-01-01
+Id-c05b5cb1-e57e-402d-b3bb-7c1ec83697c2;Olsendg;"fractie Olsen (na P-extractie)";HoedanigheidFractieBasis;612;2016-02-06;2100-01-01
+Id-bb886f2a-1314-4927-bf75-4300e7c53480;blauwalg;"fractie afkomstig van blauwalgen";HoedanigheidFractieBasis;74;2011-06-10;2100-01-01
+Id-29c7adcf-174e-49a2-bd29-833bf78e979b;cryptofy;"fractie afkomstig van cryptofyten";HoedanigheidFractieBasis;140;2011-06-10;2100-01-01
+Id-f9bec7cc-ac14-4785-9d27-547ca0f7a986;diatomee;"fractie afkomstig van diatomeeën";HoedanigheidFractieBasis;178;2011-06-10;2100-01-01
+Id-bc2a6188-cfc0-4ea5-b1a8-f763e255fcd6;groenalg;"fractie afkomstig van groenalgen";HoedanigheidFractieBasis;287;2011-06-10;2100-01-01
+Id-90a5565f-a4f7-4590-8ede-3f35dc434786;planktothrix;"fractie afkomstig van planktothrix";HoedanigheidFractieBasis;716;2020-01-01;2100-01-01
+Id-c5bbbf3d-38c7-4afe-808a-7677c1c3bbaf;toxblauw;"fractie afkomstig van toxische blauwalgen";HoedanigheidFractieBasis;416;2011-06-11;2100-01-01
+Id-454e0cc8-7c59-45a3-86ff-249e93e50361;toxblauwINSU;"fractie afkomstig van toxische blauwalgen / in situ gemeten";HoedanigheidCombinatie;900;2022-05-03;2100-01-01
+Id-a4ebd331-a7e1-4c83-9c4b-0359ef92a126;asbfg016;"fractie groter dan 16 mm";AsbestFractie;51;2016-02-25;2100-01-01
+Id-f8a8af2d-b5af-4661-bdcd-b6c4fa838c72;afg016dg;"fractie groter dan 16 mm / drooggewicht";HoedanigheidCombinatie;882;2021-11-19;2100-01-01
+Id-b44656cd-7b89-47f7-bd3d-3c391de1221f;asbfg020;"fractie groter dan 20 mm";AsbestFractie;624;2017-01-10;2100-01-01
+Id-f456b80b-64d8-49ed-b67b-a5911a4b5b2f;afg020dg;"fractie groter dan 20 mm / drooggewicht";HoedanigheidCombinatie;883;2021-11-19;2100-01-01
+Id-d1c3003a-9659-412c-8c04-24fb2ab71134;asbfk0005;"fractie kleiner dan 0,5 mm";AsbestFractie;57;2016-02-25;2100-01-01
+Id-9422cdd3-9d89-4b1f-92eb-f28795ef95a8;afk0005dg;"fractie kleiner dan 0,5 mm / drooggewicht";HoedanigheidCombinatie;884;2021-11-19;2100-01-01
+Id-dec9c4ba-7a52-411a-ab5e-25a2c51aa5e3;afk020;"fractie kleiner dan 20 mm";AsbestFractie;987;2024-05-31;2100-01-01
+Id-f14ccf25-eaf4-409e-bf90-5cb68ba9d223;afk020dg;"fractie kleiner dan 20 mm / drooggewicht";HoedanigheidCombinatie;988;2024-05-31;2100-01-01
+Id-f2791bf1-50d3-42a3-84c5-bcc7af94289f;gva;"gebruikt voor analyse";HoedanigheidOnterecht;975;2023-04-27;2100-01-01
+Id-daf7e829-0ddc-46e1-8def-18c463205029;gbor;"gemeten bij een oever met riet";HoedanigheidBiotoopaspect;1008;2025-08-29;2100-01-01
+Id-1b882384-a3bc-4c5f-aa18-7c8c63947384;gbos;"gemeten bij een oever met stenen";HoedanigheidBiotoopaspect;1007;2025-08-29;2100-01-01
+Id-4951e3fc-e359-4956-9a88-80ef06d38432;gbov;"gemeten bij een oever met vooroever";HoedanigheidBiotoopaspect;1006;2025-08-29;2100-01-01
+Id-71c65499-7969-4010-b91a-e559803ca367;gboz;"gemeten bij een oever met zand";HoedanigheidBiotoopaspect;1005;2025-08-29;2100-01-01
+Id-2b061d41-0bc6-41e8-82c2-f9cc19a7fe98;L250nm;"gemeten bij golflengte 250 nm";HoedanigheidOnterecht;307;2011-06-10;2100-01-01
+Id-d1f4a106-7211-462f-85e0-b90f000a92a4;L254nm;"gemeten bij golflengte 254 nm";HoedanigheidOnterecht;308;2011-06-10;2100-01-01
+Id-dea134e4-a415-4e2e-a6e5-7260a1ea8d46;L380nm;"gemeten bij golflengte 380 nm";HoedanigheidOnterecht;309;2011-06-10;2100-01-01
+Id-d0ac8eda-a76d-43e2-b4a2-34607d17d4e3;L400nm;"gemeten bij golflengte 400 nm";HoedanigheidOnterecht;310;2011-06-10;2100-01-01
+Id-ca52018c-9f25-4420-afdb-2e0f215a0250;L440nm;"gemeten bij golflengte 440 nm";HoedanigheidOnterecht;311;2011-06-10;2100-01-01
+Id-e03443e5-fd6f-4eee-b7a8-b9270b856ceb;L450nm;"gemeten bij golflengte 450 nm";HoedanigheidOnterecht;710;2019-05-11;2100-01-01
+Id-e3d265ce-23c6-49ca-b638-e42932ee87d8;L455nm;"gemeten bij golflengte 455 nm";HoedanigheidOnterecht;312;2012-10-06;2100-01-01
+Id-424d45bb-ed71-48e8-a578-487486f03ea5;L465nm;"gemeten bij golflengte 465 nm";HoedanigheidOnterecht;313;2011-06-10;2100-01-01
+Id-fad2026d-b8a3-4e9c-91d7-7b98b78133b3;L470nm;"gemeten bij golflengte 470 nm";HoedanigheidOnterecht;314;2011-06-10;2100-01-01
+Id-22b8b8c0-3461-4592-ad99-0d48a6fc97ea;L525nm;"gemeten bij golflengte 525 nm";HoedanigheidOnterecht;315;2011-06-10;2100-01-01
+Id-4a25c976-e85d-448b-b584-1c6f42a30cf4;L550nm;"gemeten bij golflengte 550 nm";HoedanigheidOnterecht;679;2017-12-20;2100-01-01
+Id-3138b68e-aa3b-43eb-80b1-d604888b6c95;L570nm;"gemeten bij golflengte 570 nm";HoedanigheidOnterecht;316;2012-02-29;2100-01-01
+Id-41fb26c1-89ca-4730-9bc9-59ede7ec36d7;L590nm;"gemeten bij golflengte 590 nm";HoedanigheidOnterecht;317;2011-06-10;2100-01-01
+Id-6d1ce848-2274-4a8a-88a9-033b93479bb7;L610nm;"gemeten bij golflengte 610 nm";HoedanigheidOnterecht;318;2012-02-29;2100-01-01
+Id-b8fbda42-9951-4522-a3b3-a8939506d937;L635nm;"gemeten bij golflengte 635 nm";HoedanigheidOnterecht;703;2019-01-30;2100-01-01
+Id-1a40c61a-0d27-4dd6-9ca2-4726de9e355d;L650nm;"gemeten bij golflengte 650 nm";HoedanigheidOnterecht;319;2011-06-10;2100-01-01
+Id-ecae161a-55d3-4afe-93f1-aa22ac473571;L655nm;"gemeten bij golflengte 655 nm";HoedanigheidOnterecht;320;2012-10-06;2100-01-01
+Id-33da661c-6890-4cd6-bccc-90027fab7f4d;L665nm;"gemeten bij golflengte 665 nm";HoedanigheidOnterecht;321;2011-06-10;2100-01-01
+Id-dfba4e49-57bb-448c-b5ee-084bc52344ce;L672nm;"gemeten bij golflengte 672 nm";HoedanigheidOnterecht;322;2011-06-10;2100-01-01
+Id-67fe4216-8f8b-4f2b-8487-26ad3efe07dd;L776nm;"gemeten bij golflengte 776 nm";HoedanigheidOnterecht;323;2011-06-10;2100-01-01
+Id-b7e42170-039c-439d-9eeb-f2f8c8b74cdf;L400-700;"gemeten bij golflengtebereik 400 tot 700 nm";HoedanigheidOnterecht;452;2013-02-12;2100-01-01
+Id-775875db-1c89-4df2-8c67-eb0f7b99077c;L435-525;"gemeten bij golflengtebereik 435 tot 525 nm";HoedanigheidOnterecht;504;2013-10-30;2100-01-01
+Id-e7695dfb-e993-4df3-bee1-86d403880fe6;L510-600;"gemeten bij golflengtebereik 510 tot 600 nm";HoedanigheidOnterecht;505;2013-10-30;2100-01-01
+Id-fa3852d9-5cd8-4214-87cc-5d16782ee7d2;L570-670;"gemeten bij golflengtebereik 570 tot 670 nm";HoedanigheidOnterecht;506;2013-10-30;2100-01-01
+Id-cdccfbdb-e618-4539-a012-d3dbba4ba4bb;L700-825;"gemeten bij golflengtebereik 700 tot 825 nm";HoedanigheidOnterecht;507;2013-10-30;2100-01-01
+Id-2adb91d4-7156-4c06-9a79-da5aa8cce702;L825-950;"gemeten bij golflengtebereik 825 tot 950 nm";HoedanigheidOnterecht;508;2013-10-30;2100-01-01
+Id-cf384c95-5dd7-4b67-9694-a0abfd8531b5;gimw;"gemeten in het midden van het water";HoedanigheidBiotoopaspect;1009;2025-08-29;2100-01-01
+Id-c4a5871f-e90a-4dca-bd7c-83ccc727673c;gimshlw;"gemeten in mesohalien water";HoedanigheidBiotoopaspect;1004;2025-08-29;2100-01-01
+Id-b2f86837-bbba-4b4f-918f-679bf032303c;giolghlw;"gemeten in oligohalien water";HoedanigheidBiotoopaspect;1002;2025-08-29;2100-01-01
+Id-38e18b23-443b-4aef-8926-8240d2cf122b;giow;"gemeten in open water";HoedanigheidBiotoopaspect;1011;2025-08-29;2100-01-01
+Id-c12dcf5b-21f6-4c0a-ae4f-9d9d037184fd;giplhlw;"gemeten in polyhalien water";HoedanigheidBiotoopaspect;1003;2025-08-29;2100-01-01
+Id-31716b9a-5c24-4fcc-8774-2a2d957786e8;gizw;"gemeten in zijwater";HoedanigheidBiotoopaspect;1010;2025-08-29;2100-01-01
+Id-a04d036b-e981-48f7-9823-a5f347e087a2;EL370nm;"gemeten na excitatie bij golflengte 370 nm";HoedanigheidOnterecht;811;2021-02-16;2100-01-01
+Id-54e5f5a3-86f2-414d-b62a-3be5c242daa1;F000;"golffrequentie tussen 0 en 5 mHz";GolffrequentieKlasse;922;2022-12-24;2100-01-01
+Id-116729df-f204-470c-8278-75bf58c8c76c;F010-020;"golffrequentie tussen 100 en 200 mHz";GolffrequentieKlasse;581;2014-10-28;2100-01-01
+Id-e64ad5aa-6601-4654-bdf0-95280f3073d4;F011;"golffrequentie tussen 105 en 115 mHz";GolffrequentieKlasse;243;2014-10-28;2100-01-01
+Id-0735226a-8c88-4b8b-99d0-46ef3e5be120;F012;"golffrequentie tussen 115 en 125 mHz";GolffrequentieKlasse;244;2014-10-28;2100-01-01
+Id-9ea7ec92-2256-4f65-aa18-df01ac832ecb;F013;"golffrequentie tussen 125 en 135 mHz";GolffrequentieKlasse;245;2014-10-28;2100-01-01
+Id-e2fe5b29-1396-4008-ac74-8fa2beeaf9f2;F014;"golffrequentie tussen 135 en 145 mHz";GolffrequentieKlasse;246;2014-10-28;2100-01-01
+Id-97b75ec4-ad60-4e4e-a6da-727857d098b5;F015;"golffrequentie tussen 145 en 155 mHz";GolffrequentieKlasse;247;2014-10-28;2100-01-01
+Id-96247272-e46b-485a-a09e-5c556511c6d2;F002;"golffrequentie tussen 15 en 25 mHz";GolffrequentieKlasse;924;2022-12-24;2100-01-01
+Id-598a4ab2-cc19-4137-955a-8c94db2a7891;F016;"golffrequentie tussen 155 en 165 mHz";GolffrequentieKlasse;248;2014-10-28;2100-01-01
+Id-bfcdab7a-3f8c-4a8d-b376-dc4c571a9b62;F017;"golffrequentie tussen 165 en 175 mHz";GolffrequentieKlasse;249;2014-10-28;2100-01-01
+Id-75a912d0-5e4a-4c24-b432-e5d38d4c2c31;F018;"golffrequentie tussen 175 en 185 mHz";GolffrequentieKlasse;250;2014-10-28;2100-01-01
+Id-152590f1-9d01-4a09-a7b7-4263e214f3ce;F019;"golffrequentie tussen 185 en 195 mHz";GolffrequentieKlasse;251;2014-10-28;2100-01-01
+Id-84f897fc-c729-43b3-bd1d-d70d5fce23b1;F020;"golffrequentie tussen 195 en 205 mHz";GolffrequentieKlasse;252;2014-10-28;2100-01-01
+Id-0d2b600f-8cb5-4ffc-b584-e3e7b5d987d2;F020-100;"golffrequentie tussen 200 en 1000 mHz";GolffrequentieKlasse;582;2014-10-28;2100-01-01
+Id-8e103a0b-8417-44f0-868a-ba537d45b780;F020-050;"golffrequentie tussen 200 en 500 mHz";GolffrequentieKlasse;583;2014-10-28;2100-01-01
+Id-539ee935-fa6d-4a5a-933b-c5fd78f5d9d6;F021;"golffrequentie tussen 205 en 215 mHz";GolffrequentieKlasse;253;2014-10-28;2100-01-01
+Id-77eca805-e76d-4426-8174-3d8cfc9f6a30;F022;"golffrequentie tussen 215 en 225 mHz";GolffrequentieKlasse;254;2014-10-28;2100-01-01
+Id-6533e5b0-c6ad-40ce-9701-b565e0821240;F023;"golffrequentie tussen 225 en 235 mHz";GolffrequentieKlasse;255;2014-10-28;2100-01-01
+Id-6bd59195-c12c-4cab-bfea-cccee4799883;F024;"golffrequentie tussen 235 en 245 mHz";GolffrequentieKlasse;256;2014-10-28;2100-01-01
+Id-e71e7025-1b0e-4f1f-9dd0-94fad8a950f8;F025;"golffrequentie tussen 245 en 255 mHz";GolffrequentieKlasse;257;2014-10-28;2100-01-01
+Id-5b070e9d-29e7-428b-bbff-45dbb8aada6b;F003;"golffrequentie tussen 25 en 35 mHz";GolffrequentieKlasse;235;2014-10-28;2100-01-01
+Id-e80f26be-4c36-4953-9b22-31a73724f6a7;F026;"golffrequentie tussen 255 en 265 mHz";GolffrequentieKlasse;258;2014-10-28;2100-01-01
+Id-ab2280a1-3648-43a7-9670-7ae267590248;F027;"golffrequentie tussen 265 en 275 mHz";GolffrequentieKlasse;259;2014-10-28;2100-01-01
+Id-5d2456bb-7786-4c11-b3f0-40ca23abc578;F028;"golffrequentie tussen 275 en 285 mHz";GolffrequentieKlasse;260;2014-10-28;2100-01-01
+Id-4252e7f4-baaf-491e-865d-1bb84b192bfc;F029;"golffrequentie tussen 285 en 295 mHz";GolffrequentieKlasse;261;2014-10-28;2100-01-01
+Id-da650297-c920-4c16-80e2-f342da128530;F030;"golffrequentie tussen 295 en 305 mHz";GolffrequentieKlasse;262;2014-10-28;2100-01-01
+Id-26ad8184-30cf-4af3-82d7-1a0eda7884f5;F003-010;"golffrequentie tussen 30 en 100 mHz";GolffrequentieKlasse;584;2014-10-28;2100-01-01
+Id-8be0265d-99ef-49da-8ad1-174b06488146;F003-100;"golffrequentie tussen 30 en 1000 mHz";GolffrequentieKlasse;585;2014-10-28;2100-01-01
+Id-69aeb560-c3b8-425f-b3ad-fb553ecbca17;F003-050;"golffrequentie tussen 30 en 500 mHz";GolffrequentieKlasse;586;2014-10-28;2100-01-01
+Id-212dc0d4-e3d5-4e32-9db7-3d63434e96d0;F301;"golffrequentie tussen 3005 en 3015 mHz";GolffrequentieKlasse;926;2022-12-24;2100-01-01
+Id-e69b2772-31a2-4ea6-a3ff-ceb42f527066;F031;"golffrequentie tussen 305 en 315 mHz";GolffrequentieKlasse;263;2014-10-28;2100-01-01
+Id-f03c688e-c644-4d19-9f4f-1d1eade60ca9;F032;"golffrequentie tussen 315 en 325 mHz";GolffrequentieKlasse;264;2014-10-28;2100-01-01
+Id-ff02b206-70dc-4ac3-8c0d-f7fd02a30a0f;F033;"golffrequentie tussen 325 en 335 mHz";GolffrequentieKlasse;265;2014-10-28;2100-01-01
+Id-58ec2f5a-aff8-4d91-b90e-2af902832e6b;F034;"golffrequentie tussen 335 en 345 mHz";GolffrequentieKlasse;266;2014-10-28;2100-01-01
+Id-eeb1e658-caa4-4721-87b6-7a4a6e5baf79;F035;"golffrequentie tussen 345 en 355 mHz";GolffrequentieKlasse;267;2014-10-28;2100-01-01
+Id-c67eff37-145d-4968-b885-b061a7346a7f;F004;"golffrequentie tussen 35 en 45 mHz";GolffrequentieKlasse;236;2014-10-28;2100-01-01
+Id-ad00b1b3-2f13-41d7-be44-f5129458452a;F036;"golffrequentie tussen 355 en 365 mHz";GolffrequentieKlasse;268;2014-10-28;2100-01-01
+Id-5b0135db-3428-4a66-be35-4fca1666018e;F037;"golffrequentie tussen 365 en 375 mHz";GolffrequentieKlasse;269;2014-10-28;2100-01-01
+Id-3b0d64bd-eda8-4ff6-a967-cd34743548e9;F038;"golffrequentie tussen 375 en 385 mHz";GolffrequentieKlasse;270;2014-10-28;2100-01-01
+Id-4335cf15-c3b9-4ea2-9eb1-2cdb716b61cc;F039;"golffrequentie tussen 385 en 395 mHz";GolffrequentieKlasse;271;2014-10-28;2100-01-01
+Id-c7205384-6570-48ba-a7f2-83bbcd5570bb;F040;"golffrequentie tussen 395 en 405 mHz";GolffrequentieKlasse;272;2014-10-28;2100-01-01
+Id-ef4fe998-f190-4ef6-a3cf-ebb266e6294c;F041;"golffrequentie tussen 405 en 415 mHz";GolffrequentieKlasse;273;2014-10-28;2100-01-01
+Id-f0adc285-e2c5-47b0-a57c-5e393f034c3a;F042;"golffrequentie tussen 415 en 425 mHz";GolffrequentieKlasse;274;2014-10-28;2100-01-01
+Id-aff934ca-9a13-44e2-81c3-f46c56c699ff;F043;"golffrequentie tussen 425 en 435 mHz";GolffrequentieKlasse;275;2014-10-28;2100-01-01
+Id-5e1f3f10-d03b-4f30-aae9-77985a4954da;F044;"golffrequentie tussen 435 en 445 mHz";GolffrequentieKlasse;276;2014-10-28;2100-01-01
+Id-3b8ee2b0-76f0-4c26-8fb8-092715f17f0e;F045;"golffrequentie tussen 445 en 455 mHz";GolffrequentieKlasse;277;2014-10-28;2100-01-01
+Id-382c802b-9954-43ee-8214-cfd094b02e38;F005;"golffrequentie tussen 45 en 55 mHz";GolffrequentieKlasse;237;2014-10-28;2100-01-01
+Id-eb5c500c-a519-42b2-80ee-134e731d47bf;F046;"golffrequentie tussen 455 en 465 mHz";GolffrequentieKlasse;278;2014-10-28;2100-01-01
+Id-6e64e702-da50-42a2-bed8-34d3266b7661;F047;"golffrequentie tussen 465 en 475 mHz";GolffrequentieKlasse;279;2014-10-28;2100-01-01
+Id-232f88fa-a32b-4d4e-a20b-5d48f2b3b710;F048;"golffrequentie tussen 475 en 485 mHz";GolffrequentieKlasse;280;2014-10-28;2100-01-01
+Id-2de856db-3383-474b-b49f-fc0cdbefef77;F049;"golffrequentie tussen 485 en 495 mHz";GolffrequentieKlasse;281;2014-10-28;2100-01-01
+Id-6395761d-6855-4b50-af76-f76e41d65c7d;F050;"golffrequentie tussen 495 en 505 mHz";GolffrequentieKlasse;282;2014-10-28;2100-01-01
+Id-1c6106cb-d2e3-4c94-bfab-dfb3d100155e;F001;"golffrequentie tussen 5 en 15 mHz";GolffrequentieKlasse;923;2022-12-24;2100-01-01
+Id-bc7a7b4a-91b8-4103-a522-22fa27be07a4;F050-100;"golffrequentie tussen 500 en 1000 mHz";GolffrequentieKlasse;587;2014-10-28;2100-01-01
+Id-ba5baf0c-3e24-41f8-b389-f89e05617092;F051;"golffrequentie tussen 505 en 515 mHz";GolffrequentieKlasse;588;2014-10-28;2100-01-01
+Id-3ca0a376-81bd-4a89-8c67-9858a818f6be;F052;"golffrequentie tussen 515 en 525 mHz";GolffrequentieKlasse;589;2014-10-28;2100-01-01
+Id-a87e9bba-931c-4374-a905-812f2b0bbc50;F053;"golffrequentie tussen 525 en 535 mHz";GolffrequentieKlasse;925;2022-12-24;2100-01-01
+Id-baeffdb6-11ca-4e99-b2aa-b23adae487bf;F054;"golffrequentie tussen 535 en 545 mHz";GolffrequentieKlasse;927;2022-12-31;2100-01-01
+Id-2929d22b-d27b-4f20-bf79-4b62522d5551;F055;"golffrequentie tussen 545 en 555 mHz";GolffrequentieKlasse;928;2022-12-31;2100-01-01
+Id-bc90930e-39bc-4b63-ae20-0faa71fd4d21;F006;"golffrequentie tussen 55 en 65 mHz";GolffrequentieKlasse;238;2014-10-28;2100-01-01
+Id-8b5921d0-a78e-4a31-8f51-f3327a83d342;F056;"golffrequentie tussen 555 en 565 mHz";GolffrequentieKlasse;929;2022-12-31;2100-01-01
+Id-58f90fb0-51ad-4c78-9c53-b4a51f340bdd;F057;"golffrequentie tussen 565 en 575 mHz";GolffrequentieKlasse;930;2022-12-31;2100-01-01
+Id-7acb80b0-1f02-4337-ad55-a1b109b40656;F058;"golffrequentie tussen 575 en 585 mHz";GolffrequentieKlasse;931;2022-12-31;2100-01-01
+Id-bd82faea-0a6a-48a6-b28c-8309539610f4;F059;"golffrequentie tussen 585 en 595 mHz";GolffrequentieKlasse;932;2022-12-31;2100-01-01
+Id-c4c35a90-3219-4c86-b8e0-c06d603af8a1;F060;"golffrequentie tussen 595 en 605 mHz";GolffrequentieKlasse;933;2022-12-31;2100-01-01
+Id-9c06c9bd-8cfe-4c41-bb61-8124a65a1f7d;F061;"golffrequentie tussen 605 en 615 mHz";GolffrequentieKlasse;934;2022-12-31;2100-01-01
+Id-34cd9a21-1f6c-4e72-ad8c-118a763590a1;F062;"golffrequentie tussen 615 en 625 mHz";GolffrequentieKlasse;935;2022-12-31;2100-01-01
+Id-e55e0d69-dca9-45a1-96d1-e6e5b84d21e8;F063;"golffrequentie tussen 625 en 635 mHz";GolffrequentieKlasse;936;2022-12-31;2100-01-01
+Id-8f7e7029-4266-45b0-993e-df7017817a44;F064;"golffrequentie tussen 635 en 645 mHz";GolffrequentieKlasse;937;2022-12-31;2100-01-01
+Id-a8e78b1e-b3e3-401a-8154-fc9d05b29d8e;F065;"golffrequentie tussen 645 en 655 mHz";GolffrequentieKlasse;938;2022-12-31;2100-01-01
+Id-7dd6a4fc-e56d-4770-8da5-530610bd5188;F007;"golffrequentie tussen 65 en 75 mHz";GolffrequentieKlasse;239;2014-10-28;2100-01-01
+Id-435a7fae-1db8-4f5b-8605-83654ed20c39;F066;"golffrequentie tussen 655 en 665 mHz";GolffrequentieKlasse;939;2022-12-31;2100-01-01
+Id-9a66df19-4367-4a0c-933d-cf2daf086041;F067;"golffrequentie tussen 665 en 675 mHz";GolffrequentieKlasse;940;2022-12-31;2100-01-01
+Id-0f5420ee-caa5-4bf3-be13-bc39d1b3bf72;F068;"golffrequentie tussen 675 en 685 mHz";GolffrequentieKlasse;941;2022-12-31;2100-01-01
+Id-ec8307ed-a950-4f38-91c4-5690e0318617;F069;"golffrequentie tussen 685 en 695 mHz";GolffrequentieKlasse;942;2022-12-31;2100-01-01
+Id-8d1f913c-8d09-4ac7-9dde-4e7c2e6bdbef;F070;"golffrequentie tussen 695 en 705 mHz";GolffrequentieKlasse;943;2022-12-31;2100-01-01
+Id-a611ea6b-df7c-4a11-8d96-5e9ae6a726c3;F071;"golffrequentie tussen 705 en 715 mHz";GolffrequentieKlasse;944;2022-12-31;2100-01-01
+Id-3ad46bbc-8b00-466e-9ec8-1992d6cb32a5;F072;"golffrequentie tussen 715 en 725 mHz";GolffrequentieKlasse;945;2022-12-31;2100-01-01
+Id-1def0da2-a60c-48aa-8307-e22c3007a691;F073;"golffrequentie tussen 725 en 735 mHz";GolffrequentieKlasse;946;2022-12-31;2100-01-01
+Id-1a773c00-aefa-4171-99e7-6ab7c3c6ca75;F074;"golffrequentie tussen 735 en 745 mHz";GolffrequentieKlasse;947;2022-12-31;2100-01-01
+Id-228cdfab-1933-4f3c-8976-c2cdc68988fa;F075;"golffrequentie tussen 745 en 755 mHz";GolffrequentieKlasse;948;2022-12-31;2100-01-01
+Id-319c5841-13d3-4755-b401-41255c6317ad;F008;"golffrequentie tussen 75 en 85 mHz";GolffrequentieKlasse;240;2014-10-28;2100-01-01
+Id-de2d9cde-d0f2-487e-9017-5408b9e4a42f;F076;"golffrequentie tussen 755 en 765 mHz";GolffrequentieKlasse;949;2022-12-31;2100-01-01
+Id-b42e445e-f88d-4b06-8836-c31211cebd48;F077;"golffrequentie tussen 765 en 775 mHz";GolffrequentieKlasse;950;2022-12-31;2100-01-01
+Id-495b0d5d-d4ae-435a-9c9f-d342ecf1724d;F078;"golffrequentie tussen 775 en 785 mHz";GolffrequentieKlasse;951;2022-12-31;2100-01-01
+Id-723cb02a-4eec-4e75-a660-abc77a814794;F079;"golffrequentie tussen 785 en 795 mHz";GolffrequentieKlasse;952;2022-12-31;2100-01-01
+Id-0d6dc460-5abb-4452-8f0a-d52d1017d1a8;F080;"golffrequentie tussen 795 en 805 mHz";GolffrequentieKlasse;953;2022-12-31;2100-01-01
+Id-51b9cae4-cac9-405f-8351-7fcb1099a61b;F081;"golffrequentie tussen 805 en 815 mHz";GolffrequentieKlasse;954;2022-12-31;2100-01-01
+Id-9a0eea65-79c4-41f3-a7f5-7f493175225a;F082;"golffrequentie tussen 815 en 825 mHz";GolffrequentieKlasse;955;2022-12-31;2100-01-01
+Id-2fb072de-7678-4521-a0d5-1fb518ecd786;F083;"golffrequentie tussen 825 en 835 mHz";GolffrequentieKlasse;956;2022-12-31;2100-01-01
+Id-23ba8654-bda0-4047-add4-5aaa799593de;F084;"golffrequentie tussen 835 en 845 mHz";GolffrequentieKlasse;957;2022-12-31;2100-01-01
+Id-88282624-6f0f-4845-b8a5-d0a6dd3fa23c;F085;"golffrequentie tussen 845 en 855 mHz";GolffrequentieKlasse;958;2022-12-31;2100-01-01
+Id-fab0f0cc-4e58-4f4e-bc83-94e40ad9a9e1;F009;"golffrequentie tussen 85 en 95 mHz";GolffrequentieKlasse;241;2014-10-28;2100-01-01
+Id-df41b004-f403-4f11-95f9-0819a08f9d87;F086;"golffrequentie tussen 855 en 865 mHz";GolffrequentieKlasse;959;2022-12-31;2100-01-01
+Id-ee5917db-61b4-4b0c-bc96-0b95682747c3;F087;"golffrequentie tussen 865 en 875 mHz";GolffrequentieKlasse;960;2022-12-31;2100-01-01
+Id-6dbf43ef-a898-4461-a93f-440827c1480e;F088;"golffrequentie tussen 875 en 885 mHz";GolffrequentieKlasse;961;2022-12-31;2100-01-01
+Id-13b82aea-9d21-4b47-9596-3ffd7d53463d;F089;"golffrequentie tussen 885 en 895 mHz";GolffrequentieKlasse;962;2022-12-31;2100-01-01
+Id-c2b5ce93-3018-448e-b1be-d8b407873991;F090;"golffrequentie tussen 895 en 905 mHz";GolffrequentieKlasse;963;2022-12-31;2100-01-01
+Id-f990df75-0e22-496c-906d-0974e3bb35e2;F091;"golffrequentie tussen 905 en 915 mHz";GolffrequentieKlasse;964;2022-12-31;2100-01-01
+Id-f0bd4dc3-a60a-485c-acea-6d77ce0613fd;F092;"golffrequentie tussen 915 en 925 mHz";GolffrequentieKlasse;965;2022-12-31;2100-01-01
+Id-5f6a3b73-00f7-4682-b9ac-30eb9621b0bd;F093;"golffrequentie tussen 925 en 935 mHz";GolffrequentieKlasse;966;2022-12-31;2100-01-01
+Id-245c0257-009e-4916-8534-9d5f0c6f3da8;F094;"golffrequentie tussen 935 en 945 mHz";GolffrequentieKlasse;967;2022-12-31;2100-01-01
+Id-1764a379-18fb-4aa5-8939-7b6710917336;F095;"golffrequentie tussen 945 en 955 mHz";GolffrequentieKlasse;968;2022-12-31;2100-01-01
+Id-b83b842c-5bb5-4b60-97a4-124ad7748c1b;F010;"golffrequentie tussen 95 en 105 mHz";GolffrequentieKlasse;242;2014-10-28;2100-01-01
+Id-16f8decf-0bbf-43f2-a7ac-47c4590e1561;F096;"golffrequentie tussen 955 en 965 mHz";GolffrequentieKlasse;969;2022-12-31;2100-01-01
+Id-ddc8fac7-51cc-49aa-8e03-f690b072cdc9;F097;"golffrequentie tussen 965 en 975 mHz";GolffrequentieKlasse;970;2022-12-31;2100-01-01
+Id-1965a003-23f2-493b-9c5a-4910f493db1e;F098;"golffrequentie tussen 975 en 985 mHz";GolffrequentieKlasse;971;2022-12-31;2100-01-01
+Id-b679d4f8-7ae6-4417-849e-9800c7908934;F099;"golffrequentie tussen 985 en 995 mHz";GolffrequentieKlasse;972;2022-12-31;2100-01-01
+Id-5fab3e58-d6cd-4f4a-b681-40838df2cad9;F100;"golffrequentie tussen 995 en 1005 mHz";GolffrequentieKlasse;590;2014-10-28;2100-01-01
+Id-515cd05f-d8c1-4eac-a10b-ceb93e221b1e;HALVWTKL;"halve waterkolom";ReferentieVlak;290;2011-06-10;2100-01-01
+Id-5355bfcd-948f-4328-b1e6-afbe4a18d660;HOOGTRF;"hoog tarief";HoedanigheidFractieBasis;294;2011-06-10;2100-01-01
+Id-ef30f1c4-9090-4d33-9820-c28efad1c82d;hyf;"hydroliseerbare fractie";HoedanigheidFractieBasis;296;2011-06-10;2100-01-01
+Id-3e4af357-c529-4cd3-9aa1-950c469e246e;hor-vlak;"in horizontaal vlak";ReferentieRichting;295;2011-06-10;2100-01-01
+Id-6b25a473-76fc-4eb0-a59e-cbb76d1f3fa1;ver-vlak;"in verticaal vlak";ReferentieRichting;417;2011-06-10;2100-01-01
+Id-5ea8f39d-0eef-4dad-be15-58efa090d33a;C10;"koolwaterstoffractie C10";KoolwaterstofFractie;888;2021-12-11;2100-01-01
+Id-d649e044-16b4-40d0-8448-ecc7a2221a15;C10dg;"koolwaterstoffractie C10 / drooggewicht";HoedanigheidCombinatie;889;2021-12-11;2100-01-01
+Id-10b4f526-a25a-4895-8e65-d74975b383e9;C10C12;"koolwaterstoffractie C10-C12";KoolwaterstofFractie;85;2011-06-10;2100-01-01
+Id-fc3ec041-8912-4040-9cc0-0c3977d9e271;C10C12dg;"koolwaterstoffractie C10-C12 / drooggewicht";HoedanigheidCombinatie;86;2011-06-10;2100-01-01
+Id-d8ec5f7f-f001-40ca-9ed3-9f44e492fc35;C10C14;"koolwaterstoffractie C10-C14";KoolwaterstofFractie;844;2021-08-06;2100-01-01
+Id-6b1c089e-b959-4130-b918-c3205e2f86bf;C10C14dg;"koolwaterstoffractie C10-C14 / drooggewicht";HoedanigheidCombinatie;845;2021-08-06;2100-01-01
+Id-ceb70633-2684-44c9-90c8-40e5901cea6a;C10C15;"koolwaterstoffractie C10-C15";KoolwaterstofFractie;846;2021-08-06;2100-01-01
+Id-cca72cc0-ee3e-4310-b2ae-bbbcd3a11541;C10C15dg;"koolwaterstoffractie C10-C15 / drooggewicht";HoedanigheidCombinatie;847;2021-08-06;2100-01-01
+Id-0dd9ef54-ebcf-4550-81f3-c22cae6e7c5c;C10C16;"koolwaterstoffractie C10-C16";KoolwaterstofFractie;87;2015-12-19;2100-01-01
+Id-3da4a007-e4ae-4c08-8b05-9cf74dc687cd;C10C16dg;"koolwaterstoffractie C10-C16 / drooggewicht";HoedanigheidCombinatie;88;2011-06-10;2100-01-01
+Id-f9a3c1e7-3400-44b2-8247-a8db4307a7ec;C10C19;"koolwaterstoffractie C10-C19";KoolwaterstofFractie;894;2022-03-05;2100-01-01
+Id-beb1c7be-9f63-409c-b0c3-fb0db3b5f3af;C10C19dg;"koolwaterstoffractie C10-C19 / drooggewicht";HoedanigheidCombinatie;89;2011-08-02;2100-01-01
+Id-71b5e42b-9689-44e2-9776-8f3d01052baf;C10C20;"koolwaterstoffractie C10-C20";KoolwaterstofFractie;90;2011-06-10;2100-01-01
+Id-cefb7737-4e91-46de-99f5-5ab2ae489802;C10C20dg;"koolwaterstoffractie C10-C20 / drooggewicht";HoedanigheidCombinatie;91;2011-06-10;2100-01-01
+Id-c9bfe477-2bea-4523-aed5-c5f2837a6d7d;C10C20nf;"koolwaterstoffractie C10-C20 / opgeloste fractie";HoedanigheidCombinatie;747;2020-02-28;2100-01-01
+Id-531c9b1e-8a60-4a75-acdd-fa0651e3e817;C10C25;"koolwaterstoffractie C10-C25";KoolwaterstofFractie;470;2014-09-13;2100-01-01
+Id-bffed8db-5010-4219-8fe1-72ac31e8083a;C10C25dg;"koolwaterstoffractie C10-C25 / drooggewicht";HoedanigheidCombinatie;471;2014-09-13;2100-01-01
+Id-1a87fde5-41b6-4d1a-8ed6-5a5ceb9bad49;C10C35;"koolwaterstoffractie C10-C35";KoolwaterstofFractie;893;2022-03-05;2100-01-01
+Id-ffff5aed-e0c7-4e4d-9f04-cca3287038f7;C10C35dg;"koolwaterstoffractie C10-C35 / drooggewicht";HoedanigheidCombinatie;675;2017-06-27;2100-01-01
+Id-e2aa2aec-8164-4308-88c0-9cf25db3a916;C10C40;"koolwaterstoffractie C10-C40";KoolwaterstofFractie;92;2011-06-10;2100-01-01
+Id-20bb12ec-190b-462b-b507-ac34f2d7f8e7;C10C40dg;"koolwaterstoffractie C10-C40 / drooggewicht";HoedanigheidCombinatie;93;2011-06-10;2100-01-01
+Id-b245f288-8017-48e3-ae48-a2cf1d2b84a5;C11C12;"koolwaterstoffractie C11-C12";KoolwaterstofFractie;892;2021-12-11;2100-01-01
+Id-64d08e3f-9b0d-4e2e-bd61-c08ce8641dc4;C12C14;"koolwaterstoffractie C12-C14";KoolwaterstofFractie;466;2014-09-13;2100-01-01
+Id-8d783ff1-e78c-4431-af74-28b0aaad9e31;C12C14dg;"koolwaterstoffractie C12-C14 / drooggewicht";HoedanigheidCombinatie;94;2011-06-10;2100-01-01
+Id-2cbd0d63-3bb5-4299-92f3-dccf21f59086;C12C16;"koolwaterstoffractie C12-C16";KoolwaterstofFractie;95;2011-06-10;2100-01-01
+Id-0a4381ae-8e12-4a73-a842-b1d7e5331ef7;C12C16dg;"koolwaterstoffractie C12-C16 / drooggewicht";HoedanigheidCombinatie;96;2011-06-10;2100-01-01
+Id-90bb20d8-f021-4260-a7fd-d8f2a0464e82;C12C20;"koolwaterstoffractie C12-C20";KoolwaterstofFractie;489;2014-09-13;2100-01-01
+Id-13034022-fc62-4c83-92d8-2dc1a53342b4;C12C20dg;"koolwaterstoffractie C12-C20 / drooggewicht";HoedanigheidCombinatie;97;2011-08-02;2100-01-01
+Id-d981d4f0-d1b1-4a81-a2a4-e85572f70f09;C12C22;"koolwaterstoffractie C12-C22";KoolwaterstofFractie;98;2011-06-10;2100-01-01
+Id-2f510d89-b40d-4b5c-9914-85cd33860a92;C12C22dg;"koolwaterstoffractie C12-C22 / drooggewicht";HoedanigheidCombinatie;99;2011-06-10;2100-01-01
+Id-0d78b2cd-85e5-4b13-93f6-185c7c2f2b6a;C14C20;"koolwaterstoffractie C14-C20";KoolwaterstofFractie;457;2014-09-13;2100-01-01
+Id-e7c71643-82b2-4617-bab0-5bda73b7d5af;C14C20dg;"koolwaterstoffractie C14-C20 / drooggewicht";HoedanigheidCombinatie;100;2011-06-10;2100-01-01
+Id-5157449d-7b12-49d0-a75c-b22098d52d27;C15C20;"koolwaterstoffractie C15-C20";KoolwaterstofFractie;848;2021-08-06;2100-01-01
+Id-db48f298-1dea-414c-8e5b-1ef9b9de6a76;C15C20dg;"koolwaterstoffractie C15-C20 / drooggewicht";HoedanigheidCombinatie;849;2021-08-06;2100-01-01
+Id-46832934-d519-4c93-b660-13731d6c61e3;C16C20;"koolwaterstoffractie C16-C20";KoolwaterstofFractie;101;2011-06-10;2100-01-01
+Id-8682e871-4ebb-49ae-9cbc-0d31c8a97705;C16C20dg;"koolwaterstoffractie C16-C20 / drooggewicht";HoedanigheidCombinatie;102;2011-06-10;2100-01-01
+Id-9f170ad8-3540-4c56-b7c2-6f2fd45620a7;C16C21;"koolwaterstoffractie C16-C21";KoolwaterstofFractie;462;2014-09-13;2100-01-01
+Id-8d9ddc43-5444-4e59-b871-fc7f2e91cc64;C16C21dg;"koolwaterstoffractie C16-C21 / drooggewicht";HoedanigheidCombinatie;103;2011-08-02;2100-01-01
+Id-9b8be8cb-1ee8-462e-9db1-99c9e1b9741d;C16C22;"koolwaterstoffractie C16-C22";KoolwaterstofFractie;104;2012-05-26;2100-01-01
+Id-fbc9505b-010a-47d1-b380-6c5c8c9a88b9;C16C22dg;"koolwaterstoffractie C16-C22 / drooggewicht";HoedanigheidCombinatie;105;2011-06-10;2100-01-01
+Id-c4c47778-d8f2-4067-a60a-c2fa5f964dda;C16C35;"koolwaterstoffractie C16-C35";KoolwaterstofFractie;1012;2025-08-30;2100-01-01
+Id-f120e85c-22e7-4fcf-9aa0-5d2a640f4b3a;C16C35dg;"koolwaterstoffractie C16-C35 / drooggewicht";HoedanigheidCombinatie;1013;2025-08-30;2100-01-01
+Id-62244f23-0132-4c94-b50a-c3c5f736d347;C17;"koolwaterstoffractie C17";KoolwaterstofFractie;472;2014-09-13;2100-01-01
+Id-a44435d2-960c-400d-a023-98cd1c7555d9;C17dg;"koolwaterstoffractie C17 / drooggewicht";HoedanigheidCombinatie;473;2014-09-13;2100-01-01
+Id-b059b0d2-a44e-47ff-95b6-8d3e9086b8d0;C02C06;"koolwaterstoffractie C2-C6";KoolwaterstofFractie;836;2021-08-06;2100-01-01
+Id-f1986b7c-1c5b-493d-95bd-b05a0241252f;C02C06dg;"koolwaterstoffractie C2-C6 / drooggewicht";HoedanigheidCombinatie;837;2021-08-06;2100-01-01
+Id-fe61cee2-d5a8-441f-8901-e33fab449d47;C20C24;"koolwaterstoffractie C20-C24";KoolwaterstofFractie;106;2011-06-10;2100-01-01
+Id-95e12ec1-37f8-47ea-b307-3ca6c4336ee8;C20C24dg;"koolwaterstoffractie C20-C24 / drooggewicht";HoedanigheidCombinatie;107;2011-06-10;2100-01-01
+Id-de4f67c4-2fea-4390-8099-da7e9925a7c9;C20C26;"koolwaterstoffractie C20-C26";KoolwaterstofFractie;458;2014-09-13;2100-01-01
+Id-af4ac1dc-1971-4dbf-a25f-1f90fe55b610;C20C26dg;"koolwaterstoffractie C20-C26 / drooggewicht";HoedanigheidCombinatie;108;2011-06-10;2100-01-01
+Id-541e38be-a882-4170-bc1f-6c86b02af347;C20C27;"koolwaterstoffractie C20-C27";KoolwaterstofFractie;444;2014-01-21;2100-01-01
+Id-1c93855e-e8f6-425c-9a75-bd5893899b0a;C20C29dg;"koolwaterstoffractie C20-C29 / drooggewicht";HoedanigheidCombinatie;109;2011-08-02;2100-01-01
+Id-ff01e89a-7c24-4a2d-b7a7-797971c7ecd2;C20C30;"koolwaterstoffractie C20-C30";KoolwaterstofFractie;474;2014-09-13;2100-01-01
+Id-2a60133e-f676-43d1-bf85-e0046cb29be5;C20C30dg;"koolwaterstoffractie C20-C30 / drooggewicht";HoedanigheidCombinatie;475;2014-09-13;2100-01-01
+Id-d9d55a20-4631-4bbe-8f30-ff2675dd2e40;C20C40;"koolwaterstoffractie C20-C40";KoolwaterstofFractie;110;2011-06-10;2100-01-01
+Id-3bd4ee5f-d671-4854-9a33-c2bffbd44f09;C20C40dg;"koolwaterstoffractie C20-C40 / drooggewicht";HoedanigheidCombinatie;111;2011-06-10;2100-01-01
+Id-2294a99b-b834-414c-a2e5-fc9bb85c05d9;C20C40nf;"koolwaterstoffractie C20-C40 / opgeloste fractie";HoedanigheidCombinatie;748;2020-02-28;2100-01-01
+Id-0578a2f6-e7cf-40f3-af26-d1fadcbf1605;C21C30;"koolwaterstoffractie C21-C30";KoolwaterstofFractie;463;2014-09-13;2100-01-01
+Id-215b1ca7-40fc-4942-9fd7-dd4ac04aee71;C21C30dg;"koolwaterstoffractie C21-C30 / drooggewicht";HoedanigheidCombinatie;112;2011-08-02;2100-01-01
+Id-fe101b81-770c-4f15-8b3c-45ec955ad734;C21C35;"koolwaterstoffractie C21-C35";KoolwaterstofFractie;490;2014-09-13;2100-01-01
+Id-7c948a3e-d9e4-4450-a073-579639fe1926;C21C35dg;"koolwaterstoffractie C21-C35 / drooggewicht";HoedanigheidCombinatie;491;2014-09-13;2100-01-01
+Id-d9d1af35-4601-417a-8603-3076765d5fcb;C21C40;"koolwaterstoffractie C21-C40";KoolwaterstofFractie;850;2021-08-06;2100-01-01
+Id-7601cfac-47a2-4b39-aee0-f56db26eb306;C21C40dg;"koolwaterstoffractie C21-C40 / drooggewicht";HoedanigheidCombinatie;851;2021-08-06;2100-01-01
+Id-c02e15ce-53dc-4431-bc75-f30318a28f71;C22C30;"koolwaterstoffractie C22-C30";KoolwaterstofFractie;113;2011-06-10;2100-01-01
+Id-7f99145d-b48c-43fc-96e1-ce0303d8e2c4;C22C30dg;"koolwaterstoffractie C22-C30 / drooggewicht";HoedanigheidCombinatie;114;2011-06-10;2100-01-01
+Id-069a7cff-998e-48a3-aa76-5c8d482d72de;C24C28;"koolwaterstoffractie C24-C28";KoolwaterstofFractie;115;2011-06-10;2100-01-01
+Id-fd9ecae7-fe3a-4161-ae5f-027a55f6c272;C24C28dg;"koolwaterstoffractie C24-C28 / drooggewicht";HoedanigheidCombinatie;116;2011-06-10;2100-01-01
+Id-4965590f-1d87-42f0-8add-c5735d8688a7;C25C35;"koolwaterstoffractie C25-C35";KoolwaterstofFractie;852;2021-08-06;2100-01-01
+Id-f8465297-6e16-4ad6-95d3-001955c2c1c1;C25C35dg;"koolwaterstoffractie C25-C35 / drooggewicht";HoedanigheidCombinatie;853;2021-08-06;2100-01-01
+Id-f8d1e720-7f20-451d-b315-2e652243f075;C25C40;"koolwaterstoffractie C25-C40";KoolwaterstofFractie;854;2021-08-06;2100-01-01
+Id-01b05b4f-4bda-4949-bdc1-a8923d5b6679;C25C40dg;"koolwaterstoffractie C25-C40 / drooggewicht";HoedanigheidCombinatie;855;2021-08-06;2100-01-01
+Id-e323dffa-9d10-4aff-8039-b7c0b8ceeabf;C26C34;"koolwaterstoffractie C26-C34";KoolwaterstofFractie;459;2014-09-13;2100-01-01
+Id-67f2ae1a-09e7-4aee-bd38-91552ae8066a;C26C34dg;"koolwaterstoffractie C26-C34 / drooggewicht";HoedanigheidCombinatie;117;2011-06-10;2100-01-01
+Id-fdf11e83-157d-49eb-97f4-244ce77df872;C28C32;"koolwaterstoffractie C28-C32";KoolwaterstofFractie;118;2011-06-10;2100-01-01
+Id-d6ccb8a9-1747-484f-80cf-9a8c9c0e39fe;C28C32dg;"koolwaterstoffractie C28-C32 / drooggewicht";HoedanigheidCombinatie;119;2011-06-10;2100-01-01
+Id-1bdbd793-118e-4cb6-88b9-aba1e289a57f;C30C35;"koolwaterstoffractie C30-C35";KoolwaterstofFractie;464;2014-09-13;2100-01-01
+Id-6b333cbe-af57-4896-bad6-f8187350e1c0;C30C35dg;"koolwaterstoffractie C30-C35 / drooggewicht";HoedanigheidCombinatie;120;2011-08-02;2100-01-01
+Id-aecc9bd6-420a-4b61-b11f-0e4ef77db1cd;C30C36;"koolwaterstoffractie C30-C36";KoolwaterstofFractie;856;2021-08-06;2100-01-01
+Id-91fa84af-05c1-46c5-99b9-ff324e87210a;C30C36dg;"koolwaterstoffractie C30-C36 / drooggewicht";HoedanigheidCombinatie;857;2021-08-06;2100-01-01
+Id-14b753c2-9fe5-46b2-a07b-2e2213d176bd;C30C40;"koolwaterstoffractie C30-C40";KoolwaterstofFractie;121;2011-06-10;2100-01-01
+Id-9839cb02-999f-4f33-80ec-838266cc7630;C30C40dg;"koolwaterstoffractie C30-C40 / drooggewicht";HoedanigheidCombinatie;122;2011-06-10;2100-01-01
+Id-f1443986-bc35-493b-bdac-2c0ccfbe76a8;C32C36;"koolwaterstoffractie C32-C36";KoolwaterstofFractie;123;2011-06-10;2100-01-01
+Id-dd9b24cf-b82d-4e86-8083-f0a53a80f713;C32C36dg;"koolwaterstoffractie C32-C36 / drooggewicht";HoedanigheidCombinatie;124;2011-06-10;2100-01-01
+Id-4d2cf4c3-0ae8-4bf3-87a8-f72a5cd57efe;C34C40;"koolwaterstoffractie C34-C40";KoolwaterstofFractie;460;2014-09-13;2100-01-01
+Id-c640c759-78c2-4da9-a4d9-26a6f0169be1;C34C40dg;"koolwaterstoffractie C34-C40 / drooggewicht";HoedanigheidCombinatie;125;2011-06-10;2100-01-01
+Id-55b3156a-689d-435c-b81d-e7b0d533cdf5;C35C40;"koolwaterstoffractie C35-C40";KoolwaterstofFractie;465;2014-09-13;2100-01-01
+Id-6b164a57-6f4b-4298-9ac7-d8112a8f0869;C35C40dg;"koolwaterstoffractie C35-C40 / drooggewicht";HoedanigheidCombinatie;126;2011-08-02;2100-01-01
+Id-1b3183d9-d224-4f15-9713-5fce126ee698;C36C40;"koolwaterstoffractie C36-C40";KoolwaterstofFractie;127;2011-06-10;2100-01-01
+Id-f86722f4-4824-4432-9b3f-11cc7d081c00;C36C40dg;"koolwaterstoffractie C36-C40 / drooggewicht";HoedanigheidCombinatie;128;2011-06-10;2100-01-01
+Id-6502642b-1422-465f-ae8f-b6e1725d4aba;C05C13;"koolwaterstoffractie C5-13";KoolwaterstofFractie;992;2024-07-26;2100-01-01
+Id-6270f5ce-96b6-4594-bdbb-f110185afbd4;C05C10;"koolwaterstoffractie C5-C10";KoolwaterstofFractie;493;2014-09-13;2100-01-01
+Id-c914858b-7af4-48d3-a522-c1c73f5bc4bd;C05C10dg;"koolwaterstoffractie C5-C10 / drooggewicht";HoedanigheidCombinatie;494;2014-09-13;2100-01-01
+Id-9ff19556-8043-4f20-b80d-111ddfe52e89;C05C13dg;"koolwaterstoffractie C5-C13 / drooggewicht";HoedanigheidCombinatie;993;2024-07-26;2100-01-01
+Id-6df46240-5859-42f3-8def-d9d3dd29e2c1;C05C35;"koolwaterstoffractie C5-C35";KoolwaterstofFractie;833;2021-06-22;2100-01-01
+Id-68178bba-2e38-4884-a109-59c63c34c834;C05C35dg;"koolwaterstoffractie C5-C35 / drooggewicht";HoedanigheidCombinatie;834;2021-06-22;2100-01-01
+Id-304a8265-6c62-4a05-ab77-e90e1e35abcc;C05C40;"koolwaterstoffractie C5-C40";KoolwaterstofFractie;835;2021-06-22;2100-01-01
+Id-471a1f15-5e3d-41fb-b2c8-1c222135ab49;C05C40dg;"koolwaterstoffractie C5-C40 / drooggewicht";HoedanigheidCombinatie;761;2020-08-25;2100-01-01
+Id-562c28bd-7768-485d-b7bf-59b1f556afc9;C05C06;"koolwaterstoffractie C5-C6";KoolwaterstofFractie;442;2014-01-21;2100-01-01
+Id-e1a26903-bb52-43d3-b001-a9e1fc971a32;C05C06dg;"koolwaterstoffractie C5-C6 / drooggewicht";HoedanigheidCombinatie;674;2017-06-27;2100-01-01
+Id-639af90e-ae12-4422-b67a-c4cb3e12b299;C05C07;"koolwaterstoffractie C5-C7";KoolwaterstofFractie;838;2021-08-06;2100-01-01
+Id-9e88b544-7f24-4757-b3ba-23388aca86c3;C05C07dg;"koolwaterstoffractie C5-C7 / drooggewicht";HoedanigheidCombinatie;839;2021-08-06;2100-01-01
+Id-5c313ca7-94a4-4571-b024-5b5bec8c0962;C05C08;"koolwaterstoffractie C5-C8";KoolwaterstofFractie;476;2014-09-13;2100-01-01
+Id-e619bc26-e0b9-457f-977d-b68ca7547511;C05C08dg;"koolwaterstoffractie C5-C8 / drooggewicht";HoedanigheidCombinatie;477;2014-09-13;2100-01-01
+Id-30cee327-40f8-4f04-a39b-7e9eeba1b440;C05C09;"koolwaterstoffractie C5-C9";KoolwaterstofFractie;840;2021-08-06;2100-01-01
+Id-1aa40062-aafd-4374-9a35-8a77d1591adf;C05C09dg;"koolwaterstoffractie C5-C9 / drooggewicht";HoedanigheidCombinatie;841;2021-08-06;2100-01-01
+Id-d7887199-b490-4f75-b1e2-52c89888465f;C06C10;"koolwaterstoffractie C6-C10";KoolwaterstofFractie;82;2011-06-10;2100-01-01
+Id-99fd93e5-dded-42f0-ac14-4a6beba7ed3a;C06C10dg;"koolwaterstoffractie C6-C10 / drooggewicht";HoedanigheidCombinatie;83;2011-06-10;2100-01-01
+Id-b7638c75-f9f0-43cb-8e82-38e9be76d51a;C06C12;"koolwaterstoffractie C6-C12";KoolwaterstofFractie;842;2021-08-06;2100-01-01
+Id-9b6f0a07-76b9-483c-a93c-9e6e1ffa7242;C06C12dg;"koolwaterstoffractie C6-C12 / drooggewicht";HoedanigheidCombinatie;843;2021-08-06;2100-01-01
+Id-5bfcd298-1842-40ce-9c83-3b6eb37541db;C06C16;"koolwaterstoffractie C6-C16";KoolwaterstofFractie;443;2014-01-21;2100-01-01
+Id-43915f7f-3106-45c6-84aa-e18148c6dcfd;C06C16dg;"koolwaterstoffractie C6-C16 / drooggewicht";HoedanigheidCombinatie;478;2014-09-13;2100-01-01
+Id-74547242-2619-42b5-8dbe-83a6b941fdfe;C06C35;"koolwaterstoffractie C6-C35";KoolwaterstofFractie;499;2014-09-13;2100-01-01
+Id-4efeb31c-0f77-4d72-8ae5-1b43ff043829;C06C35dg;"koolwaterstoffractie C6-C35 / drooggewicht";HoedanigheidCombinatie;500;2014-09-13;2100-01-01
+Id-34d84d13-6252-4a79-828f-37ecaf74f112;C06C40;"koolwaterstoffractie C6-C40";KoolwaterstofFractie;479;2014-09-13;2100-01-01
+Id-7e2a8f69-3f96-4339-9976-028400e60353;C06C40dg;"koolwaterstoffractie C6-C40 / drooggewicht";HoedanigheidCombinatie;480;2014-09-13;2100-01-01
+Id-e12a5006-1750-4733-aad4-8c615c61b9da;C06C07;"koolwaterstoffractie C6-C7";KoolwaterstofFractie;495;2014-09-13;2100-01-01
+Id-11e75671-fb60-4422-a7b2-c22bff4fb3e9;C06C07dg;"koolwaterstoffractie C6-C7 / drooggewicht";HoedanigheidCombinatie;496;2014-09-13;2100-01-01
+Id-e13a6dde-f425-47a2-bde5-0c888c5cc24e;C06C08;"koolwaterstoffractie C6-C8";KoolwaterstofFractie;481;2013-10-17;2100-01-01
+Id-7da6a88a-a672-4b62-bd85-81ef8dd334f1;C06C08dg;"koolwaterstoffractie C6-C8 / drooggewicht";HoedanigheidCombinatie;482;2014-09-13;2100-01-01
+Id-57df6f23-d67a-4da0-8734-bdb7146633f4;C07C10;"koolwaterstoffractie C7-C10";KoolwaterstofFractie;890;2021-12-11;2100-01-01
+Id-c512ab32-0e5e-4cb8-b8f5-7b59dbecc858;C07C10dg;"koolwaterstoffractie C7-C10 / drooggewicht";HoedanigheidCombinatie;891;2021-12-11;2100-01-01
+Id-703a6db5-8a6b-4360-92da-6e782f6ffc00;C07C08;"koolwaterstoffractie C7-C8";KoolwaterstofFractie;497;2014-09-13;2100-01-01
+Id-f2a3da64-78fd-4e06-b575-64a01ca16c22;C07C08dg;"koolwaterstoffractie C7-C8 / drooggewicht";HoedanigheidCombinatie;498;2014-09-13;2100-01-01
+Id-15156315-0ee0-426e-9fc0-e3de2269f57a;C08C10;"koolwaterstoffractie C8-C10";KoolwaterstofFractie;461;2013-10-17;2100-01-01
+Id-a5c72e5b-f116-45aa-aded-be4d903504d2;C08C10dg;"koolwaterstoffractie C8-C10 / drooggewicht";HoedanigheidCombinatie;84;2011-06-10;2100-01-01
+Id-744d94eb-ca62-4f96-a22e-e51f1c8e28e5;C08C35;"koolwaterstoffractie C8-C35";KoolwaterstofFractie;990;2024-07-26;2100-01-01
+Id-73cbf004-fe65-4e52-89e2-2de6a29a8bc8;C08C35dg;"koolwaterstoffractie C8-C35 / drooggewicht";HoedanigheidCombinatie;991;2024-07-26;2100-01-01
+Id-65f15408-5d16-4f3c-99cb-4e047616dd39;C09;"koolwaterstoffractie C9";KoolwaterstofFractie;885;2021-12-11;2100-01-01
+Id-ea3dde69-ac0b-454d-ae83-e5476f3a1358;C09dg;"koolwaterstoffractie C9 / drooggewicht";HoedanigheidCombinatie;886;2021-12-11;2100-01-01
+Id-81e8f82e-c064-44cd-8487-5e7691b69f65;C09nf;"koolwaterstoffractie C9 / opgeloste fractie";HoedanigheidCombinatie;887;2021-12-11;2100-01-01
+Id-6f3e2b71-8e15-4d81-8709-fd7f22035f72;LAAGTRF;"laag tarief";HoedanigheidFractieBasis;325;2011-06-10;2100-01-01
+Id-515e302d-627a-4547-a85a-cc7b5d438c1b;MWA;"meest waarschijnlijke aantal";HoedanigheidOnterecht;356;2011-06-10;2100-01-01
+Id-20ca0652-288c-4f7d-b4d2-96b45e599982;md;"minerale delen (OS / calciet verwijderd)";HoedanigheidFractieBasis;350;2019-12-31;2100-01-01
+Id-c041f330-6c91-4fef-808d-cf3072d2d7f1;nb;"na beluchten";HoedanigheidOnterecht;359;2011-06-10;2100-01-01
+Id-3858c9ee-d98c-4ec2-b7f0-b36aa07ee45c;nbz;"na bezinken";HoedanigheidOnterecht;360;2011-06-10;2100-01-01
+Id-6fa5a9a8-9235-40dc-bb33-a398efd0f503;nc;"na centrifugeren";HoedanigheidOnterecht;361;2015-12-19;2100-01-01
+Id-0de54527-5ed2-4862-8c32-b50096f69b12;nco;"na chemische oxidatie";HoedanigheidOnterecht;996;2025-02-11;2100-01-01
+Id-02d60420-6ffe-4ea6-9994-b46de64d4926;ncc;"na concentratie";HoedanigheidOnterecht;976;2023-04-27;2100-01-01
+Id-1eaa9298-0434-4d6e-a73b-48c38195af61;ndc;"na decanteren";HoedanigheidOnterecht;363;2011-06-10;2100-01-01
+Id-b81d16a0-2525-4656-948a-7d4df353e462;nds;"na destructie";HoedanigheidOnterecht;830;2021-05-05;2100-01-01
+Id-0c04b3c2-a4bb-4354-9be1-299efd48731d;ne;"na extractie";HoedanigheidOnterecht;365;2011-06-10;2100-01-01
+Id-2bd262cb-7929-4086-8b38-c90799e036f3;nd;"na verdunning";HoedanigheidOnterecht;362;2011-06-10;2100-01-01
+Id-daf55339-25ab-4ca7-877b-f0bc83734353;nv;"na vriesdrogen";HoedanigheidOnterecht;374;2011-06-10;2100-01-01
+Id-731fd6f2-060d-4270-8fbe-de8383456826;OPN;open;HoedanigheidFractieBasis;447;2013-08-07;2100-01-01
+Id-df18efc4-a3bf-42f2-a74a-953383a32332;nf;"opgeloste fractie (bijv. na filtratie)";HoedanigheidFractieBasis;9;2016-11-29;2100-01-01
+Id-d41cf1c6-4b74-4f29-9f1c-651db95d2b6e;nfnds;"opgeloste fractie (bijv. na filtratie) / na destructie";HoedanigheidCombinatie;831;2021-05-05;2100-01-01
+Id-12fdc529-9b0a-4a68-9410-726e12c048ab;nfdg;"opgeloste fractie / drooggewicht";HoedanigheidCombinatie;366;2016-11-29;2100-01-01
+Id-678cb02e-1e56-49d9-9d2e-2aa950e9e9a5;pg;"particulair gebonden";HoedanigheidFractieBasis;391;2011-06-10;2100-01-01
+Id-bc9af366-560d-464f-852a-59e1c235c288;SENSR;"t.o.v. (hoogte van) sensor";ReferentieVlak;402;2011-06-10;2100-01-01
+Id-ed01030a-07f4-4331-b11f-4377d5911392;10oC;"t.o.v. 10 graden Celsius";HoedanigheidReferentieBasis;829;2021-05-05;2100-01-01
+Id-e55690f3-4e76-4b6a-93c9-47d7d4a7c7fe;105oC;"t.o.v. 105 graden Celsius";HoedanigheidReferentieBasis;720;2020-01-24;2100-01-01
+Id-8fcf479a-dfeb-4581-8d69-10d5f965376d;18oC;"t.o.v. 18 graden Celsius";HoedanigheidReferentieBasis;63;2011-06-10;2100-01-01
+Id-9d44e171-835f-4997-a844-168c6aa6bc43;20oC;"t.o.v. 20 graden Celsius";HoedanigheidReferentieBasis;64;2011-06-10;2100-01-01
+Id-6dc947ef-e316-40d9-9a2f-d5529c432553;20oCINSU;"t.o.v. 20 graden Celsius / in situ gemeten";HoedanigheidCombinatie;65;2011-06-10;2100-01-01
+Id-026998ab-8f5c-43b6-9572-ff4003848022;22oC;"t.o.v. 22 graden Celsius";HoedanigheidReferentieBasis;66;2011-08-26;2100-01-01
+Id-93e8f103-2b12-4678-8b67-209993ccb01e;25oC;"t.o.v. 25 graden Celsius";HoedanigheidReferentieBasis;67;2011-06-10;2100-01-01
+Id-c4cf0984-810d-4f2e-8d75-45893fe4e2b7;25oCINSU;"t.o.v. 25 graden Celsius / in situ gemeten";HoedanigheidCombinatie;68;2011-06-10;2100-01-01
+Id-f7f79895-4e27-4ac7-af1b-9b3a3fba476b;30oC;"t.o.v. 30 graden Celsius";HoedanigheidReferentieBasis;717;2020-01-24;2100-01-01
+Id-f63b27da-7736-47cc-89b0-22df3dc9549f;36oC;"t.o.v. 36 graden Celsius";HoedanigheidReferentieBasis;69;2011-08-26;2100-01-01
+Id-d6448e64-f728-4d40-96be-61087f491b15;37oC;"t.o.v. 37 graden Celcius";HoedanigheidReferentieBasis;609;2015-08-22;2100-01-01
+Id-35dc0814-29d1-482d-a9d7-98cecca754b9;40oC;"t.o.v. 40 graden Celsius";HoedanigheidReferentieBasis;818;2021-04-13;2100-01-01
+Id-682eabde-b632-4479-9845-5d05cf48a240;44oC;"t.o.v. 44 graden Celsius";HoedanigheidReferentieBasis;718;2020-01-24;2100-01-01
+Id-48a0af60-cfb9-4a0f-bab9-e81b69788e18;550oC;"t.o.v. 550 graden Celsius";HoedanigheidReferentieBasis;492;2014-09-13;2100-01-01
+Id-8e59e7e2-94b5-416b-bdae-9f27c5067570;90oC;"t.o.v. 90 graden Celsius";HoedanigheidReferentieBasis;719;2020-01-24;2100-01-01
+Id-31e51b92-9353-4653-916c-36fb79fe5741;HAT;"t.o.v. Highest Astronomical Tide";ReferentieVlak;291;2011-06-10;2100-01-01
+Id-661b1dc0-5884-4d12-96d8-fd345dcfc853;KELLBSG;"t.o.v. Kelly Bushing";ReferentieVlak;303;2011-06-10;2100-01-01
+Id-2673fa98-1bef-4cb8-8af0-cead5c11128b;LLWS1980;"t.o.v. Laag Laag Water Spring 1980.0";ReferentieVlak;329;2011-06-10;2100-01-01
+Id-358484ec-5e94-48ed-bfcc-34667c45c26e;LLWS1985;"t.o.v. Laag Laag Water Spring 1985.0";ReferentieVlak;330;2011-06-10;2100-01-01
+Id-ab2a33f0-64a5-481d-9a6d-547b23eb0ba2;LLWS1992;"t.o.v. Laag Laag Water Spring 1992.0";ReferentieVlak;331;2011-06-10;2100-01-01
+Id-b5168f4c-00c4-4314-a20d-2aebc07c8ed7;LAT;"t.o.v. Lowest Astronomical Tide";ReferentieVlak;326;2025-11-28;2100-01-01
+Id-87ebd04d-ec82-4aaf-bed6-e1a042450bce;MSL;"t.o.v. Mean Sea Level";ReferentieVlak;355;2025-11-28;2100-01-01
+Id-d192aff8-bef4-46fb-a9b9-2f5fe779a6d9;NAP;"t.o.v. Normaal Amsterdams Peil";ReferentieVlak;12;2025-11-28;2100-01-01
+Id-1a08c1ea-11bc-4eac-8842-86870473f51d;OLA;"t.o.v. Overeengekomen Lage Afvoer";ReferentieVlak;381;2011-06-10;2100-01-01
+Id-70bb0c34-be3e-4f12-9f4d-034222f23a0a;OLR1982;"t.o.v. Overeengekomen Lage Rivierstand 1982.0";ReferentieVlak;382;2011-06-10;2100-01-01
+Id-3e3d8f15-27a2-4269-bd12-f609eb70c60f;OLR1992;"t.o.v. Overeengekomen Lage Rivierstand 1992.0";ReferentieVlak;509;2013-10-31;2100-01-01
+Id-8e58a934-6011-46d7-b311-ecb3dc6660f9;OLR2002;"t.o.v. Overeengekomen Lage Rivierstand 2002.0";ReferentieVlak;510;2013-10-31;2100-01-01
+Id-613edcbb-e7be-470c-ac61-72dd59a7a59c;OLW1972;"t.o.v. Overeengekomen Lage Waterstand 1972.0";ReferentieVlak;383;2011-06-10;2100-01-01
+Id-38573950-15b3-4021-8950-56632fe61edd;OLW1982;"t.o.v. Overeengekomen Lage Waterstand 1982.0";ReferentieVlak;384;2011-06-10;2100-01-01
+Id-19b633b0-c860-4750-97ba-910b5dce24d1;OLW1991;"t.o.v. Overeengekomen Lage Waterstand 1991.0";ReferentieVlak;385;2011-06-10;2100-01-01
+Id-94754e8f-d94e-4bc2-8017-6943c9478ee6;TAW;"t.o.v. Tweede Algemene Waterpassing";ReferentieVlak;412;2011-06-10;2100-01-01
+Id-15f5c80d-60ae-4fa2-bc11-42b596f0ccf9;V-PDB-Canorg;"t.o.v. Vienna-Pee Dee Belemnite in anorganisch koolstof";HoedanigheidReferentieBasis;713;2019-10-30;2100-01-01
+Id-ee17a1d2-d28e-459a-97ba-e4bd06f94905;V-SMOW;"t.o.v. Vienna-Standard Mean Ocean Water";HoedanigheidReferentieBasis;712;2019-10-30;2100-01-01
+Id-0d4b47b0-aa67-4269-84fc-533e3c25a58c;absdg;"t.o.v. absorbent drooggewicht";HoedanigheidReferentieBasis;449;2013-03-16;2100-01-01
+Id-ea1b751b-5607-4617-8296-98dfb68199a5;ACTWRD;"t.o.v. actuele waarde";HoedanigheidReferentieBasis;1001;2025-07-30;2100-01-01
+Id-e471726a-94a6-4cc3-9d38-f0a8f1632cf7;ASTNMH;"t.o.v. astronomisch getij";ReferentieVlak;73;2011-06-10;2100-01-01
+Id-7e0c3b5e-e1a7-477d-8ba6-d369ddbc75a7;BOORVLR;"t.o.v. boorvloer";ReferentieVlak;76;2011-06-10;2100-01-01
+Id-e8147b6e-c053-414d-8f14-cd8958a12fe6;BODM;"t.o.v. de bodem";ReferentieVlak;75;2025-11-28;2100-01-01
+Id-d045b723-bdac-4114-ac01-44795bec0dbd;LEL;"t.o.v. de onderste explosie limiet";HoedanigheidReferentieBasis;698;2018-08-07;2100-01-01
+Id-0bf9c1f7-57de-4be0-8826-0d3989f9f12a;dg;"t.o.v. drooggewicht";HoedanigheidReferentieBasis;1;2011-06-10;2100-01-01
+Id-bce2e006-6dec-4c6e-b6a3-b15b16e996e6;grensWTP;"t.o.v. grensvlak wel/geen begroeiing waterplanten";HoedanigheidReferentieBasis;450;2013-03-02;2100-01-01
+Id-080007bc-03d5-45eb-8038-41a1ae74a119;HOOGPL;"t.o.v. hoog peil";ReferentieVlak;293;2012-01-18;2100-01-01
+Id-573d1758-9bf4-4611-a369-d7a3a5a176a6;KAARTNDN;"t.o.v. kaart Noorden";ReferentieRichting;301;2011-06-10;2100-01-01
+Id-b0c3fe0d-5d1b-4419-9bd4-cc26859559da;KERDHTE;"t.o.v. kerende hoogte";ReferentieVlak;591;2015-01-15;2100-01-01
+Id-ab0b5d9f-3914-4bad-b117-b6570c756414;LAAGPL;"t.o.v. laag peil";ReferentieVlak;324;2012-01-18;2100-01-01
+Id-08105525-38a2-4f8f-bd2c-355b205cb2e6;LINKOVR;"t.o.v. linkeroever";ReferentieRichting;328;2012-01-18;2100-01-01
+Id-c50c663e-cfef-41f5-951d-9100e0d4e9da;MAAIVD;"t.o.v. maaiveld";ReferentieVlak;11;2011-06-10;2100-01-01
+Id-c4becdd4-79e0-4ac3-bccd-59a9c7ee1837;MAATGAVR;"t.o.v. maatgevende afvoer";HoedanigheidReferentieBasis;593;2015-02-07;2100-01-01
+Id-a3f217fc-9e24-4970-891d-71cd1fe1cf1e;METLN;"t.o.v. metalen";HoedanigheidReferentieBasis;351;2011-06-10;2100-01-01
+Id-88dd7a1f-8fc0-43c7-a7e0-9bf85794fcff;METLNG;"t.o.v. metalen grijze lijst";HoedanigheidReferentieBasis;352;2011-06-10;2100-01-01
+Id-9af6d0fc-2486-4ce9-8544-e737260f9b30;METLNZ;"t.o.v. metalen zwarte lijst";HoedanigheidReferentieBasis;353;2011-06-10;2100-01-01
+Id-b97e5488-6f91-478a-95f4-17dd836531cb;MC;"t.o.v. modern carbon";HoedanigheidReferentieBasis;714;2019-10-30;2100-01-01
+Id-e8f710a4-25c8-4770-bde0-ae60ab62aeb6;ng;"t.o.v. natgewicht";HoedanigheidReferentieBasis;367;2011-06-10;2100-01-01
+Id-d05a5dce-0edd-4d15-9fae-b458d3477adb;NORMCDTS;"t.o.v. normaalcondities";HoedanigheidReferentieBasis;711;2019-07-26;2100-01-01
+Id-07feea4f-9245-4a6c-adc3-a25cb646d4b8;odg;"t.o.v. organisch drooggewicht";HoedanigheidReferentieBasis;380;2011-06-10;2100-01-01
+Id-bacb4c5c-9c4c-47a0-89c4-846e70e19a8d;PBBK;"t.o.v. peilbuis bovenkant";ReferentieVlak;14;2011-06-10;2100-01-01
+Id-23adb8b9-d3b7-4b1e-ac74-4f8cd49699f8;PLAATSLR;"t.o.v. plaatselijk referentievlak";ReferentieVlak;392;2011-06-10;2100-01-01
+Id-c55548a5-e0cf-43e8-bc22-4a5ea68eb94b;PUTDSBK;"t.o.v. putdeksel bovenkant";ReferentieVlak;15;2014-09-13;2100-01-01
+Id-8ddb3467-0ff7-498e-895a-5b94ed43bf08;RAAIRTG;"t.o.v. raairichting";ReferentieRichting;399;2011-06-10;2100-01-01
+Id-cb291c29-cffc-45df-8092-eaafb954aa05;RECHTOVR;"t.o.v. rechteroever";ReferentieRichting;400;2012-01-18;2100-01-01
+Id-5349cd13-4e4d-49a2-95e2-27a6d9cadd88;SPRONGLG;"t.o.v. spronglaag";ReferentieVlak;409;2011-06-10;2100-01-01
+Id-1ff5dab3-2496-4989-9f8c-e34530f72c28;STDWRD;"t.o.v. standaard waarde";HoedanigheidReferentieBasis;1000;2025-07-30;2100-01-01
+Id-2a25810a-0c09-4d85-a1ce-3e9d21ef3a92;STREEFPL;"t.o.v. streefpeil";ReferentieVlak;592;2015-01-15;2100-01-01
+Id-5bcc68e3-d0d0-4ae5-9575-fc9b5c354c4c;VETGWT;"t.o.v. vetgewicht";HoedanigheidReferentieBasis;418;2011-06-10;2100-01-01
+Id-f0a677fe-e250-40c9-862a-dfd8ecdd4ddd;WARNDN;"t.o.v. ware Noorden";ReferentieRichting;432;2011-06-10;2100-01-01
+Id-70f4f9d3-b158-42e3-b15c-cdbb0c860dd7;WATSGL;"t.o.v. waterspiegel";ReferentieVlak;13;2025-11-28;2100-01-01
+Id-243a2aaf-8b3c-4086-afbf-df82f5fc0a90;TOERTHG;"toerental hoog";HoedanigheidFractieBasis;413;2011-06-10;2100-01-01
+Id-b5136606-55c0-4481-aa95-bb91d4538b98;TOERTLG;"toerental laag";HoedanigheidFractieBasis;414;2011-06-10;2100-01-01
+Id-a19c0bf2-25ee-4b94-812f-45b7ce744e1b;TOERTMDL;"toerental middel";HoedanigheidFractieBasis;415;2011-06-10;2100-01-01
+Id-9f054021-ea0e-4c27-bba7-3a1224391a5f;glucse;"uitgedrukt als glucose";HoedanigheidEquivalent;286;2011-06-10;2100-01-01
+Id-e8151359-ad19-4fa4-a1f7-a06b82f6d32d;agrCO2;"uitgedrukt in (kalk-)agressief koolzuur";HoedanigheidEquivalent;832;2021-06-18;2100-01-01
+Id-0765e38f-bc57-4826-b0dc-3383a7a96906;136gO2;"uitgedrukt in 136 g O2";HoedanigheidEquivalent;1015;2025-12-13;2100-01-01
+Id-3844b732-e2db-403a-acef-bf7477c6ff01;136gTZV;"uitgedrukt in 136 g TZV";HoedanigheidEquivalent;58;2011-06-10;2100-01-01
+Id-e934d542-36e6-4619-bed2-39423d88b525;136gTZVd;"uitgedrukt in 136 g TZV / drooggewicht";HoedanigheidCombinatie;59;2011-06-10;2100-01-01
+Id-871cdf69-16d0-49cc-aad5-994e0ab1659b;150gO2;"uitgedrukt in 150 g O2";HoedanigheidEquivalent;1016;2025-12-13;2100-01-01
+Id-4d809655-9504-4338-ad81-f1720fd525c0;150gTZV;"uitgedrukt in 150 g TZV";HoedanigheidEquivalent;60;2011-06-10;2100-01-01
+Id-8703fbc7-4e0a-4f94-a0ab-6e7862bca05a;EEQ;"uitgedrukt in 17b-estradiol equivalenten";HoedanigheidEquivalent;226;2011-06-10;2100-01-01
+Id-60b194c8-14f5-42c5-8207-15a6bd156114;EEQdg;"uitgedrukt in 17b-estradiol equivalenten / drooggewicht";HoedanigheidCombinatie;600;2015-07-11;2100-01-01
+Id-4b4be45e-bf1a-4c90-a428-99703b0f18ed;180gTZV;"uitgedrukt in 180 g TZV";HoedanigheidEquivalent;61;2011-06-10;2100-01-01
+Id-a1225306-5d60-4d1c-aa5d-ab3c1343e72b;180gTZVd;"uitgedrukt in 180 g TZV / drooggewicht";HoedanigheidCombinatie;62;2011-06-10;2100-01-01
+Id-1c0afb99-d7d7-46ea-b27f-9b8b036fe4de;2dAoatnmcnD;"uitgedrukt in 2-deaminoactinomycine D equivalenten";HoedanigheidEquivalent;858;2021-09-30;2100-01-01
+Id-8cb6f9a5-aee8-45d7-8026-a1177dc51928;200um;"uitgedrukt in 200 um eenheidslengte";HoedanigheidEquivalent;754;2020-03-27;2100-01-01
+Id-75a800e7-2196-4356-9531-09adee9bf2f5;49.6kgO2;"uitgedrukt in 49.6 g O2 / drooggewicht";HoedanigheidCombinatie;1017;2025-12-13;2100-01-01
+Id-1c2fd91c-ab66-4ca7-8ff3-5bc442d6ca5e;KL5;"uitgedrukt in 5 klassen";HoedanigheidEquivalent;304;2011-06-10;2100-01-01
+Id-858039ea-e97d-481f-b348-2f94ec65ead7;54gBZV;"uitgedrukt in 54 g BZV";HoedanigheidEquivalent;70;2011-06-10;2100-01-01
+Id-b5845e82-63f8-43a5-a150-dfb603be4a1e;54gBZVdg;"uitgedrukt in 54 g BZV / drooggewicht";HoedanigheidCombinatie;71;2011-06-10;2100-01-01
+Id-6556caad-c80e-49f1-8720-6c320fa1bac2;54gO2;"uitgedrukt in 54 g O2";HoedanigheidEquivalent;1014;2025-12-13;2100-01-01
+Id-2f5b161c-825c-424a-a63b-8727829656f2;54.8kgO2;"uitgedrukt in 54.8 g O2 / drooggewicht";HoedanigheidCombinatie;1018;2025-12-13;2100-01-01
+Id-4028fa21-3006-465d-869e-99b415697371;BZVdg;"uitgedrukt in BZV / drooggewicht";HoedanigheidCombinatie;80;2011-06-10;2100-01-01
+Id-cb73d83c-8043-4028-9778-dd245a0fc7cc;LS;"uitgedrukt in C12ySO4 (laurylsulfaat)";HoedanigheidEquivalent;513;2014-04-12;2100-01-01
+Id-99c597e3-2fd7-4871-bf80-666ef5e053f9;CZVdg;"uitgedrukt in CZV / drooggewicht";HoedanigheidCombinatie;143;2011-06-10;2100-01-01
+Id-2f67a229-a9db-4658-9784-1fb108337058;DNAKPN;"uitgedrukt in DNA-kopieën";HoedanigheidEquivalent;451;2013-02-12;2100-01-01
+Id-8c02f6c9-c842-47d9-a290-6cfff0623f36;Dactnmcn;"uitgedrukt in Dactinomycin equivalenten";HoedanigheidEquivalent;911;2022-08-17;2100-01-01
+Id-292f06dc-5474-4539-98a4-71d8fd2fd7c0;EKR;"uitgedrukt in Ecologische Kwaliteitsratio";HoedanigheidEquivalent;227;2011-06-10;2100-01-01
+Id-899c8825-75bf-43dd-a18e-faebb434523a;stamA3;"uitgedrukt in Flavobacterium johnsoniae";HoedanigheidEquivalent;827;2021-05-05;2100-01-01
+Id-2128a429-a1dd-4d0f-9c18-5fa81c148e76;I-TEQ;"uitgedrukt in I-TEQ";HoedanigheidEquivalent;298;2011-06-10;2100-01-01
+Id-fc536d9d-fc49-470f-9707-6d724275b404;I-TEQdg;"uitgedrukt in I-TEQ / drooggewicht";HoedanigheidCombinatie;299;2011-06-10;2100-01-01
+Id-0d358cda-b1e4-4961-952d-6aa348eaf5b7;POlsendg;"uitgedrukt in Olsen-P (fosfor) / drooggewicht";HoedanigheidCombinatie;394;2011-09-01;2100-01-01
+Id-1e80c356-5fff-405c-b0f7-cb61b03054db;POlsenng;"uitgedrukt in Olsen-P (fosfor) / natgewicht";HoedanigheidCombinatie;445;2013-09-07;2100-01-01
+Id-22738eb4-cab1-4947-9b81-fc1b2000b50d;P2O5;"uitgedrukt in P2O5";HoedanigheidEquivalent;501;2014-09-13;2100-01-01
+Id-cb4a2abf-93a2-43db-bd1a-23361182d4d9;P2O5dg;"uitgedrukt in P2O5 / drooggewicht";HoedanigheidCombinatie;388;2011-06-10;2100-01-01
+Id-51d78535-3467-4575-a699-7ec44b127b67;P2O5ng;"uitgedrukt in P2O5 / natgewicht";HoedanigheidCombinatie;389;2011-06-10;2100-01-01
+Id-cbff450d-d1e8-4606-8178-28470a9019d8;P2O5nf;"uitgedrukt in P2O5 / opgeloste fractie";HoedanigheidCombinatie;920;2022-10-05;2100-01-01
+Id-7e16cc0b-18ca-480c-b975-669a358f2b12;PAF;"uitgedrukt in Potentieel Aangetaste Fractie";HoedanigheidEquivalent;6;2011-06-10;2100-01-01
+Id-ce34c2de-8b7d-45fb-a902-3f42d46f1822;stamP17;"uitgedrukt in Pseudomonas fluorescens";HoedanigheidEquivalent;824;2021-05-05;2100-01-01
+Id-bbf2a3c0-b02f-4966-95f1-a3957f2e24a1;RNAKPN;"uitgedrukt in RNA-kopiën";HoedanigheidEquivalent;974;2023-04-27;2100-01-01
+Id-ef045175-0f8a-42f3-9e14-50002f3f4cfe;stamNox;"uitgedrukt in Spirillum";HoedanigheidEquivalent;822;2021-05-05;2100-01-01
+Id-3e60faab-a2f7-4d66-90e6-ccf1fa07e697;TEQ;"uitgedrukt in Toxiciteit equivalenten";HoedanigheidEquivalent;10;2019-12-31;2100-01-01
+Id-5647279f-7e20-4363-ab05-94c004832e4b;TEQdg;"uitgedrukt in Toxiciteit equivalenten / drooggewicht";HoedanigheidCombinatie;5;2019-12-31;2100-01-01
+Id-a0cba6f1-a148-4dff-9947-b3e1a2925e4f;WI;"uitgedrukt in Waterindex";HoedanigheidEquivalent;434;2011-06-10;2100-01-01
+Id-b8fb9636-3083-45c5-a979-62410104018a;acttC;"uitgedrukt in acetaat koolstof";HoedanigheidEquivalent;820;2021-04-13;2100-01-01
+Id-fb5f436c-f003-4497-9f32-6c0196763aeb;acttCstamNox;"uitgedrukt in acetaat koolstof / uitgedrukt in Spirillum";HoedanigheidCombinatie;823;2021-05-05;2100-01-01
+Id-4c31695a-70c4-4c2d-b894-ef98a8c2fdc6;acttCstamP17;"uitgedrukt in acetaat koolstof en in Pseudomonas fluorescens";HoedanigheidCombinatie;825;2021-05-05;2100-01-01
+Id-f5ef16de-5051-4fb1-b4ac-75128c548820;NH4;"uitgedrukt in ammonium";HoedanigheidEquivalent;467;2014-09-13;2100-01-01
+Id-bdae4c39-9ad9-4217-9bc9-73514ea1d3ef;NH4dg;"uitgedrukt in ammonium / drooggewicht";HoedanigheidCombinatie;468;2014-09-13;2100-01-01
+Id-bf36f282-cb84-4da9-bc19-78620a943565;As;"uitgedrukt in arseen";HoedanigheidEquivalent;610;2016-01-21;2100-01-01
+Id-6594d434-f166-4b7a-bd46-e9a783bf26c6;AtznD5;"uitgedrukt in atrazine-D5 equivalenten";HoedanigheidEquivalent;994;2024-08-29;2100-01-01
+Id-e2913c21-a306-4780-a0a8-8a3618fc35fc;HAc;"uitgedrukt in azijnzuur";HoedanigheidEquivalent;289;2011-06-10;2100-01-01
+Id-3e3ebecc-62b2-4225-99ac-1140881a691a;BtznD6;"uitgedrukt in bentazon-D6 equivalenten";HoedanigheidEquivalent;995;2024-08-29;2100-01-01
+Id-832cba0d-ada3-4507-8e91-5e2f51473e6b;BtznD7;"uitgedrukt in bentazon-D7 equivalenten";HoedanigheidEquivalent;999;2025-09-26;2100-01-01
+Id-d76d1566-d803-4d2a-88fb-b0a119acd8fd;BaP;"uitgedrukt in benzo(a)pyreen equivalenten";HoedanigheidEquivalent;912;2022-08-17;2100-01-01
+Id-24a3e977-4aff-4500-be03-8bcb0d95427c;biplmCstamA3;"uitgedrukt in biopolymeer-C en in Flavobacterium johnsoniae";HoedanigheidCombinatie;828;2021-05-05;2100-01-01
+Id-6f956bf1-dafe-4ac3-95a5-f015fd0fef78;biplmC;"uitgedrukt in biopolymeer-koolstof";HoedanigheidEquivalent;826;2021-05-05;2100-01-01
+Id-b0c42ddc-50be-494c-ae97-4f76c8da6c48;BrO3;"uitgedrukt in bromaat";HoedanigheidEquivalent;79;2019-12-31;2100-01-01
+Id-ec65ed30-dafc-4947-8a0d-accf0242aad5;BrO3nf;"uitgedrukt in bromaat / opgeloste fractie";HoedanigheidCombinatie;989;2024-06-25;2100-01-01
+Id-11b73dfb-1ac5-460f-b563-3d70034f5fd9;Brnf;"uitgedrukt in bromide / opgeloste fractie";HoedanigheidCombinatie;78;2016-11-29;2100-01-01
+Id-9f1c6d64-e7a4-4301-9587-a92142ed1264;CaCO3;"uitgedrukt in calciumcarbonaat";HoedanigheidEquivalent;130;2019-12-31;2100-01-01
+Id-7c1e63b1-b241-4efd-bfcf-f5f36ea1c7a9;CaCO3nf;"uitgedrukt in calciumcarbonaat  / opgeloste fractie";HoedanigheidCombinatie;599;2016-11-29;2100-01-01
+Id-3eda93a3-54ad-4c8a-92a3-210cdffa7019;CaCl2dg;"uitgedrukt in calciumchloride / drooggewicht";HoedanigheidCombinatie;129;2019-12-31;2100-01-01
+Id-efdf235f-ffbd-4e52-a1f9-20d33b7c9506;CaO;"uitgedrukt in calciumoxide";HoedanigheidEquivalent;440;2014-01-21;2100-01-01
+Id-4c5c42bf-11fc-4b47-b431-c650e800ad68;CaOdg;"uitgedrukt in calciumoxide / drooggewicht";HoedanigheidCombinatie;131;2019-12-31;2100-01-01
+Id-6faa7425-35a9-4ddf-af16-19add0045df6;cel;"uitgedrukt in cellen";HoedanigheidEquivalent;132;2011-06-10;2100-01-01
+Id-ba524cf7-4ff3-4629-8302-605f08b41602;CTAB;"uitgedrukt in cetyltrimethylammoniumbromide";HoedanigheidEquivalent;512;2014-04-12;2100-01-01
+Id-43667998-6d4b-4566-81af-69b38e5b5bb7;Cl;"uitgedrukt in chloor";HoedanigheidEquivalent;133;2019-12-31;2100-01-01
+Id-87134e28-737d-460e-8b3a-cd8c7d9692f8;Cldg;"uitgedrukt in chloor / drooggewicht";HoedanigheidCombinatie;134;2019-12-31;2100-01-01
+Id-c1c1bc34-b2e9-4a0d-af1c-06e4935d7603;Clnf;"uitgedrukt in chloor / opgeloste fractie";HoedanigheidCombinatie;136;2016-11-29;2100-01-01
+Id-c45b5d67-808d-427e-a048-97668e83b883;Clnb;"uitgedrukt in chloor na beluchten";HoedanigheidCombinatie;135;2019-12-31;2100-01-01
+Id-3c398df6-b783-4a75-8dfc-35c419d22c2a;ClO3;"uitgedrukt in chloraat";HoedanigheidEquivalent;608;2015-07-18;2100-01-01
+Id-be7df462-2d03-4f5c-a2c6-8e3731e6401c;CHCl3;"uitgedrukt in chloroform";HoedanigheidEquivalent;594;2015-02-12;2100-01-01
+Id-bb90e187-db50-4468-9dbb-2a7246a96474;curcmn;"uitgedrukt in curcumine equivalenten";HoedanigheidEquivalent;859;2021-09-30;2100-01-01
+Id-f3302dfd-45ed-4419-8902-09e6a68d88f4;CN;"uitgedrukt in cyanide";HoedanigheidEquivalent;487;2014-09-13;2100-01-01
+Id-a75e20f6-7482-491f-a322-7819e92816f7;CNdg;"uitgedrukt in cyanide / drooggewicht";HoedanigheidCombinatie;488;2014-09-13;2100-01-01
+Id-9a91fdf6-edf6-4747-89c8-55750bac34b5;cycffAd;"uitgedrukt in cyclofosfamide equivalenten";HoedanigheidEquivalent;860;2021-09-30;2100-01-01
+Id-7f262409-ba37-4a50-acec-84e16716f314;CYSTN;"uitgedrukt in cysten";HoedanigheidEquivalent;813;2021-04-13;2100-01-01
+Id-c4699401-bf77-4450-9e6c-4238daba2615;cyttct;"uitgedrukt in cytotoxiciteit equivalenten";HoedanigheidEquivalent;861;2021-09-30;2100-01-01
+Id-99cfc076-2037-4c1d-961a-36fdfc8e2d61;dexmtsn;"uitgedrukt in dexamethason equivalenten";HoedanigheidEquivalent;598;2015-06-17;2100-01-01
+Id-f66f44b7-98d6-4630-bb64-567a23f3af26;dexmtsdg;"uitgedrukt in dexamethason equivalenten / drooggewicht";HoedanigheidCombinatie;604;2015-07-11;2100-01-01
+Id-e710910a-e392-4c15-9ebf-2c991a751f3a;DHT;"uitgedrukt in dihydrotestosterone equivalenten";HoedanigheidEquivalent;595;2015-06-17;2100-01-01
+Id-05801ae5-92be-41d7-9435-41ce60be9443;DHTdg;"uitgedrukt in dihydrotestosterone equivalenten /drooggewicht";HoedanigheidCombinatie;601;2015-07-11;2100-01-01
+Id-cd17fb07-75e3-4c5b-b8a2-7e9f92ef5ee3;flutmde;"uitgedrukt in flutamide equivalenten";HoedanigheidEquivalent;596;2015-06-17;2100-01-01
+Id-e4602a78-bec3-4df7-a114-5c48acb16cc3;flutmddg;"uitgedrukt in flutamide equivalenten / drooggewicht";HoedanigheidCombinatie;602;2015-07-11;2100-01-01
+Id-1853002c-604d-4009-9aea-5d57a1921a5f;PO4;"uitgedrukt in fosfaat";HoedanigheidEquivalent;437;2014-01-21;2100-01-01
+Id-9e126a86-1a3b-47ea-85ef-14321bd62ff5;PO4dg;"uitgedrukt in fosfaat / drooggewicht";HoedanigheidCombinatie;455;2014-09-13;2100-01-01
+Id-c8887f48-7e13-49c2-9514-cf8c5d1d1cdc;PO4nf;"uitgedrukt in fosfaat / opgeloste fractie";HoedanigheidCombinatie;921;2022-10-05;2100-01-01
+Id-b4bbd18f-060c-452d-8bbd-c5bf220439e0;P;"uitgedrukt in fosfor";HoedanigheidEquivalent;387;2019-12-31;2100-01-01
+Id-3919d65e-97b3-4dc5-9c5c-76edff32c773;Pdg;"uitgedrukt in fosfor / drooggewicht";HoedanigheidCombinatie;390;2019-12-31;2100-01-01
+Id-bbc4894e-9092-4806-abd6-cafcd7093a0d;Pnf;"uitgedrukt in fosfor / opgeloste fractie";HoedanigheidCombinatie;17;2016-11-29;2100-01-01
+Id-de2a8bb6-1b4a-496b-a997-7e4f6ef5668a;Pos;"uitgedrukt in fosfor / organische stof";HoedanigheidCombinatie;395;2019-12-31;2100-01-01
+Id-5599b7bf-8a5f-4251-8632-7a025621b102;Pndc;"uitgedrukt in fosfor na decanteren";HoedanigheidCombinatie;393;2019-12-31;2100-01-01
+Id-055a8cef-0e09-4445-8b4b-5fa2e04b1319;Ppg;"uitgedrukt in fosfor particulair gebonden";HoedanigheidCombinatie;396;2019-12-31;2100-01-01
+Id-db8e0def-725c-4c4c-85b4-70d323d24eb1;Ftn;"uitgedrukt in fotonen";HoedanigheidEquivalent;986;2024-06-05;2100-01-01
+Id-24d96ae4-4a5c-4440-ae88-3d8c001db42f;Gd;"uitgedrukt in gadolinium";HoedanigheidEquivalent;759;2020-08-04;2100-01-01
+Id-5d541b8b-d84f-44d4-8d00-bd21758555f4;WATKLM;"uitgedrukt in hoogte waterkolom";HoedanigheidEquivalent;433;2011-06-10;2100-01-01
+Id-22f9e9da-4b7e-4cd3-ad78-c3c8b180eefc;KCldg;"uitgedrukt in kaliumchloride / drooggewicht";HoedanigheidCombinatie;302;2019-12-31;2100-01-01
+Id-ea5bec4f-08c4-4759-abd6-debed3d2572c;K2O;"uitgedrukt in kaliumoxide";HoedanigheidEquivalent;441;2014-01-21;2100-01-01
+Id-b09a6fe5-4082-4942-a635-bc42637e6621;K2Odg;"uitgedrukt in kaliumoxide / drooggewicht";HoedanigheidCombinatie;300;2019-12-31;2100-01-01
+Id-87bf604c-acd4-4896-9801-d8e6335dca3d;KVE22oC;"uitgedrukt in kolonie vormende eenh./t.o.v.22 graden Celsius";HoedanigheidCombinatie;814;2021-04-13;2100-01-01
+Id-fe99bae6-d787-4471-a51e-b9dd8faa4b76;KVE25oC;"uitgedrukt in kolonie vormende eenh./t.o.v.25 graden Celsius";HoedanigheidCombinatie;815;2021-04-13;2100-01-01
+Id-563a60a7-26f1-477e-a097-a642598abab1;KVE30oC;"uitgedrukt in kolonie vormende eenh./t.o.v.30 graden Celsius";HoedanigheidCombinatie;816;2021-04-13;2100-01-01
+Id-ecbf2b9c-dfc4-493a-b303-3620e746598a;KVE37oC;"uitgedrukt in kolonie vormende eenh./t.o.v.37 graden Celsius";HoedanigheidCombinatie;817;2021-04-13;2100-01-01
+Id-904ae5e9-34ad-457a-83bc-12c639bcefba;KVE40oC;"uitgedrukt in kolonie vormende eenh./t.o.v.40 graden Celsius";HoedanigheidCombinatie;819;2021-04-13;2100-01-01
+Id-272a74df-7d64-419b-8672-cc01237e5134;KVE44oC;"uitgedrukt in kolonie vormende eenh./t.o.v.44 graden Celsius";HoedanigheidCombinatie;821;2021-04-20;2100-01-01
+Id-395ed804-ab26-44cf-8737-7c70e3a38c8d;KVE;"uitgedrukt in kolonie vormende eenheden";HoedanigheidEquivalent;306;2011-06-10;2100-01-01
+Id-0813903e-c515-4302-a5fe-eda267dd3d39;KVE250ml;"uitgedrukt in kolonie vormende eenheden in 250 ml monster";HoedanigheidOnterecht;978;2024-01-17;2100-01-01
+Id-381a8665-bd55-41ef-94c9-be6e48429105;KVE50ml;"uitgedrukt in kolonie vormende eenheden in 50 ml monster";HoedanigheidOnterecht;977;2024-01-17;2100-01-01
+Id-3907ef31-a635-40fb-87c3-022ba99c75ef;C;"uitgedrukt in koolstof";HoedanigheidEquivalent;81;2019-12-31;2100-01-01
+Id-1382b38a-4920-4e59-8f3e-b47a9333c3a8;Cdg;"uitgedrukt in koolstof / drooggewicht";HoedanigheidCombinatie;7;2019-12-31;2100-01-01
+Id-a9fe4055-34cd-4f28-b2da-55c3c162dd1f;CCHLFa;"uitgedrukt in koolstof / milligram chlorofyl-a";HoedanigheidEquivalent;984;2024-06-05;2100-01-01
+Id-ffd06d52-ef21-4f27-bf69-cea701d18d6e;Cnf;"uitgedrukt in koolstof / opgeloste fractie";HoedanigheidCombinatie;137;2016-11-29;2100-01-01
+Id-8d1d2ad0-d794-4be3-a131-9a1f3d9738e8;Cpg;"uitgedrukt in koolstof particulair gebonden";HoedanigheidCombinatie;139;2019-12-31;2100-01-01
+Id-098bdcf3-0253-45b1-b032-8cdb4a1cb8b9;CCHLFaFtn;"uitgedrukt in koolstof/mg chlofofyl-a/umol fotonen/m2/sec";HoedanigheidEquivalent;985;2024-06-05;2100-01-01
+Id-052f96c5-f6d4-4d52-9ce1-408e909ed105;CS2;"uitgedrukt in koolstofdisulfide";HoedanigheidEquivalent;141;2019-12-31;2100-01-01
+Id-c74bd3dc-bfe7-46c7-b697-1c2473f75d7d;CS2dg;"uitgedrukt in koolstofdisulfide / drooggewicht";HoedanigheidCombinatie;142;2019-12-31;2100-01-01
+Id-30918cca-93be-4a08-9903-2925200d1385;levtrxne;"uitgedrukt in levothyroxine equivalenten";HoedanigheidEquivalent;914;2022-08-17;2100-01-01
+Id-9056a047-aabb-48ee-85a6-b492452c6025;MgO;"uitgedrukt in magnesiumoxide";HoedanigheidEquivalent;469;2019-12-31;2100-01-01
+Id-300dc3d7-d6cc-4447-aa40-bba7c3103eb1;MgOdg;"uitgedrukt in magnesiumoxide / drooggewicht";HoedanigheidCombinatie;354;2019-12-31;2100-01-01
+Id-4bb60bac-9b74-4505-8354-07c15d0f606d;mifptn;"uitgedrukt in mifepriston equivalenten";HoedanigheidEquivalent;913;2022-08-17;2100-01-01
+Id-7e2adf67-ccc8-4f76-8ff1-7aa627092f7b;NaCl;"uitgedrukt in natriumchloride";HoedanigheidEquivalent;435;2014-01-21;2100-01-01
+Id-b15111be-bb27-4ae7-b23d-3d584a643368;Na2Odg;"uitgedrukt in natriumoxide / drooggewicht";HoedanigheidCombinatie;358;2019-12-31;2100-01-01
+Id-9612b000-2b16-4beb-ba42-c417660ee2a2;NO3;"uitgedrukt in nitraat";HoedanigheidEquivalent;483;2014-09-13;2100-01-01
+Id-ef5c28ac-c910-4fe0-8f69-aa1cab69177f;NO3dg;"uitgedrukt in nitraat / drooggewicht";HoedanigheidCombinatie;484;2014-09-13;2100-01-01
+Id-5edcf92b-d80a-4042-aa4e-a716adc912af;NO2;"uitgedrukt in nitriet";HoedanigheidEquivalent;485;2014-09-13;2100-01-01
+Id-73823c48-42bc-4e16-bb10-d2d7621745f4;NO2dg;"uitgedrukt in nitriet / drooggewicht";HoedanigheidCombinatie;486;2014-09-13;2100-01-01
+Id-506a120a-55c6-4726-b86a-5de78db80d64;org2058;"uitgedrukt in org2058 equivalenten";HoedanigheidEquivalent;597;2015-06-17;2100-01-01
+Id-c2a703e1-2af4-4eea-9df5-ef74b9cd87a9;or2058dg;"uitgedrukt in org2058 equivalenten / drooggewicht";HoedanigheidCombinatie;603;2015-07-11;2100-01-01
+Id-36a2895e-3b5a-46e9-8295-61c3769a621f;OOCTN;"uitgedrukt in oöcysten";HoedanigheidEquivalent;812;2021-04-13;2100-01-01
+Id-5d555317-2151-4494-b12e-bca17cd491f8;PVE;"uitgedrukt in plaque vormende eenheden";HoedanigheidEquivalent;398;2011-06-11;2100-01-01
+Id-b85413c2-47c5-4f56-882c-19b8894fcfe5;rosgtzn;"uitgedrukt in rosiglitazon equivalenten";HoedanigheidEquivalent;616;2016-08-20;2100-01-01
+Id-a6dc73d2-63eb-465f-80d4-b94bbeb9eaff;rosgtzdg;"uitgedrukt in rosiglitazon equivalenten / drooggewicht";HoedanigheidCombinatie;617;2016-08-20;2100-01-01
+Id-a9767321-8b04-486b-abf6-1760c27f34b3;Se;"uitgedrukt in seleen";HoedanigheidEquivalent;611;2016-01-21;2100-01-01
+Id-0b528dab-f65d-4a48-ab92-489a34fbd5ea;Si;"uitgedrukt in silicium";HoedanigheidEquivalent;403;2019-12-31;2100-01-01
+Id-f5fbc80f-4a75-4798-9179-260e69a21c79;Sinf;"uitgedrukt in silicium / opgeloste fractie";HoedanigheidCombinatie;404;2016-11-29;2100-01-01
+Id-2249d877-6f7c-43ac-9c56-f48cea681dad;Sipg;"uitgedrukt in silicium particulair gebonden";HoedanigheidCombinatie;405;2019-12-31;2100-01-01
+Id-a917399d-d69d-4289-9ac6-a7175a45503c;N;"uitgedrukt in stikstof";HoedanigheidEquivalent;357;2019-12-31;2100-01-01
+Id-582157c1-9448-4484-aa6a-93a3e0f89fd8;Ndg;"uitgedrukt in stikstof / drooggewicht";HoedanigheidCombinatie;364;2019-12-31;2100-01-01
+Id-aa9ec6a6-46dd-4712-bf41-5c767ba2a71e;Nnf;"uitgedrukt in stikstof / opgeloste fractie";HoedanigheidCombinatie;16;2016-11-29;2100-01-01
+Id-26fba23d-1846-4f0c-8178-df341428391a;Nnfdg;"uitgedrukt in stikstof / opgeloste fractie / drooggewicht";HoedanigheidCombinatie;370;2016-11-29;2100-01-01
+Id-4368097b-04ba-44e8-877b-50fb595bbdfb;Nodg;"uitgedrukt in stikstof / organisch drooggewicht";HoedanigheidCombinatie;371;2019-12-31;2100-01-01
+Id-cd25cc77-4bb3-4552-9163-42da767571de;Nos;"uitgedrukt in stikstof / organische stof";HoedanigheidCombinatie;372;2019-12-31;2100-01-01
+Id-38470acc-7222-4ca8-8632-c882f0e6970f;Nnbzndc;"uitgedrukt in stikstof na bezinken na decanteren";HoedanigheidCombinatie;368;2019-12-31;2100-01-01
+Id-f319e0a7-30f1-4332-8add-865c03d0d77d;Nndc;"uitgedrukt in stikstof na decanteren";HoedanigheidCombinatie;369;2019-12-31;2100-01-01
+Id-7c55e340-4a14-4729-8557-f26b1504be38;Npg;"uitgedrukt in stikstof particulair gebonden";HoedanigheidCombinatie;373;2019-12-31;2100-01-01
+Id-ef1ec5eb-f5a4-4356-bfe2-741fe9ad622a;SO4;"uitgedrukt in sulfaat";HoedanigheidEquivalent;439;2014-01-21;2100-01-01
+Id-d7fb081b-df1a-46d7-83ff-fdee704b4c15;SO4dg;"uitgedrukt in sulfaat / drooggewicht";HoedanigheidCombinatie;456;2014-09-13;2100-01-01
+Id-b34a85fe-87e5-4a9e-8af0-42f59d0ece56;SO4nf;"uitgedrukt in sulfaat / opgeloste fractie";HoedanigheidCombinatie;408;2016-11-29;2100-01-01
+Id-a2bff6bb-01c6-4393-a437-7782a4e3c879;Sn;"uitgedrukt in tin";HoedanigheidEquivalent;406;2019-12-31;2100-01-01
+Id-08676ac9-c558-470d-9ae2-ee1d59edbb33;Sndg;"uitgedrukt in tin / drooggewicht";HoedanigheidCombinatie;4;2019-12-31;2100-01-01
+Id-08b65039-c61d-418f-bfed-76c2d97638c9;tX100;"uitgedrukt in tritX100 (triton X-100)";HoedanigheidEquivalent;514;2014-04-12;2100-01-01
+Id-7bcf9ba2-1dcc-41b5-8687-61f7d23ff5b3;H3;"uitgedrukt in tritium";HoedanigheidEquivalent;288;2019-12-31;2100-01-01
+Id-84b32da5-1a76-4262-b594-d5a6322c3193;TU;"uitgedrukt in tritium units";HoedanigheidEquivalent;715;2019-10-30;2100-01-01
+Id-d520ab5e-ede1-4e0b-b8c8-e034c0b519e2;HCO3;"uitgedrukt in waterstofcarbonaat";HoedanigheidEquivalent;292;2019-12-31;2100-01-01
+Id-4e49b7e8-7c86-41b7-8a2c-9add1f62c311;O2;"uitgedrukt in zuurstof";HoedanigheidEquivalent;376;2019-12-31;2100-01-01
+Id-41918ce0-7fe5-442f-931f-94bf2ceeed92;O;"uitgedrukt in zuurstof (element)";HoedanigheidEquivalent;375;2019-12-31;2100-01-01
+Id-04445000-2536-4a46-a8c2-24aa407fa0ca;O2dg;"uitgedrukt in zuurstof / drooggewicht";HoedanigheidCombinatie;377;2019-12-31;2100-01-01
+Id-54c3a096-05b0-49aa-b780-2feb22a07ee1;O2nf;"uitgedrukt in zuurstof / opgeloste fractie";HoedanigheidCombinatie;379;2016-11-29;2100-01-01
+Id-74ce67c7-97d5-4004-92bc-4859dc27e641;O2nbz;"uitgedrukt in zuurstof na bezinken";HoedanigheidCombinatie;613;2016-06-08;2100-01-01
+Id-766dfd0c-c6a2-4a0a-ac5a-407550d76b0a;O2ndc;"uitgedrukt in zuurstof na decanteren";HoedanigheidCombinatie;378;2019-12-31;2100-01-01
+Id-d301b008-46d8-4401-a687-1b5c0c34d3b1;S;"uitgedrukt in zwavel";HoedanigheidEquivalent;401;2019-12-31;2100-01-01
+Id-01d5eb79-f200-4720-960b-c4bc31c98176;Sdg;"uitgedrukt in zwavel / drooggewicht";HoedanigheidCombinatie;438;2014-01-21;2100-01-01
+Id-fad792c2-7b29-4953-b6ad-dd3806a1e6ca;Snf;"uitgedrukt in zwavel / opgeloste fractie";HoedanigheidCombinatie;407;2016-11-29;2100-01-01
+Id-ff80da9b-7361-4677-9a53-64a1aa3319d8;BraunBS;"uitgedrukt volgens Braun-Blanquet-Schaal";HoedanigheidEquivalent;77;2011-06-28;2100-01-01
+Id-e00c6b1a-9828-4431-ad55-21253142b70d;PtCo;"uitgedrukt volgens PtCo-schaal";HoedanigheidEquivalent;397;2011-06-10;2100-01-01
+Id-aae367e8-7066-45c0-a615-edeec5d7c4ea;TansleyS;"uitgedrukt volgens Tansley-schaal";HoedanigheidEquivalent;411;2011-06-28;2100-01-01
+Id-c74c4f72-ba39-4281-8e27-0bdcaef6dd87;SACFORS;"uitgedrukt volgens de SACFOR-schaal";HoedanigheidEquivalent;678;2017-12-13;2100-01-01
