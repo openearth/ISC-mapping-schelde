@@ -1,4 +1,4 @@
-#%%
+#%% FIRST mapping of parameter on ISC, CAS, AQUO and DONAR. Creates initial parameter excel / csv which needs to be manually checked + extended
 import pandas as pd
 import os
 from pathlib import Path
@@ -8,12 +8,13 @@ donar = pd.read_csv(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), se
 gevraagd_format = pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
 aangeleverd_2024 =  pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
 aquo = pd.read_csv(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep =';')
+
 # %%
 # preprocessing, unpacking multiple excel sheets and selecting what is needed for the analysis
 donarcols = donar.columns
 sheets = gevraagd_format.keys()
 sheetsa = aangeleverd_2024.keys()
-tables = [k for k in  sheetsa] # lsit of desired cols
+tables = [k for k in  sheetsa] # list of desired cols
 
 meetdata = gevraagd_format[tables[1]] #data
 locations = gevraagd_format[tables[2]] # locaties
