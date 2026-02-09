@@ -1,85 +1,123 @@
-Unieke identificatie gemeten parameter,CASnummer,AQUO_Codes,AQUO_Omschrijving,ISC_Parameter,Identification unique de l'unité,DONAR_Parameter,DONAR_PARCode,HDH
-1630,87-61-6,123TClBen,"1,2,3-trichloorbenzeen","1,2,3 Trichloorbenzeen",µg/L,"1,2,3-trichloorbenzeen",123TClBen,NVT
-1283,120-82-1,124TClBen,"1,2,4-trichloorbenzeen","1,2,4 Trichloorbenzeen",µg/L,"1,2,4-trichloorbenzeen",124TClBen,NVT
-1161,107-06-2,12DClC2a,"1,2-dichloorethaan","1,2-dichloorethaan",µg/L,"1,2-dichloorethaan",12DClC2a,NVT
-1629,108-70-3,135TClBen,"1,3,5-trichloorbenzeen","1,3,5 Trichloorbenzeen",µg/L,"1,3,5-trichloorbenzeen",135TClBen,NVT
-1959,140-66-9,4ttC8yFol,4-tertiair-octylfenol,"4-(1,1',3,3' - tetramethylbutyl)-fenol (Para-tert-octylfenol)",µg/L,4-tertiair-octylfenol,4ttC8yFol,NVT
-1688,74070-46-5,acnfn,aclonifen,aclonifen,µg/L,aclonifen,acnfn,NVT
-1101,15972-60-8,alCl,alachloor,Alachloor,µg/L,alachloor,alCl,NVT
-1103,309-00-2,aldn,aldrin,Aldrin,µg/L,aldrin,aldn,NVT
-1178,959-98-8,aedsfn,alfa-endosulfan,alfa-Endosulfan,µg/L,alfa-endosulfan,aedsfn,NVT
-1200,319-84-6,aHCH,alfa-hexachloorcyclohexaan,alpha Hexachloorcyclohexaan,µg/L,alfa-hexachloorcyclohexaan,aHCH,NVT
-1458,120-12-7,Ant,antraceen,Antraceen,µg/L,antraceen,Ant,NVT
-1369,7440-38-2,As,arseen,Arseen  opgelost,µg/L,arseen,As,nf
-1369,7440-38-2,As,arseen,Arseen  opgelost,µg/L,arseen,As,NVT
-1107,1912-24-9,atzne,atrazine,Atrazine,µg/L,atrazine,atzne,NVT
-1114,71-43-2,Ben,benzeen,Benzeen,µg/L,benzeen,Ben,NVT
-1115,50-32-8,BaP,benzo(a)pyreen,Benzo (a) pyreen,µg/L,benzo(a)pyreen,BaP,NVT
-1118,191-24-2,BghiPe,benzo(ghi)peryleen,Benzo (ghi) peryleen,µg/L,"benzo(g,h,i)peryleen",BghiPe,NVT
-1117,207-08-9,BkF,benzo(k)fluorantheen,Benzo (k) fluorantheen,µg/L,benzo(k)fluorantheen,BkF,NVT
-1179,33213-65-9,bedsfn,beta-endosulfan,beta-Endosulfan,µg/L,beta-endosulfan,bedsfn,NVT
-1201,319-85-7,bHCH,beta-hexachloorcyclohexaan,beta Hexachloorcyclohexaan,µg/L,beta-hexachloorcyclohexaan,bHCH,NVT
-1119,42576-02-3,bfnx,bifenox,bifenox,µg/L,bifenox,bfnx,NVT
-1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,µg/L,cadmium,Cd,nf
-1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,µg/L,cadmium,Cd,NVT
-1464,470-90-6,Clfvfs,chloorfenvinfos,Chloorfenvinfos,µg/L,chloorfenvinfos,Clfvfs,NVT
-1439,479-61-8,CHLFa,chlorofyl-a,Chlorofyl a,µg/L,chlorofyl-a,CHLFa,NVT
-1337,16887-00-6,Cl,chloride,Chloride,mg/L,chloride,Cl,nf
-1379,7440-38-2,As,arseen,kobalt opgelost,µg/L,arseen,As,nf
-1379,7440-38-2,As,arseen,kobalt opgelost,µg/L,arseen,As,NVT
-2879,36643-28-4,TC4ySn,tributyltin (kation),Verbindingen van tributyltin (Tributyltin kation),µg/L,tributyltin (kation),TC4ySn,NVT
-1392,7440-50-8,Cu,koper,koper (Cu) opgelost,µg/L,koper,Cu,nf
-1392,7440-50-8,Cu,koper,koper (Cu) opgelost,µg/L,koper,Cu,NVT
-1935,28159-98-0,irgrl,irgarol,cybutryne,µg/L,irgarol,irgrl,NVT
-1140,52315-07-8,cypmtn,cypermethrin,cypermetrine,µg/L,cypermethrin,cypmtn,NVT
-1144,72-54-8,44DDD,"4,4'-dichloordifenyldichloorethaan",DDD pp',µg/L,"4,4'-dichloordifenyldichloorethaan",44DDD,NVT
-1146,72-55-9,44DDE,"4,4'-dichloordifenyldichlooretheen",DDE pp',µg/L,"4,4'-dichloordifenyldichlooretheen",44DDE,NVT
-1147,789-02-6,24DDT,"2,4'-dichloordifenyltrichloorethaan",DDT op',µg/L,"2,4'-dichloordifenyltrichloorethaan",24DDT,NVT
-1148,50-29-3,44DDT,"4,4'-dichloordifenyltrichloorethaan",DDT pp',µg/L,"4,4'-dichloordifenyltrichloorethaan",44DDT,NVT
-1202,319-86-8,dHCH,delta-hexachloorcyclohexaan,delta Hexachloorcyclohexaan,µg/L,delta-hexachloorcyclohexaan,dHCH,NVT
-6616,117-81-7,DEHP,bis(2-ethylhexyl)ftalaat (DEHP),Di(2-ethylhexyl)ftalaat DEHP,µg/L,bis(2-ethylhexyl)ftalaat (DEHP),DEHP,NVT
-1168,75-09-2,DClC1a,dichloormethaan,Dichloormethaan,µg/L,dichloormethaan,DClC1a,NVT
-1170,62-73-7,DClvs,dichloorvos,dichloorvos,µg/L,dichloorvos,DClvs,NVT
-1172,115-32-2,Dcfl,dicofol,Dicofol,µg/L,dicofol,Dcfl,NVT
-1173,60-57-1,dieldn,dieldrin,Dieldrin,µg/L,dieldrin,dieldn,NVT
-1177,330-54-1,Durn,diuron,Diuron,µg/L,diuron,Durn,NVT
-1181,72-20-8,endn,endrin,Endrin,µg/L,endrin,endn,NVT
-1198,1024-57-3,cHpClepO,cis-heptachloorepoxide,heptachloorepoxide,µg/L,cis-heptachloorepoxide,cHpClepO,NVT
-1191,206-44-0,Flu,fluorantheen,Fluorantheen,µg/L,fluorantheen,Flu,NVT
-7073,16984-48-8,F,fluoride,Anorganische fluoriden = fluoride opgelost,mg/L,fluoride,F,NVT
-1203,58-89-9,cHCH,gamma-hexachloorcyclohexaan (lindaan),gamma Hexachloorcyclohexaan (Lindaan),µg/L,gamma-hexachloorcyclohexaan (lindaan),cHCH,NVT
-1197,76-44-8,HpCl,heptachloor,heptachloor,µg/L,heptachloor,HpCl,NVT
-1199,118-74-1,HCB,hexachloorbenzeen,Hexachloorbenzeen,µg/L,hexachloorbenzeen,HCB,NVT
-1652,87-68-3,HxClbtDen,hexachloorbutadieen,Hexachloorbutadieen,µg/L,hexachloorbutadieen,HxClbtDen,NVT
-1877,138261-41-3,imdcpd,imidacloprid,imidacloprid,µg/L,imidacloprid,imdcpd,NVT
-1204,193-39-5,InP,"indeno(1,2,3-cd)pyreen",Indeno (123cd) pyreen,µg/L,"indeno(1,2,3-c,d)pyreen",InP,NVT
-1207,465-73-6,idn,isodrin,Isodrin,µg/L,isodrin,idn,NVT
-1208,34123-59-6,iptrn,isoproturon,Isoproturon,µg/L,isoproturon,iptrn,NVT
-1387,7439-97-6,Hg,kwik,Kwik (Hg) opgelost,µg/L,kwik,Hg,nf
-1387,7439-97-6,Hg,kwik,Kwik (Hg) opgelost,µg/L,kwik,Hg,NVT
-1517,91-20-3,Naf,naftaleen,Naftaleen,µg/L,naftaleen,Naf,NVT
-1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,µg/L,nikkel,Ni,nf
-1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,µg/L,nikkel,Ni,NVT
-1339,14797-65-0,NO2,nitriet,Nitriet NO2,mg/L N,nitriet,NO2,Nnf
-1433,14265-44-2,PO4,fosfaat,Opgeloste orthofosfaten,mg/L P,orthofosfaat,PO4,Pnf
-2912,68631-49-2,PBDE153,"2,2',4,4',5,5'-hexabroomdifenylether","PBDE153 (2,2',4,4',5,5'-hexabroomdifenylether)",µg/L,"2,2',4,4',5,5'-hexabroomdifenylether",PBDE153,NVT
-2915,189084-64-8,PBDE100,"2,2',4,4',6-pentabroomdifenylether","PBDE100 (2,2',4,4',6-pentabroomdifenylether)",µg/L,"2,2',4,4',6-pentabroomdifenylether",PBDE100,NVT
-2911,207122-15-4,PBDE154,"2,2',4,4',5,6'-hexabroomdifenylether","PBDE154 (2,2',4,4',5,6'-hexabroomdifenylether)",µg/L,"2,2',4,4',5,6'-hexabroomdifenylether",PBDE154,NVT
-2920,41318-75-6,PBDE28,"2,4,4'-tribroomdifenylether","PBDE28 (2,4,4'-tribroomdifenylether)",µg/L,"2,4,4'-tribroomdifenylether",PBDE28,NVT
-2919,5436-43-1,PBDE47,"2,2',4,4'-tetrabroomdifenylether","PBDE47 (2,2',4,4'-tetrabroomdifenylether)",µg/L,"2,2',4,4'-tetrabroomdifenylether",PBDE47,NVT
-2916,60348-60-9,PBDE99,"2,2',4,4',5-pentabroomdifenylether","PBDE99 (2,2',4,4',5-pentabroomdifenylether)",µg/L,"2,2',4,4',5-pentabroomdifenylether",PBDE99,NVT
-1888,608-93-5,PeClBen,pentachloorbenzeen,Pentachloorbenzeen,µg/L,pentachloorbenzeen,PeClBen,NVT
-1235,87-86-5,PeClFol,pentachloorfenol,Pentachloorfenol,µg/L,pentachloorfenol,PeClFol,NVT
-1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,µg/L,lood,Pb,nf
-1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,µg/L,lood,Pb,NVT
-2028,124495-18-7,quinoxfn,quinoxyfen,Quinoxyfen,µg/L,quinoxyfen,quinoxfn,NVT
-1263,122-34-9,simzne,simazine,Simazine,µg/L,simazine,simzne,NVT
-1272,127-18-4,T4ClC2e,tetrachlooretheen (per),Tetrachlooreth(yl)een,µg/L,tetrachlooretheen (per),T4ClC2e,NVT
-1276,56-23-5,T4ClC1a,tetrachloormethaan (tetra),Tetrachloormethaan,µg/L,tetrachloormethaan (tetra),T4ClC1a,NVT
-1286,79-01-6,TClC2e,trichlooretheen (tri),Trichlooreth(yl)een,µg/L,trichlooretheen (tri),TClC2e,NVT
-1135,67-66-3,TClC1a,trichloormethaan (chloroform),Trichloormethaan,µg/L,trichloormethaan (chloroform),TClC1a,NVT
-1289,1582-09-8,Tfrlne,trifluraline,Trifluraline,µg/L,trifluraline,Tfrlne,NVT
-5347,335-67-1,PFOA,perfluoroctaanzuur,PFOA,ng/L,perfluoroctaanzuur,PFOA,NVT
-6830,355-46-4,L_PFHxS,perfluorhexaansulfonzuur,PFHxS,ng/L,perfluor-1-hexaansulfonaat (lineair),L_PFHxS,NVT
-5978,307-24-4,PFHxA,perfluorhexaanzuur,PFHxA,ng/L,perfluor-n-hexaanzuur,PFHxA,NVT
-5979,2706-90-3,PFPA,perfluorpentaanzuur,PFPeA,ng/L,perfluor-n-pentaanzuur,PFPA,NVT
+Unieke identificatie gemeten parameter,CASnummer,AQUO_Codes,AQUO_Omschrijving,ISC_Parameter,Geanalyseerde fractie,Aanpak kwantificeringsgrens,Unieke identificatie van de eenheid,DONAR_Parameter,DONAR_PARCode,HDH
+1101,15972-60-8,alCl,alachloor,Alachloor,NVT,<,µg/L,alachloor,alCl,NVT
+1103,309-00-2,aldn,aldrin,Aldrin,NVT,<,µg/L,aldrin,aldn,NVT
+1107,1912-24-9,atzne,atrazine,Atrazine,NVT,<,µg/L,atrazine,atzne,NVT
+1107,1912-24-9,atzne,atrazine,Atrazine,NVT,=,µg/L,atrazine,atzne,NVT
+1114,71-43-2,Ben,benzeen,Benzeen,NVT,<,µg/L,benzeen,Ben,NVT
+1115,50-32-8,BaP,benzo(a)pyreen,Benzo (a) pyreen,NVT,=,µg/L,benzo(a)pyreen,BaP,NVT
+1115,50-32-8,BaP,benzo(a)pyreen,Benzo (a) pyreen,NVT,<,µg/L,benzo(a)pyreen,BaP,NVT
+1117,207-08-9,BkF,benzo(k)fluorantheen,Benzo (k) fluorantheen,NVT,=,µg/L,benzo(k)fluorantheen,BkF,NVT
+1117,207-08-9,BkF,benzo(k)fluorantheen,Benzo (k) fluorantheen,NVT,<,µg/L,benzo(k)fluorantheen,BkF,NVT
+1118,191-24-2,BghiPe,benzo(ghi)peryleen,Benzo (ghi) peryleen,NVT,=,µg/L,"benzo(g,h,i)peryleen",BghiPe,NVT
+1118,191-24-2,BghiPe,benzo(ghi)peryleen,Benzo (ghi) peryleen,NVT,<,µg/L,"benzo(g,h,i)peryleen",BghiPe,NVT
+1119,42576-02-3,bfnx,bifenox,bifenox,NVT,<,µg/L,bifenox,bfnx,NVT
+1135,67-66-3,TClC1a,trichloormethaan (chloroform),Trichloormethaan,NVT,<,µg/L,trichloormethaan (chloroform),TClC1a,NVT
+1140,52315-07-8,cypmtn,cypermethrin,cypermetrine,NVT,<,µg/L,cypermethrin,cypmtn,NVT
+1144,72-54-8,44DDD,"4,4'-dichloordifenyldichloorethaan",DDD pp',NVT,<,µg/L,"4,4'-dichloordifenyldichloorethaan",44DDD,NVT
+1146,72-55-9,44DDE,"4,4'-dichloordifenyldichlooretheen",DDE pp',NVT,<,µg/L,"4,4'-dichloordifenyldichlooretheen",44DDE,NVT
+1147,789-02-6,24DDT,"2,4'-dichloordifenyltrichloorethaan",DDT op',NVT,<,µg/L,"2,4'-dichloordifenyltrichloorethaan",24DDT,NVT
+1148,50-29-3,44DDT,"4,4'-dichloordifenyltrichloorethaan",DDT pp',NVT,<,µg/L,"4,4'-dichloordifenyltrichloorethaan",44DDT,NVT
+1161,107-06-2,12DClC2a,"1,2-dichloorethaan","1,2-dichloorethaan",NVT,<,µg/L,"1,2-dichloorethaan",12DClC2a,NVT
+1168,75-09-2,DClC1a,dichloormethaan,Dichloormethaan,NVT,<,µg/L,dichloormethaan,DClC1a,NVT
+1170,62-73-7,DClvs,dichloorvos,dichloorvos,NVT,<,µg/L,dichloorvos,DClvs,NVT
+1172,115-32-2,Dcfl,dicofol,Dicofol,,,,dicofol,Dcfl,NVT
+1173,60-57-1,dieldn,dieldrin,Dieldrin,NVT,<,µg/L,dieldrin,dieldn,NVT
+1177,330-54-1,Durn,diuron,Diuron,NVT,<,µg/L,diuron,Durn,NVT
+1177,330-54-1,Durn,diuron,Diuron,NVT,=,µg/L,diuron,Durn,NVT
+1178,959-98-8,aedsfn,alfa-endosulfan,alfa-Endosulfan,NVT,<,µg/L,alfa-endosulfan,aedsfn,NVT
+1179,33213-65-9,bedsfn,beta-endosulfan,beta-Endosulfan,NVT,<,µg/L,beta-endosulfan,bedsfn,NVT
+1181,72-20-8,endn,endrin,Endrin,NVT,<,µg/L,endrin,endn,NVT
+1181,72-20-8,endn,endrin,Endrin,NVT,=,µg/L,endrin,endn,NVT
+1191,206-44-0,Flu,fluorantheen,Fluorantheen,NVT,=,µg/L,fluorantheen,Flu,NVT
+1191,206-44-0,Flu,fluorantheen,Fluorantheen,NVT,<,µg/L,fluorantheen,Flu,NVT
+1197,76-44-8,HpCl,heptachloor,heptachloor,NVT,<,µg/L,heptachloor,HpCl,NVT
+1198,1024-57-3,cHpClepO,cis-heptachloorepoxide,heptachloorepoxide,NVT,<,µg/L,cis-heptachloorepoxide,cHpClepO,NVT
+1199,118-74-1,HCB,hexachloorbenzeen,Hexachloorbenzeen,NVT,<,µg/L,hexachloorbenzeen,HCB,NVT
+1200,319-84-6,aHCH,alfa-hexachloorcyclohexaan,alpha Hexachloorcyclohexaan,NVT,<,µg/L,alfa-hexachloorcyclohexaan,aHCH,NVT
+1201,319-85-7,bHCH,beta-hexachloorcyclohexaan,beta Hexachloorcyclohexaan,NVT,<,µg/L,beta-hexachloorcyclohexaan,bHCH,NVT
+1202,319-86-8,dHCH,delta-hexachloorcyclohexaan,delta Hexachloorcyclohexaan,NVT,<,µg/L,delta-hexachloorcyclohexaan,dHCH,NVT
+1202,319-86-8,dHCH,delta-hexachloorcyclohexaan,delta Hexachloorcyclohexaan,NVT,=,µg/L,delta-hexachloorcyclohexaan,dHCH,NVT
+1203,58-89-9,cHCH,gamma-hexachloorcyclohexaan (lindaan),gamma Hexachloorcyclohexaan (Lindaan),NVT,<,µg/L,gamma-hexachloorcyclohexaan (lindaan),cHCH,NVT
+1203,58-89-9,cHCH,gamma-hexachloorcyclohexaan (lindaan),gamma Hexachloorcyclohexaan (Lindaan),NVT,=,µg/L,gamma-hexachloorcyclohexaan (lindaan),cHCH,NVT
+1204,193-39-5,InP,"indeno(1,2,3-cd)pyreen",Indeno (123cd) pyreen,NVT,=,µg/L,"indeno(1,2,3-c,d)pyreen",InP,NVT
+1204,193-39-5,InP,"indeno(1,2,3-cd)pyreen",Indeno (123cd) pyreen,NVT,<,µg/L,"indeno(1,2,3-c,d)pyreen",InP,NVT
+1207,465-73-6,idn,isodrin,Isodrin,NVT,<,µg/L,isodrin,idn,NVT
+1207,465-73-6,idn,isodrin,Isodrin,NVT,=,µg/L,isodrin,idn,NVT
+1208,34123-59-6,iptrn,isoproturon,Isoproturon,NVT,<,µg/L,isoproturon,iptrn,NVT
+1208,34123-59-6,iptrn,isoproturon,Isoproturon,NVT,=,µg/L,isoproturon,iptrn,NVT
+1235,87-86-5,PeClFol,pentachloorfenol,Pentachloorfenol,NVT,<,µg/L,pentachloorfenol,PeClFol,NVT
+1263,122-34-9,simzne,simazine,Simazine,NVT,<,µg/L,simazine,simzne,NVT
+1263,122-34-9,simzne,simazine,Simazine,NVT,=,µg/L,simazine,simzne,NVT
+1272,127-18-4,T4ClC2e,tetrachlooretheen (per),Tetrachlooreth(yl)een,NVT,<,µg/L,tetrachlooretheen (per),T4ClC2e,NVT
+1276,56-23-5,T4ClC1a,tetrachloormethaan (tetra),Tetrachloormethaan,NVT,<,µg/L,tetrachloormethaan (tetra),T4ClC1a,NVT
+1283,120-82-1,124TClBen,"1,2,4-trichloorbenzeen","1,2,4 Trichloorbenzeen",NVT,<,µg/L,"1,2,4-trichloorbenzeen",124TClBen,NVT
+1286,79-01-6,TClC2e,trichlooretheen (tri),Trichlooreth(yl)een,NVT,<,µg/L,trichlooretheen (tri),TClC2e,NVT
+1289,1582-09-8,Tfrlne,trifluraline,Trifluraline,NVT,<,µg/L,trifluraline,Tfrlne,NVT
+1337,16887-00-6,Cl,chloride,Chloride,NVT,=,mg/L,chloride,Cl,nf
+1339,14797-65-0,NO2,nitriet,Nitriet NO2,NVT,=,mg/L N,nitriet,NO2,Nnf
+1339,14797-65-0,NO2,nitriet,Nitriet NO2,NVT,<,mg/L N,nitriet,NO2,Nnf
+1369,7440-38-2,As,arseen,Arseen  opgelost,nf,=,µg/L,arseen,As,nf
+1369,7440-38-2,As,arseen,Arseen  opgelost,nf,=,µg/L,arseen,As,NVT
+1369,7440-38-2,As,arseen,Arseen  opgelost,nf,<,µg/L,arseen,As,nf
+1369,7440-38-2,As,arseen,Arseen  opgelost,nf,<,µg/L,arseen,As,NVT
+1379,7440-38-2,As,arseen,kobalt opgelost,nf,=,µg/L,arseen,As,nf
+1379,7440-38-2,As,arseen,kobalt opgelost,nf,=,µg/L,arseen,As,NVT
+1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,nf,<,µg/L,lood,Pb,nf
+1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,nf,<,µg/L,lood,Pb,NVT
+1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,nf,=,µg/L,lood,Pb,nf
+1382,7439-92-1,Pb,lood,Lood (Pb) opgelost,nf,=,µg/L,lood,Pb,NVT
+1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,nf,<,µg/L,nikkel,Ni,nf
+1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,nf,<,µg/L,nikkel,Ni,NVT
+1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,nf,=,µg/L,nikkel,Ni,nf
+1386,7440-02-0,Ni,nikkel,Nikkel (Ni) opgelost,nf,=,µg/L,nikkel,Ni,NVT
+1387,7439-97-6,Hg,kwik,Kwik (Hg) opgelost,nf,<,µg/L,kwik,Hg,nf
+1387,7439-97-6,Hg,kwik,Kwik (Hg) opgelost,nf,<,µg/L,kwik,Hg,NVT
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,NVT,<,µg/L,cadmium,Cd,nf
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,NVT,<,µg/L,cadmium,Cd,NVT
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,nf,<,µg/L,cadmium,Cd,nf
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,nf,<,µg/L,cadmium,Cd,NVT
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,NVT,=,µg/L,cadmium,Cd,nf
+1388,7440-43-9,Cd,cadmium,Cadmium (Cd) opgelost,NVT,=,µg/L,cadmium,Cd,NVT
+1392,7440-50-8,Cu,koper,koper (Cu) opgelost,nf,<,µg/L,koper,Cu,nf
+1392,7440-50-8,Cu,koper,koper (Cu) opgelost,nf,<,µg/L,koper,Cu,NVT
+1392,7440-50-8,Cu,koper,koper (Cu) opgelost,nf,=,µg/L,koper,Cu,nf
+1392,7440-50-8,Cu,koper,koper (Cu) opgelost,nf,=,µg/L,koper,Cu,NVT
+1433,14265-44-2,PO4,fosfaat,Opgeloste orthofosfaten,nf,=,mg/L P,orthofosfaat,PO4,Pnf
+1439,479-61-8,CHLFa,chlorofyl-a,Chlorofyl a,NVT,=,µg/L,chlorofyl-a,CHLFa,NVT
+1439,479-61-8,CHLFa,chlorofyl-a,Chlorofyl a,NVT,<,µg/L,chlorofyl-a,CHLFa,NVT
+1458,120-12-7,Ant,antraceen,Antraceen,NVT,<,µg/L,antraceen,Ant,NVT
+1458,120-12-7,Ant,antraceen,Antraceen,NVT,=,µg/L,antraceen,Ant,NVT
+1464,470-90-6,Clfvfs,chloorfenvinfos,Chloorfenvinfos,NVT,<,µg/L,chloorfenvinfos,Clfvfs,NVT
+1517,91-20-3,Naf,naftaleen,Naftaleen,NVT,<,µg/L,naftaleen,Naf,NVT
+1517,91-20-3,Naf,naftaleen,Naftaleen,NVT,=,µg/L,naftaleen,Naf,NVT
+1629,108-70-3,135TClBen,"1,3,5-trichloorbenzeen","1,3,5 Trichloorbenzeen",NVT,<,µg/L,"1,3,5-trichloorbenzeen",135TClBen,NVT
+1630,87-61-6,123TClBen,"1,2,3-trichloorbenzeen","1,2,3 Trichloorbenzeen",NVT,<,µg/L,"1,2,3-trichloorbenzeen",123TClBen,NVT
+1652,87-68-3,HxClbtDen,hexachloorbutadieen,Hexachloorbutadieen,NVT,<,µg/L,hexachloorbutadieen,HxClbtDen,NVT
+1688,74070-46-5,acnfn,aclonifen,aclonifen,NVT,<,µg/L,aclonifen,acnfn,NVT
+1688,74070-46-5,acnfn,aclonifen,aclonifen,NVT,=,µg/L,aclonifen,acnfn,NVT
+1877,138261-41-3,imdcpd,imidacloprid,imidacloprid,NVT,<,µg/L,imidacloprid,imdcpd,NVT
+1877,138261-41-3,imdcpd,imidacloprid,imidacloprid,NVT,=,µg/L,imidacloprid,imdcpd,NVT
+1888,608-93-5,PeClBen,pentachloorbenzeen,Pentachloorbenzeen,NVT,<,µg/L,pentachloorbenzeen,PeClBen,NVT
+1935,28159-98-0,irgrl,irgarol,cybutryne,NVT,<,µg/L,irgarol,irgrl,NVT
+1959,140-66-9,4ttC8yFol,4-tertiair-octylfenol,"4-(1,1',3,3' - tetramethylbutyl)-fenol (Para-tert-octylfenol)",NVT,<,µg/L,4-tertiair-octylfenol,4ttC8yFol,NVT
+2028,124495-18-7,quinoxfn,quinoxyfen,Quinoxyfen,NVT,<,µg/L,quinoxyfen,quinoxfn,NVT
+2879,36643-28-4,TC4ySn,tributyltin (kation),Verbindingen van tributyltin (Tributyltin kation),NVT,=,µg/L,tributyltin (kation),TC4ySn,NVT
+2879,36643-28-4,TC4ySn,tributyltin (kation),Verbindingen van tributyltin (Tributyltin kation),NVT,<,µg/L,tributyltin (kation),TC4ySn,NVT
+2911,207122-15-4,PBDE154,"2,2',4,4',5,6'-hexabroomdifenylether","PBDE154 (2,2',4,4',5,6'-hexabroomdifenylether)",,,,"2,2',4,4',5,6'-hexabroomdifenylether",PBDE154,NVT
+2912,68631-49-2,PBDE153,"2,2',4,4',5,5'-hexabroomdifenylether","PBDE153 (2,2',4,4',5,5'-hexabroomdifenylether)",,,,"2,2',4,4',5,5'-hexabroomdifenylether",PBDE153,NVT
+2915,189084-64-8,PBDE100,"2,2',4,4',6-pentabroomdifenylether","PBDE100 (2,2',4,4',6-pentabroomdifenylether)",,,,"2,2',4,4',6-pentabroomdifenylether",PBDE100,NVT
+2916,60348-60-9,PBDE99,"2,2',4,4',5-pentabroomdifenylether","PBDE99 (2,2',4,4',5-pentabroomdifenylether)",,,,"2,2',4,4',5-pentabroomdifenylether",PBDE99,NVT
+2919,5436-43-1,PBDE47,"2,2',4,4'-tetrabroomdifenylether","PBDE47 (2,2',4,4'-tetrabroomdifenylether)",,,,"2,2',4,4'-tetrabroomdifenylether",PBDE47,NVT
+2920,41318-75-6,PBDE28,"2,4,4'-tribroomdifenylether","PBDE28 (2,4,4'-tribroomdifenylether)",,,,"2,4,4'-tribroomdifenylether",PBDE28,NVT
+5347,335-67-1,PFOA,perfluoroctaanzuur,PFOA,NVT,<,µg/L,perfluoroctaanzuur,PFOA,NVT
+5347,335-67-1,PFOA,perfluoroctaanzuur,PFOA,NVT,=,µg/L,perfluoroctaanzuur,PFOA,NVT
+5978,307-24-4,PFHxA,perfluorhexaanzuur,PFHxA,NVT,=,µg/L,perfluor-n-hexaanzuur,PFHxA,NVT
+5978,307-24-4,PFHxA,perfluorhexaanzuur,PFHxA,NVT,<,µg/L,perfluor-n-hexaanzuur,PFHxA,NVT
+5979,2706-90-3,PFPA,perfluorpentaanzuur,PFPeA,NVT,<,µg/L,perfluor-n-pentaanzuur,PFPA,NVT
+5979,2706-90-3,PFPA,perfluorpentaanzuur,PFPeA,NVT,=,µg/L,perfluor-n-pentaanzuur,PFPA,NVT
+6616,117-81-7,DEHP,bis(2-ethylhexyl)ftalaat (DEHP),Di(2-ethylhexyl)ftalaat DEHP,NVT,<,µg/L,bis(2-ethylhexyl)ftalaat (DEHP),DEHP,NVT
+6616,117-81-7,DEHP,bis(2-ethylhexyl)ftalaat (DEHP),Di(2-ethylhexyl)ftalaat DEHP,NVT,=,µg/L,bis(2-ethylhexyl)ftalaat (DEHP),DEHP,NVT
+6830,355-46-4,L_PFHxS,perfluorhexaansulfonzuur,PFHxS,NVT,<,µg/L,perfluor-1-hexaansulfonaat (lineair),L_PFHxS,NVT
+6830,355-46-4,L_PFHxS,perfluorhexaansulfonzuur,PFHxS,NVT,=,µg/L,perfluor-1-hexaansulfonaat (lineair),L_PFHxS,NVT
+7073,16984-48-8,F,fluoride,Anorganische fluoriden = fluoride opgelost,nf,=,mg/L,fluoride,F,NVT
+7073,16984-48-8,F,fluoride,Anorganische fluoriden = fluoride opgelost,nf,<,mg/L,fluoride,F,NVT

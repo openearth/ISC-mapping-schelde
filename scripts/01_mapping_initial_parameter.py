@@ -8,7 +8,7 @@ donar = pd.read_csv(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), se
 gevraagd_format = pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
 aangeleverd_2024 =  pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
 aquo = pd.read_csv(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep =';')
-
+hoedanigheid = pd.read_csv(Path.joinpath(p.parent, 'AQUO/Hoedanigheid.csv'), sep=';')
 # %%
 # preprocessing, unpacking multiple excel sheets and selecting what is needed for the analysis
 donarcols = donar.columns
@@ -22,6 +22,13 @@ parameter = gevraagd_format[tables[5]] # parameter
 new_header = meetdata.iloc[3]
 meetdata = meetdata[4:]                 
 meetdata.columns = new_header
+meetdata_mapping = meetdata[['Geanalyseerde fractie',
+       'Unieke identificatie gemeten parameter',
+                  'Aanpak kwantificeringsgrens',
+          'Unieke identificatie van de eenheid']].drop_duplicates()
+
+meetdata_mapping['Geanalyseerde fractie'] = meetdata_mapping['Geanalyseerde fractie'].replace('EB','NVT')
+meetdata_mapping['Geanalyseerde fractie'] = meetdata_mapping['Geanalyseerde fractie'].replace('EF','nf')
 # %% parameter mapping
 #gewoon paroms mappen naar de ISC tabel die gegeven is, geeft maar 6 matches, dit is dus niet wat je wil gebruiken
 # PARCODE gebruiken om te mappen naar AQUO
@@ -51,21 +58,25 @@ cols = ['Unieke identificatie gemeten parameter',
         'AQUO_Codes',
         'AQUO_Omschrijving', 
         'ISC_Parameter', 
-        'Identification unique de l\'unité'
+        'Geanalyseerde fractie',
+       'Aanpak kwantificeringsgrens', 
+       'Unieke identificatie van de eenheid'
         ] 
-innerjoin = parameter.merge(casnummers, on = 'CASnummer', how = 'inner') #alle ISC die wel met CASnummers kunnen worden gemapt
+parameterx = parameter.merge(meetdata_mapping, on='Unieke identificatie gemeten parameter', how = 'outer')
+#%%
+innerjoin = parameterx.merge(casnummers, on = 'CASnummer', how = 'inner') #alle ISC die wel met CASnummers kunnen worden gemapt
 innerjoin = innerjoin[cols]
 
-leftjoin = (parameter.merge(casnummers, on='CASnummer',how='left', indicator=True) #Alle ISC die niet met CASnummers kunnen worden gemapt
+leftjoin = (parameterx.merge(casnummers, on='CASnummer',how='left', indicator=True) #Alle ISC die niet met CASnummers kunnen worden gemapt
             .query('_merge == "left_only"')
             .drop('_merge', axis=1))
 
 leftjoin = leftjoin[cols]
-print('total parameters =', len(parameter), 
+print('total parameters =', len(parameterx), 
       '\nISC match with CAS numbers=', len(innerjoin), 
       '\n NO match ISC with CAS=', len(leftjoin),
       '\n SUM', len(innerjoin)+ len(leftjoin))
-# %%
+
 # Join DONAR met complete ISC mapping met CAS nummers en kijk wat er wel en niet gemapt kan worden van DONAR naar ISC. 
 # Hebben we alle variabelen die nodig zijn?
 donar_isc_cas = innerjoin.merge(paroms, left_on='AQUO_Codes', right_on='DONAR_PARCode', how='inner') #, validate='one_to_one'
@@ -82,6 +93,7 @@ nomatch =nomatch_donar_isc_cas.merge(leftjoin, on = 'Unieke identificatie gemete
 # Identify overlapping non-key columns that exist on both sides
 overlaps = set(nomatch_donar_isc_cas.columns).intersection(leftjoin.columns) - set(['Unieke identificatie gemeten parameter'])
 
+#%%
 # Coalesce: prefer left, then right
 for col in overlaps:
     nomatch[col] = nomatch[col].combine_first(nomatch.pop(f"{col}_r"))
@@ -89,7 +101,7 @@ for col in overlaps:
 donar_isc_cas.to_csv(Path.joinpath(p.parent,'mappings/donar-isc-cas.csv'), index=False)
 nomatch.to_csv(Path.joinpath(p.parent,'mappings/nomatch-donar-isc-cas.csv'), index=False)
 
-with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter.xlsx')) as writer: 
+with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter_e_h_g.xlsx')) as writer: 
     donar_isc_cas.to_excel(writer, sheet_name='donar_isc_cas', index=False)
     nomatch.to_excel(writer, sheet_name='nomatch_donar_isc_cas', index=False) 
 
@@ -104,3 +116,4 @@ all_locs.to_csv(Path.joinpath(p.parent,'mappings/locations.csv'), index=False)
 all_locs.to_excel(Path.joinpath(p.parent,'mappings/locations-raw.xlsx'), index=False)
 
 # %%
+# mapping van donar HDH uniques met hoedanigheid codes uniques
