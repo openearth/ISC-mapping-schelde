@@ -25,7 +25,6 @@ meetdata = meetdata[4:]
 meetdata.columns = new_header
 meetdata_mapping = meetdata[['Geanalyseerde fractie',
        'Unieke identificatie gemeten parameter',
-                  'Aanpak kwantificeringsgrens',
           'Unieke identificatie van de eenheid']].drop_duplicates()
 
 meetdata_mapping['Geanalyseerde fractie'] = meetdata_mapping['Geanalyseerde fractie'].replace('EB','NVT')
@@ -43,8 +42,22 @@ aquocols = ['CASnummer',
             ]
 casnummers = aquo[aquocols]
 
+# eenheden en de eenheden mapping van DONAR -? ISC lijkt wel anders te zijn dan de eenheden mapping van WADAR -> ISC
+
+#AQUOcode kwaliteit: https://www.aquo.nl/index.php/Id-1e17d9e6-4e0e-4f88-8fe5-c71f6a7931db
+# 99: hiaat
+# 0: normale waarde (zou 00 moeten zijn)
+# 3: Waarde heeft een grotere spreiding dan beschreven
+# 90: Afwijkende waarde na validatie goedgekeurd
+# 1002: ??? bestaat niet in aquolijst
+
+# voor ISC is er een unieke code bij gebrek aan resultaat -> moet dit verplicht meegegeven worden
+# NM : geen meting
+# NV : niet gevalideerd
 # paroms = wadar[['PAROMS', 'PAR','HDH']].drop_duplicates()
-paroms = wadar[['grootheid_code','parameter_code', 'hoedanigheid_code']].drop_duplicates()
+paroms = wadar[['grootheid_code',
+                'parameter_code', 
+                'hoedanigheid_code']].drop_duplicates()
 paroms = paroms.rename(columns = {'parameter_code': 'wadar_PARCode'})
 
 # %% # MAP ISC table to CAS nummers
@@ -60,7 +73,6 @@ cols = ['Unieke identificatie gemeten parameter',
         'AQUO_Omschrijving', 
         'ISC_Parameter', 
         'Geanalyseerde fractie',
-       'Aanpak kwantificeringsgrens', 
        'Unieke identificatie van de eenheid'
         ] 
 parameterx = parameter.merge(meetdata_mapping, on='Unieke identificatie gemeten parameter', how = 'outer')
@@ -98,7 +110,6 @@ overlaps = set(nomatch_wadar_isc_cas.columns).intersection(leftjoin.columns) - s
 # Coalesce: prefer left, then right
 for col in overlaps:
     nomatch[col] = nomatch[col].combine_first(nomatch.pop(f"{col}_r"))
-
 wadar_isc_cas.to_csv(Path.joinpath(p.parent,'mappings/wadar-isc-cas.csv'), index=False)
 nomatch.to_csv(Path.joinpath(p.parent,'mappings/nomatch-wadar-isc-cas.csv'), index=False)
 
@@ -106,14 +117,14 @@ with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter_e_h_g.xlsx')) as 
     wadar_isc_cas.to_excel(writer, sheet_name='wadar_isc_cas', index=False)
     nomatch.to_excel(writer, sheet_name='nomatch_wadar_isc_cas', index=False) 
 
-# %% location mapping
+# %% location mapping mapping naar wadar uitgevoerd
 # MET wadar een handmatige mapping is nodig aangezien de nieuwe terminologie te veel verschilt 
 lsloc=wadar['locatie_code'].drop_duplicates().to_frame()
 locs= locations[['Identitication unique de la station' , 'Localité']]
 locs=locs.groupby(['Identitication unique de la station' , 'Localité']).count().reset_index()
 locs=locs[locs['Identitication unique de la station'].str.startswith("NL")]
 
-all_locs = locs.merge(lsloc, left_on='Localité', right_on='LOCOMS', how='outer')
+all_locs = locs.merge(lsloc, left_on='Localité', right_on='locatie_code', how='outer')
 all_locs.to_csv(Path.joinpath(p.parent,'mappings/locations.csv'), index=False)
 all_locs.to_excel(Path.joinpath(p.parent,'mappings/locations-raw.xlsx'), index=False)
 
