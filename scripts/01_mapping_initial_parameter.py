@@ -3,13 +3,42 @@ import pandas as pd
 import os
 from pathlib import Path
 
+def load_data(filepath, sheet_name=None, sep=';', low_memory=False):
+    """
+    Load data from Excel or CSV file based on file extension.
+    
+    Parameters:
+    -----------
+    filepath : str or Path
+        Path to the file (Excel or CSV)
+    sheet_name : str or None
+        Sheet name for Excel files (required for .xlsx/.xls)
+    sep : str
+        Separator for CSV files (default: ';')
+    low_memory : bool
+        For CSV files, whether to use low memory mode (default: False)
+    
+    Returns:
+    --------
+    pd.DataFrame or dict
+        DataFrame for single sheet, dict of DataFrames for Excel with sheet_name=None
+    """
+    filepath = Path(filepath)
+    
+    if filepath.suffix.lower() in ['.xlsx', '.xls']:
+        return pd.read_excel(filepath, sheet_name=sheet_name)
+    elif filepath.suffix.lower() == '.csv':
+        return pd.read_csv(filepath, sep=sep, low_memory=low_memory)
+    else:
+        raise ValueError(f"Unsupported file format: {filepath.suffix}")
+
 p=Path(os.getcwd())
-donar = pd.read_csv(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), sep =';')
-wadar = pd.read_csv(Path.joinpath(p.parent, 'voorbeeld/WADAR/ISC2024/ISC2024.csv'), sep = ';', low_memory = False)
-gevraagd_format = pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
-aangeleverd_2024 =  pd.read_excel(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
-aquo = pd.read_csv(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep =';')
-hoedanigheid = pd.read_csv(Path.joinpath(p.parent, 'AQUO/Hoedanigheid.csv'), sep=';')
+donar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), sep=';')
+wadar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc_2023-2025/ISC_2024.xlsx'), sheet_name='2024', sep=';')
+gevraagd_format = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
+aangeleverd_2024 = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
+aquo = load_data(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep=';')
+hoedanigheid = load_data(Path.joinpath(p.parent, 'AQUO/Hoedanigheid.csv'), sep=';')
 # %%
 # preprocessing, unpacking multiple excel sheets and selecting what is needed for the analysis
 wadarcols = wadar.columns
@@ -57,7 +86,8 @@ casnummers = aquo[aquocols]
 # paroms = wadar[['PAROMS', 'PAR','HDH']].drop_duplicates()
 paroms = wadar[['grootheid_code',
                 'parameter_code', 
-                'hoedanigheid_code']].drop_duplicates()
+                'hoedanigheid_code',
+                'eenheid_code']].drop_duplicates()
 paroms = paroms.rename(columns = {'parameter_code': 'wadar_PARCode'})
 
 # %% # MAP ISC table to CAS nummers
@@ -101,7 +131,7 @@ print('total can be mapped from wadar to ISC =', len(wadar_isc_cas),
       '\n Cannot find match for ISC parameters with wadar', len(nomatch_wadar_isc_cas),
       '\n SUM', len(wadar_isc_cas)+ len(nomatch_wadar_isc_cas))
 
-nomatch =nomatch_wadar_isc_cas.merge(leftjoin, on = 'Unieke identificatie gemeten parameter', how='outer', suffixes=("", "_r"))
+nomatch = nomatch_wadar_isc_cas.merge(leftjoin, on = 'Unieke identificatie gemeten parameter', how='outer', suffixes=("", "_r"))
 
 # Identify overlapping non-key columns that exist on both sides
 overlaps = set(nomatch_wadar_isc_cas.columns).intersection(leftjoin.columns) - set(['Unieke identificatie gemeten parameter'])
