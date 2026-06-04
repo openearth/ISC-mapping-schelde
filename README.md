@@ -36,3 +36,7 @@ TO DO
 first check after mapping
 - checking if RWS measures at all locations
 
+Aquo_code : (quality flag) 
+NV - not valid -> 99 in aquo
+NM - applicable for all parameters - the substance is not being measured - value is not there
+For aquo code quality flags, we report: 0, 3 and 90
