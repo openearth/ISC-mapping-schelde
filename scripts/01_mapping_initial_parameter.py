@@ -38,7 +38,7 @@ wadar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc_2023-2025/ISC_2024.xlsx
 gevraagd_format = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
 # aangeleverd_2024 = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
 aquo = load_data(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep=';')
-hoedanigheid = load_data(Path.joinpath(p.parent, 'AQUO/Hoedanigheid.csv'), sep=';')
+hoedanigheid_m = load_data(Path.joinpath(p.parent, 'mappings/hoedanigheid_mapped.xlsx'), sep=';', sheet_name='Sheet1')
 # %%
 # preprocessing, unpacking multiple excel sheets and selecting what is needed for the analysis
 wadarcols = wadar.columns
@@ -55,9 +55,6 @@ meetdata.columns = new_header
 meetdata_mapping = meetdata[['Geanalyseerde fractie',
        'Unieke identificatie gemeten parameter',
           'Unieke identificatie van de eenheid']].drop_duplicates()
-
-meetdata_mapping['Geanalyseerde fractie'] = meetdata_mapping['Geanalyseerde fractie'].replace('EB','NVT')
-meetdata_mapping['Geanalyseerde fractie'] = meetdata_mapping['Geanalyseerde fractie'].replace('EF','nf')
 # %% parameter mapping
 #gewoon paroms mappen naar de ISC tabel die gegeven is, geeft maar 6 matches, dit is dus niet wat je wil gebruiken
 # PARCODE gebruiken om te mappen naar AQUO
@@ -86,7 +83,6 @@ casnummers = aquo[aquocols]
 # paroms = wadar[['PAROMS', 'PAR','HDH']].drop_duplicates()
 paroms = wadar[['grootheid_code',
                 'parameter_code', 
-                'hoedanigheid_code',
                 'eenheid_code']].drop_duplicates()
 paroms = paroms.rename(columns = {'parameter_code': 'wadar_PARCode'})
 
@@ -102,7 +98,6 @@ cols = ['Unieke identificatie gemeten parameter',
         'AQUO_Codes',
         'AQUO_Omschrijving', 
         'ISC_Parameter', 
-        'Geanalyseerde fractie',
        'Unieke identificatie van de eenheid'
         ] 
 parameterx = parameter.merge(meetdata_mapping, on='Unieke identificatie gemeten parameter', how = 'outer')
@@ -146,6 +141,13 @@ nomatch.to_csv(Path.joinpath(p.parent,'mappings/nomatch-wadar-isc-cas.csv'), ind
 with pd.ExcelWriter(Path.joinpath(p.parent,'mappings/parameter_e_h_g.xlsx')) as writer: 
     wadar_isc_cas.to_excel(writer, sheet_name='wadar_isc_cas', index=False)
     nomatch.to_excel(writer, sheet_name='nomatch_wadar_isc_cas', index=False) 
+
+#%%
+## fractie - wadar['hoedanigheid_code'].unique() to df
+hoedanigheid_unique = wadar['hoedanigheid_code'].unique()
+hoedanigheid_df = pd.DataFrame(hoedanigheid_unique, columns=['hoedanigheid_code'])
+hoedanigheid_df.to_excel(Path.joinpath(p.parent,'mappings/hoedanigheid_unique.xlsx'), index=False)
+
 
 # %% location mapping mapping naar wadar uitgevoerd
 # MET wadar een handmatige mapping is nodig aangezien de nieuwe terminologie te veel verschilt 

@@ -35,6 +35,7 @@ TO DO
 
 first check after mapping
 - checking if RWS measures at all locations
+- using a jupyter notebook to visually show what happens
 
 Aquo_code : (quality flag) 
 NV - not valid -> 99 in aquo
