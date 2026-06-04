@@ -27,3 +27,12 @@ Het Oct_2025_NL bestand bevat het uiteindelijk geleverde bestand aan ISC
 -	!Eenheden vergelijken met gevraagde eenheid. Omrekeningsfactor bepalen wanneer nodig.
 - berekening daggemiddelden (ISC heeft alleen datum, geen datumtijd)
 
+
+TO DO
+- mapping for the fraction
+- check measurements per day
+- look at the units
+
+first check after mapping
+- checking if RWS measures at all locations
+
