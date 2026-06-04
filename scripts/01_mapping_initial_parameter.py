@@ -33,18 +33,18 @@ def load_data(filepath, sheet_name=None, sep=';', low_memory=False):
         raise ValueError(f"Unsupported file format: {filepath.suffix}")
 
 p=Path(os.getcwd())
-donar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), sep=';')
+# donar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc2024/isc2024.csv'), sep=';')
 wadar = load_data(Path.joinpath(p.parent, 'voorbeeld/isc_2023-2025/ISC_2024.xlsx'), sheet_name='2024', sep=';')
 gevraagd_format = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Tranfert des données RHME 2024_Sept 2025.xlsx'), sheet_name=None)
-aangeleverd_2024 = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
+# aangeleverd_2024 = load_data(Path.joinpath(p.parent, 'voorbeeld/ISC-CIE WGM_Oct 2025_NL.xlsx'), sheet_name=None)
 aquo = load_data(Path.joinpath(p.parent, 'AQUO/Parameter.csv'), sep=';')
 hoedanigheid = load_data(Path.joinpath(p.parent, 'AQUO/Hoedanigheid.csv'), sep=';')
 # %%
 # preprocessing, unpacking multiple excel sheets and selecting what is needed for the analysis
 wadarcols = wadar.columns
 sheets = gevraagd_format.keys()
-sheetsa = aangeleverd_2024.keys()
-tables = [k for k in  sheetsa] # list of desired cols
+# sheetsa = aangeleverd_2024.keys()
+tables = [k for k in  sheets] # list of desired cols
 
 meetdata = gevraagd_format[tables[1]] #data
 locations = gevraagd_format[tables[2]] # locaties
