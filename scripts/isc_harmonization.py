@@ -502,12 +502,12 @@ def apply_isc_measurement_filters(
     dropped_ber = rows_start - len(filtered)
     print(f"  - Exclude BER method: {len(filtered):,} rows remain ({dropped_ber:,} dropped)")
 
-    rows_before_depth = len(filtered)
-    filtered = filtered[filtered["bemonsteringshoogte_code"] == -100]
-    dropped_depth = rows_before_depth - len(filtered)
-    print(
-        f"  - Keep depth -100 only: {len(filtered):,} rows remain ({dropped_depth:,} dropped)"
-    )
+    # rows_before_depth = len(filtered)
+    # filtered = filtered[filtered["bemonsteringshoogte_code"] == -100]
+    # dropped_depth = rows_before_depth - len(filtered)
+    # print(
+    #     f"  - Keep depth -100 only: {len(filtered):,} rows remain ({dropped_depth:,} dropped)"
+    # )
 
     rows_before_aquo = len(filtered)
     filtered = filtered[filtered[COL_AQUOCODE].isin(VALID_AQUOCODES)]
@@ -900,9 +900,19 @@ def format_result_series(values: pd.Series) -> pd.Series:
 
 
 def to_output_text(value) -> str:
-    """Convert a single output cell value to string for mixed-type columns."""
-    if pd.isna(value):
-        return ""
+    """Convert one output cell to text, including array-like values."""
+    # Handle list/tuple/set/array-like values first
+    if isinstance(value, (list, tuple, set)):
+        return "|".join(to_output_text(v) for v in value)
+
+    # Handle pandas/numpy scalar missing values
+    try:
+        if pd.isna(value):
+            return ""
+    except Exception:
+        # Some array-like objects make pd.isna return an array
+        pass
+
     text = str(value).strip()
     if text.lower() in {"nan", "none", "<na>"}:
         return ""
