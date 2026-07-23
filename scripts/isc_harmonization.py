@@ -698,15 +698,38 @@ def aggregate_compound_parameters(
     df: pd.DataFrame,
     source_param_ids: list[str | int],
     target_param_id: str | int,
+    source_ops: list[str] | None = None,
     group_cols: list[str] | None = None,
     sum_cols: list[str] | None = None,
     list_cols: list[str] | None = None,
     remove_source_rows: bool = True,
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-    """Sum source parameters into a single target parameter per measurement case."""
+    """Aggregate source parameters into one target per case, with + / - per source."""
     source_param_ids = [str(x) for x in source_param_ids]
     target_param_id = str(target_param_id)
     expected_ids = set(source_param_ids)
+
+    if source_ops is None:
+        source_ops = ["+"] * len(source_param_ids)
+    else:
+        source_ops = [str(op).strip() for op in source_ops]
+
+    if len(source_ops) != len(source_param_ids):
+        raise ValueError("source_ops must have the same length as source_param_ids")
+
+    invalid_ops = [op for op in source_ops if op not in {"+", "-"}]
+    if invalid_ops:
+        raise ValueError(
+            f"source_ops may only contain '+' or '-'. Invalid: {invalid_ops}"
+        )
+
+    if len(set(source_param_ids)) != len(source_param_ids):
+        raise ValueError("source_param_ids must be unique when using source_ops")
+
+    sign_map = {
+        param_id: (1 if op == "+" else -1)
+        for param_id, op in zip(source_param_ids, source_ops)
+    }
 
     if group_cols is None:
         group_cols = [
@@ -728,6 +751,7 @@ def aggregate_compound_parameters(
 
     print_step_header(f"Aggregate compound combinations -> {target_param_id}")
     print(f"  Source combinations (by ISC target): {source_param_ids}")
+    print(f"  Source operations (+/-): {source_ops}")
     print(f"  Remove source rows after aggregation: {remove_source_rows}")
     print_data_summary("Input", summarize_dataframe(df))
 
@@ -755,6 +779,7 @@ def aggregate_compound_parameters(
                 {
                     "target_param_id": target_param_id,
                     "expected_source_params": source_param_ids,
+                    "source_ops": source_ops,
                     "available_source_params": available_ids,
                     "missing_source_params": missing_ids,
                     "n_available": len(available_ids),
@@ -800,7 +825,18 @@ def aggregate_compound_parameters(
     else:
         print(f"  > LQ symbols are consistent within all groups")
 
-    agg_dict = {col: (col, "sum") for col in sum_cols}
+    df_sub["__op_sign"] = df_sub[COL_PARAMETER].astype(str).map(sign_map)
+
+    agg_dict: dict[str, tuple[str, object]] = {}
+    signed_cols: dict[str, str] = {}
+
+    for col in sum_cols:
+        safe_col = col.replace(" ", "_")
+        signed_col = f"__signed_{safe_col}"
+        df_sub[signed_col] = pd.to_numeric(df_sub[col], errors="coerce") * df_sub["__op_sign"]
+        agg_dict[signed_col] = (signed_col, lambda s: s.sum(min_count=1))
+        signed_cols[signed_col] = col
+
     agg_dict[COL_LQ] = (COL_LQ, aggregate_lq_symbol)
     for col in list_cols:
         safe_name = col.replace(" ", "_")
@@ -813,6 +849,7 @@ def aggregate_compound_parameters(
     )
 
     rename_map = {col.replace(" ", "_"): col for col in list_cols}
+    rename_map.update(signed_cols)
     compressed = compressed.rename(columns=rename_map)
     compressed[COL_PARAMETER] = target_param_id
 
@@ -1247,26 +1284,50 @@ def run_harmonization_pipeline(
 
     harmonized = build_harmonized_output(filtered)
 
-    harmonized, _, _ = aggregate_compound_parameters(
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
         harmonized,
+        source_param_ids=["1551", "1339", "1340"],
+        source_ops=["+", "-", "-"],
+        target_param_id="1319",
+        remove_source_rows=False,
+    )
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
+        harmonized_compressed,
         source_param_ids=["1283", "1629", "1630"],
+        source_ops=["+", "+", "+"],
         target_param_id="1774",
         remove_source_rows=False,
     )
-    harmonized, _, _ = aggregate_compound_parameters(
-        harmonized,
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
+        harmonized_compressed,
         source_param_ids=["1103", "1181", "1173", "1207"],
+        source_ops=["+", "+", "+", "+"],
         target_param_id="5534",
         remove_source_rows=False,
     )
-    harmonized, _, _ = aggregate_compound_parameters(
-        harmonized,
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
+        harmonized_compressed,
+        source_param_ids=["1200", "1201", "1202", "1203"],
+        source_ops=["+", "+", "+", "+"],
+        target_param_id="5537",
+        remove_source_rows=False,
+    )
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
+        harmonized_compressed,
         source_param_ids=["6561a", "6561b"],
+        source_ops=["+", "+"],
         target_param_id="6561",
         remove_source_rows=True,
     )
+    harmonized_compressed, _, _ = aggregate_compound_parameters(
+        harmonized_compressed,
+        source_param_ids=["1197", "1198"],
+        source_ops=["+", "+"],
+        target_param_id="7706",
+        remove_source_rows=False,
+    )
 
-    harmonized_for_report = sort_by_station_parameter_date(harmonized)
+    harmonized_for_report = sort_by_station_parameter_date(harmonized_compressed)
     harmonized_output = select_output_columns(
         format_result_values(harmonized_for_report)
     )
