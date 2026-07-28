@@ -45,12 +45,30 @@ COMBINATION_COLS = [
     "eenheid_code",
 ]
 
+ISC_COMBINATION_COLS = [COL_PARAMETER, COL_FRACTION, COL_UNIT]
+ISC_COMBINATION_LABEL = "ISC combinations"
 
-def count_combinations(df: pd.DataFrame) -> int | None:
-    """Count unique RWS parameter combinations present in a dataframe."""
-    if not all(col in df.columns for col in COMBINATION_COLS):
+
+def count_combinations(
+    df: pd.DataFrame,
+    combination_cols: list[str] | None = None,
+) -> int | None:
+    """Count unique combinations for the requested columns in a dataframe."""
+    cols = combination_cols or COMBINATION_COLS
+    if not all(col in df.columns for col in cols):
         return None
-    return df[COMBINATION_COLS].drop_duplicates().shape[0]
+
+    combos = df[cols].copy()
+    for col in cols:
+        combos[col] = (
+            combos[col]
+            .astype("string")
+            .str.strip()
+            .fillna("<missing>")
+            .replace({"nan": "<missing>", "None": "<missing>"})
+        )
+
+    return combos.drop_duplicates().shape[0]
 
 
 def print_step_header(title: str, step: int | None = None) -> None:
@@ -66,13 +84,15 @@ def summarize_dataframe(
     *,
     station_col: str | None = COL_STATION,
     fraction_col: str | None = COL_FRACTION,
+    combination_cols: list[str] | None = None,
+    combination_label: str = "combinations",
 ) -> dict[str, int | str | None]:
     """Collect row counts and key dimensions from a dataframe."""
     summary: dict[str, int | str | None] = {"rows": len(df)}
 
-    n_combinations = count_combinations(df)
+    n_combinations = count_combinations(df, combination_cols=combination_cols)
     if n_combinations is not None:
-        summary["combinations"] = n_combinations
+        summary[combination_label] = n_combinations
     if station_col and station_col in df.columns:
         summary["stations"] = df[station_col].nunique(dropna=True)
     if fraction_col and fraction_col in df.columns:
@@ -86,13 +106,14 @@ def print_data_summary(
     summary: dict[str, int | str | None],
     *,
     indent: int = 2,
+    combination_label: str = "combinations",
 ) -> None:
     """Print a labelled data summary block."""
     prefix = " " * indent
     parts = [f"{prefix}{label}: {summary.get('rows', 0):,} rows"]
 
-    if "combinations" in summary:
-        parts.append(f"{summary['combinations']} combinations")
+    if combination_label in summary:
+        parts.append(f"{summary[combination_label]} {combination_label}")
     if "stations" in summary:
         parts.append(f"{summary['stations']} stations")
     if "fractions" in summary:
@@ -180,6 +201,40 @@ def format_combination_tuple(combo: tuple) -> str:
     return format_combination(pd.Series(combo_dict))
 
 
+def normalize_isc_combination_columns(df: pd.DataFrame) -> pd.DataFrame:
+    """Return unique ISC combinations with normalized string values."""
+    missing = [col for col in ISC_COMBINATION_COLS if col not in df.columns]
+    if missing:
+        raise KeyError(f"Missing ISC combination columns: {missing}")
+
+    combos = df[ISC_COMBINATION_COLS].copy()
+    for col in ISC_COMBINATION_COLS:
+        combos[col] = (
+            combos[col]
+            .astype("string")
+            .str.strip()
+            .fillna("<missing>")
+            .replace({"nan": "<missing>", "None": "<missing>"})
+        )
+    return combos.drop_duplicates()
+
+
+def isc_combination_tuples(df: pd.DataFrame) -> set[tuple]:
+    """Return a set of ISC combination tuples from a dataframe."""
+    normalized = normalize_isc_combination_columns(df)
+    return set(map(tuple, normalized.to_numpy()))
+
+
+def format_isc_combination_tuple(combo: tuple) -> str:
+    """Format one ISC combination tuple for display."""
+    combo_dict = dict(zip(ISC_COMBINATION_COLS, combo))
+    return (
+        f"parameter={combo_dict[COL_PARAMETER]}, "
+        f"fraction={combo_dict[COL_FRACTION]}, "
+        f"unit={combo_dict[COL_UNIT]}"
+    )
+
+
 def format_chlorophyll_combination(row: pd.Series) -> str:
     """Format a chlorophyll output row as a readable combination label."""
     unit = str(row[COL_UNIT]).replace("µ", "u")
@@ -242,12 +297,15 @@ def print_station_combination_report(
     measured_mapping: pd.DataFrame,
     not_measured_mapping: pd.DataFrame,
 ) -> None:
-    """Print measured and missing combinations per station before export."""
+    """Print missing ISC combinations per station before export."""
     print_step_header("Station combination report", step=16)
 
-    expected_combos = normalize_combination_columns(measured_mapping)
-    expected_set = combination_tuples(expected_combos)
-    print(f"  Expected measured combinations in mapping: {len(expected_set):,}")
+    expected_source = measured_mapping if all(
+        col in measured_mapping.columns for col in ISC_COMBINATION_COLS
+    ) else measured_data
+    expected_combos = normalize_isc_combination_columns(expected_source)
+    expected_set = isc_combination_tuples(expected_combos)
+    print(f"  Expected ISC combinations: {len(expected_set):,}")
 
     print_not_measured_mapping_summary(not_measured_mapping)
 
@@ -264,7 +322,7 @@ def print_station_combination_report(
 
     for station in all_stations:
         station_data = measured_data[measured_data[COL_STATION] == station]
-        measured_set = combination_tuples(station_data) if len(station_data) else set()
+        measured_set = isc_combination_tuples(station_data) if len(station_data) else set()
         missing_set = expected_set - measured_set
 
         chl_at_station = (
@@ -272,42 +330,24 @@ def print_station_combination_report(
             if len(chlorophyll_data) > 0 and COL_STATION in chlorophyll_data.columns
             else chlorophyll_data.iloc[0:0]
         )
-        chl_labels = sorted(
-            {
-                format_chlorophyll_combination(row)
-                for _, row in chl_at_station.drop_duplicates(
-                    subset=[COL_PARAMETER, COL_FRACTION, COL_UNIT]
-                ).iterrows()
-            }
+        chl_set = (
+            isc_combination_tuples(chl_at_station)
+            if len(chl_at_station)
+            else set()
         )
 
         print(f"\n  Station: {station}")
         print(
-            f"  > Measured combinations: {len(measured_set):,} / {len(expected_set):,} "
-            f"| Missing at station: {len(missing_set):,}"
+            f"  > Missing ISC combinations at station: {len(missing_set):,} / {len(expected_set):,}"
         )
-        if chl_labels:
-            print(f"  > Chlorophyll combinations: {len(chl_labels):,}")
-
-        if measured_set:
-            print(f"  Measured combinations ({len(measured_set):,}):")
-            for combo in sorted(measured_set):
-                print(f"    + {format_combination_tuple(combo)}")
-        else:
-            print("  Measured combinations (0):")
-
-        if chl_labels:
-            print(f"  Chlorophyll combinations ({len(chl_labels):,}):")
-            for label in chl_labels:
-                print(f"    + {label}")
 
         if missing_set:
             print(f"  Not measured at this station ({len(missing_set):,}):")
-            print("    (expected measured combinations only; NM parameters are listed globally above)")
+            print("    (expected ISC combinations only; NM parameters are listed globally above)")
             for combo in sorted(missing_set):
-                print(f"    - {format_combination_tuple(combo)}")
+                print(f"    - {format_isc_combination_tuple(combo)}")
         else:
-            print("  > All mapped combinations are present at this station")
+            print("  > All expected ISC combinations are present at this station")
 
 
 def print_row_change(before: int, after: int, *, reason: str) -> None:
@@ -343,8 +383,8 @@ def get_repo_root() -> Path:
 
 def split_measured_and_not_measured_parameters(
     parameter_mapping: pd.DataFrame,
-) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Split parameter mapping into measured and not-measured (NM) parameters."""
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """Split parameter mapping into measured, not-measured (NM), manually-added (AM), and aggregation-only (SK) parameters."""
     print_step_header("Split parameter mapping", step=1)
 
     total = len(parameter_mapping)
@@ -352,18 +392,57 @@ def split_measured_and_not_measured_parameters(
         parameter_mapping["reported"].isin(["N"])
     ].copy()
     measured_mapping = parameter_mapping[
-        ~parameter_mapping["reported"].isin(["N", "S"])
+        ~parameter_mapping["reported"].isin(["N", "SK", "AM"])
     ].copy()
-    excluded_mapping = parameter_mapping[
-        parameter_mapping["reported"].isin(["S"])
+    sk_mapping = parameter_mapping[
+        parameter_mapping["reported"].isin(["SK"])
+    ].copy()
+    am_mapping = parameter_mapping[
+        parameter_mapping["reported"].isin(["AM"])
+    ].copy()
+    sum_and_remove_mapping = measured_mapping[
+        measured_mapping["reported"].isin(["SR"])
     ]
+    snv_mapping = measured_mapping[
+        measured_mapping["reported"].isin(["SNV"])
+    ].copy()
 
     print(f"  Mapping table: {total:,} rows total")
     print(f"  > Measured combinations (used in pipeline): {len(measured_mapping):,}")
+    print(
+        f"    - of which needs summing + removal after aggregation (reported = SR): "
+        f"{len(sum_and_remove_mapping):,}"
+    )
+    print(
+        f"    - of which forced to NV in output (reported = SNV): "
+        f"{len(snv_mapping):,}"
+    )
     print(f"  > Not measured (NM, appended at end): {len(not_measured_mapping):,}")
-    print(f"  > Excluded (reported = S): {len(excluded_mapping):,}")
+    print(
+        f"  > Needs aggregation, kept out of direct mapping (reported = SK): "
+        f"{len(sk_mapping):,}"
+    )
+    print(
+        f"  > Added manually per station, kept out of direct mapping and NM export "
+        f"(reported = AM): {len(am_mapping):,}"
+    )
 
-    return measured_mapping, not_measured_mapping
+    return measured_mapping, not_measured_mapping, am_mapping, sk_mapping, snv_mapping
+
+
+def get_snv_parameter_ids(snv_mapping: pd.DataFrame) -> list[str]:
+    """Return unique parameter IDs flagged reported = 'SNV' (forced to NV in output)."""
+    if COL_PARAMETER not in snv_mapping.columns:
+        raise KeyError(f"Missing required column in snv_mapping: {COL_PARAMETER}")
+
+    return (
+        snv_mapping[COL_PARAMETER]
+        .dropna()
+        .astype(str)
+        .str.strip()
+        .drop_duplicates()
+        .tolist()
+    )
 
 
 def add_parameter_ids_from_mapping(
@@ -502,13 +581,6 @@ def apply_isc_measurement_filters(
     dropped_ber = rows_start - len(filtered)
     print(f"  - Exclude BER method: {len(filtered):,} rows remain ({dropped_ber:,} dropped)")
 
-    # rows_before_depth = len(filtered)
-    # filtered = filtered[filtered["bemonsteringshoogte_code"] == -100]
-    # dropped_depth = rows_before_depth - len(filtered)
-    # print(
-    #     f"  - Keep depth -100 only: {len(filtered):,} rows remain ({dropped_depth:,} dropped)"
-    # )
-
     rows_before_aquo = len(filtered)
     filtered = filtered[filtered[COL_AQUOCODE].isin(VALID_AQUOCODES)]
     dropped_aquo = rows_before_aquo - len(filtered)
@@ -526,7 +598,7 @@ def apply_isc_measurement_filters(
         combos_lost = len(lost_combos)
 
     print_data_summary("Output", summarize_dataframe(filtered))
-    print_row_change(rows_start, len(filtered), reason="ISC quality and depth filters applied")
+    print_row_change(rows_start, len(filtered), reason="ISC quality filters applied")
 
     if combos_after is not None:
         print(f"  > {combos_after:,} unique combinations remain")
@@ -586,7 +658,7 @@ def keep_lowest_aquocode_per_case(
     kept_df = pd.DataFrame(kept_rows).reset_index(drop=True)
     removed_df = pd.DataFrame(removed_rows).reset_index(drop=True)
 
-    print_step_header("Resolve duplicate aquocodes", step=6)
+    print_step_header("Resolve duplicates with different aquocodes", step=6)
 
     rows_before = len(measurements)
     print_data_summary("Input", summarize_dataframe(measurements))
@@ -604,7 +676,10 @@ def keep_lowest_aquocode_per_case(
         else 0
     )
     if cases_with_alternatives:
-        print(f"  > {cases_with_alternatives:,} cases had higher aquocodes that were skipped")
+        print(
+            f"  > {cases_with_alternatives:,} case(s) were duplicated with different "
+            "aquocodes; the record with the lowest aquocode was kept"
+        )
 
     if len(kept_df) == 0:
         print("  ! No data remaining after aquocode resolution")
@@ -694,11 +769,93 @@ def aggregate_lq_symbol(series: pd.Series):
     return unique_values
 
 
+def aggregate_lq_list(series: pd.Series) -> list[str]:
+    """Return unique non-empty LQ symbols in encounter order."""
+    values = []
+    for value in series.dropna().tolist():
+        text = str(value).strip()
+        if text:
+            values.append(text)
+    return list(dict.fromkeys(values))
+
+
+def select_preferred_lq_symbol(series: pd.Series) -> str | None:
+    """Select one LQ symbol, preferring '<' over '=' when both are present."""
+    symbols = aggregate_lq_list(series)
+    if not symbols:
+        return None
+    if "<" in symbols:
+        return "<"
+    if "=" in symbols:
+        return "="
+    return symbols[0]
+
+
+def aggregate_aquocode_list(series: pd.Series) -> list[int | float | str]:
+    """Return unique aquocodes as a sorted numeric list when possible."""
+    numeric = pd.to_numeric(series, errors="coerce").dropna()
+    if not numeric.empty:
+        values = sorted(set(numeric.tolist()))
+        out: list[int | float | str] = []
+        for value in values:
+            value_float = float(value)
+            out.append(int(value_float) if value_float.is_integer() else value_float)
+        return out
+
+    text_values = []
+    for value in series.dropna().tolist():
+        text = str(value).strip()
+        if text:
+            text_values.append(text)
+    return list(dict.fromkeys(text_values))
+
+
+def select_highest_aquocode(series: pd.Series) -> int | float | None:
+    """Select the highest numeric aquocode from one aggregation group."""
+    numeric = pd.to_numeric(series, errors="coerce").dropna()
+    if numeric.empty:
+        return None
+
+    highest = float(numeric.max())
+    return int(highest) if highest.is_integer() else highest
+
+
+def aggregate_unique_values(series: pd.Series) -> list:
+    """Return unique non-empty values in encounter order."""
+    values = []
+    for value in series.tolist():
+        if pd.isna(value):
+            continue
+        if isinstance(value, str):
+            text = value.strip()
+            if not text:
+                continue
+            values.append(text)
+        else:
+            values.append(value)
+
+    unique_values = []
+    for value in values:
+        if value not in unique_values:
+            unique_values.append(value)
+    return unique_values
+
+
+def select_unique_or_empty(series: pd.Series):
+    """Return one unique value, or empty text when multiple values are present."""
+    unique_values = aggregate_unique_values(series)
+    if len(unique_values) == 1:
+        return unique_values[0]
+    return ""
+
+
 def aggregate_compound_parameters(
     df: pd.DataFrame,
     source_param_ids: list[str | int],
     target_param_id: str | int,
     source_ops: list[str] | None = None,
+    source_fractions: list[str] | None = None,
+    unit_source_param_id: str | int = 0,
     group_cols: list[str] | None = None,
     sum_cols: list[str] | None = None,
     list_cols: list[str] | None = None,
@@ -726,6 +883,23 @@ def aggregate_compound_parameters(
     if len(set(source_param_ids)) != len(source_param_ids):
         raise ValueError("source_param_ids must be unique when using source_ops")
 
+    unit_source_param: str | None = None
+    if unit_source_param_id not in (0, "0", None, ""):
+        unit_source_param = str(unit_source_param_id)
+        if unit_source_param not in source_param_ids:
+            raise ValueError(
+                "unit_source_param_id must be one of source_param_ids when provided"
+            )
+
+    fraction_map: dict[str, str] | None = None
+    if source_fractions is not None:
+        source_fractions = [str(f).strip() for f in source_fractions]
+        if len(source_fractions) != len(source_param_ids):
+            raise ValueError("source_fractions must have the same length as source_param_ids")
+        if COL_FRACTION not in df.columns:
+            raise KeyError(f"Missing required column for source_fractions: {COL_FRACTION}")
+        fraction_map = dict(zip(source_param_ids, source_fractions))
+
     sign_map = {
         param_id: (1 if op == "+" else -1)
         for param_id, op in zip(source_param_ids, source_ops)
@@ -735,27 +909,61 @@ def aggregate_compound_parameters(
         group_cols = [
             COL_STATION,
             COL_DATE,
-            COL_FRACTION,
-            COL_UNIT,
-            COL_RAW_UNIT_CODE,
-            COL_CONVERSION,
         ]
 
     if sum_cols is None:
         sum_cols = [COL_RESULT, COL_RAW_VALUE]
 
     if list_cols is None:
-        list_cols = [COL_AQUOCODE]
+        list_cols = []
+
+    compression_combination_cols = [COL_PARAMETER, COL_FRACTION, COL_UNIT]
+    compression_combination_label = "ISC combinations"
+
+    # These are handled explicitly to keep both list and selected scalar columns.
+    managed_base_cols = {
+        COL_AQUOCODE,
+        COL_LQ,
+        COL_FRACTION,
+        COL_UNIT,
+        COL_CONVERSION,
+        COL_RAW_UNIT_CODE,
+        "grootheid_code",
+        "hoedanigheid_code",
+        COL_PARAMETER,
+    }
+    list_cols = [c for c in list_cols if c not in managed_base_cols]
 
     rows_before = len(df)
 
     print_step_header(f"Aggregate compound combinations -> {target_param_id}")
     print(f"  Source combinations (by ISC target): {source_param_ids}")
     print(f"  Source operations (+/-): {source_ops}")
+    if fraction_map is not None:
+        print(f"  Source fractions per parameter: {fraction_map}")
+    if unit_source_param is not None:
+        print(f"  Unit source parameter: {unit_source_param}")
+    print(f"  Grouping keys for aggregation: {group_cols}")
     print(f"  Remove source rows after aggregation: {remove_source_rows}")
-    print_data_summary("Input", summarize_dataframe(df))
+    print_data_summary(
+        "Input",
+        summarize_dataframe(
+            df,
+            combination_cols=compression_combination_cols,
+            combination_label=compression_combination_label,
+        ),
+        combination_label=compression_combination_label,
+    )
 
     mask = df[COL_PARAMETER].astype(str).isin(source_param_ids)
+    if fraction_map is not None:
+        fraction_mask = pd.Series(False, index=df.index)
+        param_values = df[COL_PARAMETER].astype(str)
+        frac_values = df[COL_FRACTION].astype(str)
+        for param_id, fraction in fraction_map.items():
+            fraction_mask |= (param_values.eq(param_id) & frac_values.eq(fraction))
+        mask = mask & fraction_mask
+
     n_source_rows = int(mask.sum())
     df_sub = df[mask].copy()
 
@@ -765,40 +973,128 @@ def aggregate_compound_parameters(
 
     print(f"  > {n_source_rows:,} source rows matched for aggregation")
 
-    incomplete_records = []
-    for group_key, group_df in df_sub.groupby(group_cols, dropna=False):
-        if not isinstance(group_key, tuple):
-            group_key = (group_key,)
+    source_counts = df_sub[COL_PARAMETER].astype(str).value_counts()
+    print("  Source rows per source parameter:")
+    for param_id in source_param_ids:
+        count = int(source_counts.get(param_id, 0))
+        print(f"    - {param_id}: {count:,} rows")
 
-        available_ids = sorted(group_df[COL_PARAMETER].astype(str).unique().tolist())
-        missing_ids = sorted(expected_ids - set(available_ids))
+    grouped_sources = (
+        df_sub.assign(_source_param=df_sub[COL_PARAMETER].astype(str))
+        .groupby(group_cols, dropna=False)["_source_param"]
+        .agg(lambda s: sorted(set(s)))
+        .reset_index(name="available_source_params")
+    )
+    grouped_sources["n_available"] = grouped_sources["available_source_params"].map(len)
+    grouped_sources["n_expected"] = len(source_param_ids)
 
-        if missing_ids:
-            record = dict(zip(group_cols, group_key))
-            record.update(
-                {
-                    "target_param_id": target_param_id,
-                    "expected_source_params": source_param_ids,
-                    "source_ops": source_ops,
-                    "available_source_params": available_ids,
-                    "missing_source_params": missing_ids,
-                    "n_available": len(available_ids),
-                    "n_expected": len(source_param_ids),
-                }
-            )
-            incomplete_records.append(record)
+    print("  Same station/day groups by number of source parameters present:")
+    for n_present in range(len(source_param_ids), 0, -1):
+        n_groups = int(grouped_sources["n_available"].eq(n_present).sum())
+        print(f"    - {n_present} present: {n_groups:,} group(s)")
 
-    incomplete_cases = pd.DataFrame(incomplete_records)
+    complete_groups = grouped_sources[grouped_sources["n_available"].eq(len(source_param_ids))]
+    n_complete_groups = len(complete_groups)
+    expected_rows_from_complete_groups = n_complete_groups * len(source_param_ids)
+    print(
+        f"  > {n_complete_groups:,} same station/day group(s) have all "
+        f"{len(source_param_ids)} source parameters"
+    )
+
+    incomplete_cases = grouped_sources[grouped_sources["n_available"] < len(source_param_ids)].copy()
     if not incomplete_cases.empty:
+        incomplete_cases["missing_source_params"] = incomplete_cases["available_source_params"].map(
+            lambda ids: sorted(expected_ids - set(ids))
+        )
+        incomplete_cases["target_param_id"] = target_param_id
+        incomplete_cases["expected_source_params"] = [source_param_ids] * len(incomplete_cases)
+        incomplete_cases["source_ops"] = [source_ops] * len(incomplete_cases)
         print(
             f"  ! {len(incomplete_cases)} incomplete case(s): "
-            f"not all source combinations present in the same group"
+            f"not all source combinations present for the same station/day"
         )
     else:
-        print(f"  > All groups contain the full set of source combinations")
+        print("  > All station/day groups contain at least one row for each source parameter")
+
+    if n_complete_groups == 0:
+        print(
+            "  ! No complete same-day groups found: no aggregated rows were added "
+            "because substances are not measured on the same station/day"
+        )
+        print_data_summary(
+            "Output",
+            summarize_dataframe(
+                df,
+                combination_cols=compression_combination_cols,
+                combination_label=compression_combination_label,
+            ),
+            combination_label=compression_combination_label,
+        )
+        print_row_change(
+            rows_before,
+            len(df),
+            reason=f"no complete same-day groups for target {target_param_id}",
+        )
+        return df.copy(), incomplete_cases, pd.DataFrame()
+
+    complete_group_keys = complete_groups[group_cols].copy()
+    df_sub_complete = df_sub.merge(complete_group_keys, on=group_cols, how="inner")
+    extra_rows_in_complete_groups = len(df_sub_complete) - expected_rows_from_complete_groups
+
+    unit_counts_by_group = (
+        df_sub_complete.groupby(group_cols, dropna=False)[COL_UNIT]
+        .nunique(dropna=True)
+        .reset_index(name="unit_count")
+    )
+    groups_with_multiple_units = int(unit_counts_by_group["unit_count"].gt(1).sum())
+
+    print(
+        f"  > Complete groups contain {expected_rows_from_complete_groups:,} "
+        "required source row(s) "
+        f"({n_complete_groups:,} groups x {len(source_param_ids)} parameters)"
+    )
+    if extra_rows_in_complete_groups > 0:
+        print(
+            f"  > Plus {extra_rows_in_complete_groups:,} additional duplicate source row(s) "
+            "within those complete groups"
+        )
+
+    if unit_source_param is None and groups_with_multiple_units > 0:
+        print(
+            f"  ! {groups_with_multiple_units:,} complete group(s) contain multiple units "
+            "across source parameters. Set unit_source_param_id to choose which source "
+            "parameter defines the output unit."
+        )
+    elif unit_source_param is not None:
+        print(
+            f"  > Output unit will be taken from source parameter {unit_source_param}"
+        )
+
+        selected_unit_subset = df_sub_complete[
+            df_sub_complete[COL_PARAMETER].astype(str).eq(unit_source_param)
+        ].copy()
+        selected_unit_counts = (
+            selected_unit_subset.groupby(group_cols, dropna=False)[COL_UNIT]
+            .nunique(dropna=True)
+            .reset_index(name="selected_unit_count")
+        )
+        selected_groups_with_multiple_units = int(
+            selected_unit_counts["selected_unit_count"].gt(1).sum()
+        )
+        if selected_groups_with_multiple_units > 0:
+            print(
+                f"  ! {selected_groups_with_multiple_units:,} complete group(s) still have "
+                f"multiple units for selected source parameter {unit_source_param}. "
+                "Output unit may be empty for those groups."
+            )
+
+        df_sub_complete["__selected_param_unit"] = df_sub_complete[COL_UNIT].where(
+            df_sub_complete[COL_PARAMETER].astype(str).eq(unit_source_param)
+        )
 
     lq_conflict_records = []
-    for group_key, group_df in df_sub.groupby(group_cols, dropna=False):
+    aquocode_conflict_records = []
+    for group_key, group_df in df_sub_complete.groupby(group_cols, dropna=False):
         if not isinstance(group_key, tuple):
             group_key = (group_key,)
 
@@ -816,16 +1112,46 @@ def aggregate_compound_parameters(
             )
             lq_conflict_records.append(record)
 
+        aquocode_values = aggregate_aquocode_list(group_df[COL_AQUOCODE])
+        if len(aquocode_values) > 1:
+            record = dict(zip(group_cols, group_key))
+            record.update(
+                {
+                    "target_param_id": target_param_id,
+                    "aquocodes_found": aquocode_values,
+                    "aquocode_kept": select_highest_aquocode(group_df[COL_AQUOCODE]),
+                    "source_rows_in_group": len(group_df),
+                }
+            )
+            aquocode_conflict_records.append(record)
+
     lq_conflicts = pd.DataFrame(lq_conflict_records)
     if not lq_conflicts.empty:
         print(
             f"  ! {len(lq_conflicts)} case(s) with conflicting "
             f"'{COL_LQ}' symbols within a group"
         )
+        print("    Tie-break rule: '<' is preferred over '=' when both are present")
     else:
-        print(f"  > LQ symbols are consistent within all groups")
+        print("  > LQ symbols are consistent within complete groups")
 
-    df_sub["__op_sign"] = df_sub[COL_PARAMETER].astype(str).map(sign_map)
+    aquocode_conflicts = pd.DataFrame(aquocode_conflict_records)
+    if not aquocode_conflicts.empty:
+        print(
+            f"  ! {len(aquocode_conflicts)} case(s) with different "
+            f"'{COL_AQUOCODE}' values within a group"
+        )
+        print("    Tie-break rule: the highest aquocode among the sources is kept")
+        for record in aquocode_conflict_records:
+            group_desc = ", ".join(f"{col}={record[col]}" for col in group_cols)
+            print(
+                f"    - {group_desc} | found {record['aquocodes_found']} "
+                f"-> kept {record['aquocode_kept']}"
+            )
+    else:
+        print(f"  > '{COL_AQUOCODE}' values are consistent within complete groups")
+
+    df_sub_complete["__op_sign"] = df_sub_complete[COL_PARAMETER].astype(str).map(sign_map)
 
     agg_dict: dict[str, tuple[str, object]] = {}
     signed_cols: dict[str, str] = {}
@@ -833,41 +1159,112 @@ def aggregate_compound_parameters(
     for col in sum_cols:
         safe_col = col.replace(" ", "_")
         signed_col = f"__signed_{safe_col}"
-        df_sub[signed_col] = pd.to_numeric(df_sub[col], errors="coerce") * df_sub["__op_sign"]
+        df_sub_complete[signed_col] = (
+            pd.to_numeric(df_sub_complete[col], errors="coerce")
+            * df_sub_complete["__op_sign"]
+        )
         agg_dict[signed_col] = (signed_col, lambda s: s.sum(min_count=1))
         signed_cols[signed_col] = col
 
-    agg_dict[COL_LQ] = (COL_LQ, aggregate_lq_symbol)
+    aquocode_list_col = f"{COL_AQUOCODE}_list"
+    lq_list_col = f"{COL_LQ}_list"
+    aquocode_list_safe = aquocode_list_col.replace(" ", "_")
+    lq_list_safe = lq_list_col.replace(" ", "_")
+
+    agg_dict[COL_AQUOCODE] = (COL_AQUOCODE, select_highest_aquocode)
+    agg_dict[aquocode_list_safe] = (COL_AQUOCODE, aggregate_aquocode_list)
+    agg_dict[COL_LQ] = (COL_LQ, select_preferred_lq_symbol)
+    agg_dict[lq_list_safe] = (COL_LQ, aggregate_lq_list)
+
+    scalar_plus_list_cols = [
+        COL_FRACTION,
+        COL_CONVERSION,
+        COL_RAW_UNIT_CODE,
+        "grootheid_code",
+        "hoedanigheid_code",
+    ]
+    generated_list_cols: dict[str, str] = {
+        aquocode_list_safe: aquocode_list_col,
+        lq_list_safe: lq_list_col,
+    }
+    for col in scalar_plus_list_cols:
+        if col in df_sub_complete.columns:
+            list_col = f"{col}_list"
+            list_col_safe = list_col.replace(" ", "_")
+            agg_dict[col] = (col, select_unique_or_empty)
+            agg_dict[list_col_safe] = (col, aggregate_unique_values)
+            generated_list_cols[list_col_safe] = list_col
+
+    if COL_UNIT in df_sub_complete.columns:
+        unit_series_col = "__selected_param_unit" if unit_source_param is not None else COL_UNIT
+        unit_list_col = f"{COL_UNIT}_list"
+        unit_list_col_safe = unit_list_col.replace(" ", "_")
+        agg_dict[COL_UNIT] = (unit_series_col, select_unique_or_empty)
+        agg_dict[unit_list_col_safe] = (unit_series_col, aggregate_unique_values)
+        generated_list_cols[unit_list_col_safe] = unit_list_col
+
+    parameter_list_col = f"{COL_PARAMETER}_list"
+    parameter_list_col_safe = parameter_list_col.replace(" ", "_")
+    agg_dict[parameter_list_col_safe] = (COL_PARAMETER, aggregate_unique_values)
+    generated_list_cols[parameter_list_col_safe] = parameter_list_col
+
     for col in list_cols:
         safe_name = col.replace(" ", "_")
         agg_dict[safe_name] = (col, lambda s: s.dropna().tolist())
 
     compressed = (
-        df_sub.groupby(group_cols, dropna=False)
+        df_sub_complete.groupby(group_cols, dropna=False)
         .agg(**agg_dict)
         .reset_index()
     )
 
     rename_map = {col.replace(" ", "_"): col for col in list_cols}
     rename_map.update(signed_cols)
+    rename_map.update(generated_list_cols)
     compressed = compressed.rename(columns=rename_map)
     compressed[COL_PARAMETER] = target_param_id
 
     col_order = [c for c in df.columns if c in compressed.columns]
+    extra_cols = list(generated_list_cols.values())
+    col_order.extend([c for c in extra_cols if c in compressed.columns and c not in col_order])
     compressed = compressed[col_order]
 
-    print(f"  > {len(compressed):,} aggregated rows created from {n_source_rows:,} source rows")
+    print(
+        f"  > {len(compressed):,} aggregated row(s) created "
+        "(one row per complete station/day group)"
+    )
 
     if remove_source_rows:
-        df_result = df[~mask].copy()
-        print(f"  > {n_source_rows:,} source rows removed")
+        source_subset = df[mask].copy()
+        other_subset = df[~mask].copy()
+        source_marked = source_subset.merge(
+            complete_group_keys.assign(_eligible=1),
+            on=group_cols,
+            how="left",
+        )
+        removed_count = int(source_marked["_eligible"].eq(1).sum())
+        source_kept = source_marked[source_marked["_eligible"].isna()].drop(columns="_eligible")
+        df_result = pd.concat([other_subset, source_kept], ignore_index=True)
+        print(
+            f"  > {removed_count:,} source rows removed "
+            "(only rows in complete same-day groups)"
+        )
     else:
         df_result = df.copy()
         print(f"  > Source rows kept (aggregated rows will be appended)")
 
     df_result = pd.concat([df_result, compressed], ignore_index=True)
 
-    print_data_summary("Output", summarize_dataframe(df_result))
+    print_data_summary(
+        "Output",
+        summarize_dataframe(
+            df_result,
+            combination_cols=compression_combination_cols,
+            combination_label=compression_combination_label,
+        ),
+        combination_label=compression_combination_label,
+    )
+
     print_row_change(
         rows_before,
         len(df_result),
@@ -880,14 +1277,24 @@ def aggregate_compound_parameters(
 def sort_by_station_parameter_date(df: pd.DataFrame) -> pd.DataFrame:
     """Sort harmonized data by station, parameter, and date."""
     print_step_header("Sort output", step=8)
+    isc_combination_cols = [COL_PARAMETER, COL_FRACTION, COL_UNIT]
+    isc_combination_label = "ISC combinations"
 
     sort_cols = [COL_STATION, COL_PARAMETER, COL_DATE]
     missing_cols = [c for c in sort_cols if c not in df.columns]
     if missing_cols:
         raise KeyError(f"Missing required columns: {missing_cols}")
 
-    print_data_summary("Input", summarize_dataframe(df))
-    print("  > Sorting by station -> combination -> date")
+    print_data_summary(
+        "Input",
+        summarize_dataframe(
+            df,
+            combination_cols=isc_combination_cols,
+            combination_label=isc_combination_label,
+        ),
+        combination_label=isc_combination_label,
+    )
+    print("  > Sorting by station -> ISC combination -> date")
 
     df_sorted = df.copy()
     df_sorted["_sort_date"] = pd.to_datetime(
@@ -976,6 +1383,8 @@ def format_result_values(
 ) -> pd.DataFrame:
     """Format numeric results to 4 decimals and set NV for aquocode 99."""
     print_step_header("Format result values", step=9)
+    isc_combination_cols = [COL_PARAMETER, COL_FRACTION, COL_UNIT]
+    isc_combination_label = "ISC combinations"
 
     out = df.copy()
 
@@ -984,7 +1393,15 @@ def format_result_values(
     if result_col not in out.columns:
         raise KeyError(f"Missing required column: {result_col}")
 
-    print_data_summary("Input", summarize_dataframe(out))
+    print_data_summary(
+        "Input",
+        summarize_dataframe(
+            out,
+            combination_cols=isc_combination_cols,
+            combination_label=isc_combination_label,
+        ),
+        combination_label=isc_combination_label,
+    )
 
     numeric_vals = parse_result_values(out[result_col])
     out[result_col] = format_result_series(out[result_col])
@@ -997,7 +1414,15 @@ def format_result_values(
     n_nv = int(mask_99.sum())
     print(f"  > {n_formatted:,} numeric results formatted to 4 decimals")
     print(f"  > {n_nv:,} results set to 'NV' (aquocode 99)")
-    print_data_summary("Output", summarize_dataframe(out))
+    print_data_summary(
+        "Output",
+        summarize_dataframe(
+            out,
+            combination_cols=isc_combination_cols,
+            combination_label=isc_combination_label,
+        ),
+        combination_label=isc_combination_label,
+    )
     print_row_change(len(df), len(out), reason="formatting only, no rows dropped")
 
     return out
@@ -1006,22 +1431,40 @@ def format_result_values(
 def select_output_columns(df: pd.DataFrame) -> pd.DataFrame:
     """Keep only the seven Dutch ISC output columns."""
     print_step_header("Select output columns", step=10)
+    isc_combination_cols = [COL_PARAMETER, COL_FRACTION, COL_UNIT]
+    isc_combination_label = "ISC combinations"
 
     missing = [c for c in OUTPUT_COLUMNS if c not in df.columns]
     if missing:
         raise KeyError(f"Missing required columns: {missing}")
 
-    print_data_summary("Input", summarize_dataframe(df))
+    print_data_summary(
+        "Input",
+        summarize_dataframe(
+            df,
+            combination_cols=isc_combination_cols,
+            combination_label=isc_combination_label,
+        ),
+        combination_label=isc_combination_label,
+    )
     print(f"  > Keeping {len(OUTPUT_COLUMNS)} Dutch output columns")
 
     result = df.loc[:, OUTPUT_COLUMNS].copy()
-    print_data_summary("Output", summarize_dataframe(result))
+    print_data_summary(
+        "Output",
+        summarize_dataframe(
+            result,
+            combination_cols=isc_combination_cols,
+            combination_label=isc_combination_label,
+        ),
+        combination_label=isc_combination_label,
+    )
     print_row_change(len(df), len(result), reason="column selection only, no rows dropped")
 
     return result
 
 
-def create_not_measured_rows(
+def create_not_measured_global_rows(
     not_measured_mapping: pd.DataFrame,
     reference_output: pd.DataFrame,
     default_station: str = "",
@@ -1030,7 +1473,7 @@ def create_not_measured_rows(
     *,
     verbose: bool = True,
 ) -> pd.DataFrame:
-    """Build NM (not measured) rows for parameters flagged in the mapping."""
+    """Build global NM rows for parameters flagged in the mapping."""
     required_map_cols = [COL_PARAMETER, COL_UNIT]
     missing_map = [c for c in required_map_cols if c not in not_measured_mapping.columns]
     if missing_map:
@@ -1040,25 +1483,258 @@ def create_not_measured_rows(
     if missing_target:
         raise KeyError(f"Missing columns in reference_output: {missing_target}")
 
-    nm_table = (
+    nm_mapping = (
         not_measured_mapping[[COL_PARAMETER, COL_UNIT]]
         .dropna(subset=[COL_PARAMETER])
         .drop_duplicates()
         .copy()
     )
 
-    nm_table[COL_STATION] = default_station
+    stations = (
+        reference_output[COL_STATION]
+        .astype("string")
+        .str.strip()
+        .dropna()
+    )
+    stations = stations[stations.ne("")].drop_duplicates().tolist()
+
+    if stations:
+        station_table = pd.DataFrame({COL_STATION: stations})
+        nm_table = nm_mapping.merge(station_table, how="cross")
+    else:
+        nm_table = nm_mapping.copy()
+        nm_table[COL_STATION] = default_station
+
     nm_table[COL_FRACTION] = default_fraction
     nm_table[COL_DATE] = default_date
     nm_table[COL_LQ] = "="
     nm_table[COL_RESULT] = "NM"
 
     if verbose:
-        print_step_header("Create not-measured (NM) rows", step=14)
-        print(f"  > {len(nm_table):,} NM rows created from parameter mapping")
-        print(f"  > Each row has Resultaat = 'NM' with empty station, fraction, and date")
+        print_step_header("Create not-measured (NM) rows", step=13)
+        print_not_measured_mapping_summary(not_measured_mapping)
+        print(
+            f"  > Expanded to {len(nm_table):,} NM rows across {len(stations):,} station(s)"
+        )
+        print(f"  > Each row has Resultaat = 'NM' with empty fraction and date")
 
     return nm_table[OUTPUT_COLUMNS]
+
+
+def create_not_measured_local_rows(
+    reference_output: pd.DataFrame,
+    measured_mapping: pd.DataFrame,
+    default_date: str = "",
+    *,
+    verbose: bool = True,
+) -> pd.DataFrame:
+    """Build local NM rows for missing ISC combinations per station."""
+    missing_target = [c for c in OUTPUT_COLUMNS if c not in reference_output.columns]
+    if missing_target:
+        raise KeyError(f"Missing columns in reference_output: {missing_target}")
+
+    if COL_STATION not in reference_output.columns:
+        raise KeyError(f"Missing required column in reference_output: {COL_STATION}")
+
+    # measured_mapping only maps parameter/unit (fraction comes from a separate
+    # mapping table), so it usually lacks COL_FRACTION. Fall back to deriving the
+    # expected combinations from the reference output itself (union across all
+    # stations) in that case.
+    if all(col in measured_mapping.columns for col in ISC_COMBINATION_COLS):
+        expected_source = measured_mapping
+        if verbose:
+            print("  Expected ISC combinations source: measured parameter mapping")
+    else:
+        expected_source = reference_output
+        if verbose:
+            print(
+                f"  Expected ISC combinations source: every "
+                f"{'+'.join(ISC_COMBINATION_COLS)} combination seen at any "
+                "station in this dataset is treated as expected at every station."
+            )
+
+    expected_combos = normalize_isc_combination_columns(expected_source)
+    expected_set = isc_combination_tuples(expected_combos)
+
+    if verbose:
+        print(f"  Expected ISC combinations: {len(expected_set):,}")
+
+    stations = (
+        reference_output[COL_STATION]
+        .astype("string")
+        .str.strip()
+        .dropna()
+    )
+    stations = stations[stations.ne("")].drop_duplicates().tolist()
+
+    local_rows: list[dict[str, str]] = []
+
+    for station in stations:
+        station_data = reference_output[reference_output[COL_STATION].astype("string").str.strip() == station]
+        measured_set = isc_combination_tuples(station_data) if len(station_data) else set()
+        missing_set = sorted(expected_set - measured_set)
+
+        if verbose:
+            print(f"\n  Station: {station}")
+            print(
+                f"  > Missing ISC combinations at station: {len(missing_set):,} / {len(expected_set):,}"
+            )
+            if missing_set:
+                print(f"  Not measured at this station ({len(missing_set):,}):")
+                for combo in missing_set:
+                    print(f"    - {format_isc_combination_tuple(combo)}")
+            else:
+                print("  > All expected ISC combinations are present at this station")
+
+        for combo in missing_set:
+            combo_dict = dict(zip(ISC_COMBINATION_COLS, combo))
+            local_rows.append(
+                {
+                    COL_STATION: station,
+                    COL_DATE: default_date,
+                    COL_FRACTION: combo_dict[COL_FRACTION],
+                    COL_PARAMETER: combo_dict[COL_PARAMETER],
+                    COL_LQ: "=",
+                    COL_RESULT: "NM",
+                    COL_UNIT: combo_dict[COL_UNIT],
+                }
+            )
+
+    local_nm = pd.DataFrame(local_rows, columns=OUTPUT_COLUMNS)
+
+    if verbose and local_nm.empty:
+        print("  > No local missing combinations found; no local NM rows created")
+
+    return local_nm
+
+
+def create_am_biological_quality_rows(
+    am_classifications: dict[str, dict[str, str]],
+    am_mapping: pd.DataFrame,
+    reference_output: pd.DataFrame,
+    *,
+    default_date: str = "",
+    verbose: bool = True,
+) -> pd.DataFrame:
+    """Build manually-added (AM) biological quality rows and append them to reference_output.
+
+    ``am_classifications`` maps station -> {parameter_id: classification_value},
+    e.g. {"NL89_SASVGT": {"IBGN": "Goed (Bon)", "IBD": "Goed (Bon)"}}.
+    ``am_mapping`` is the subset of the parameter mapping table flagged
+    ``reported == "AM"``, used only to look up the unit for each parameter ID.
+    ``reference_output`` is the dataframe to append the AM rows to (e.g. the
+    harmonized output combined with chlorophyll).
+
+    Returns ``reference_output`` with the AM rows appended.
+    """
+    required_cols = [COL_PARAMETER, COL_UNIT]
+    missing_cols = [c for c in required_cols if c not in am_mapping.columns]
+    if missing_cols:
+        raise KeyError(f"Missing columns in am_mapping: {missing_cols}")
+
+    if verbose:
+        print_step_header("Add manually-added (AM) biological quality rows")
+        print_data_summary(
+            "Input",
+            summarize_dataframe(
+                reference_output,
+                combination_cols=ISC_COMBINATION_COLS,
+                combination_label=ISC_COMBINATION_LABEL,
+            ),
+            combination_label=ISC_COMBINATION_LABEL,
+        )
+
+    unit_lookup = (
+        am_mapping[[COL_PARAMETER, COL_UNIT]]
+        .dropna(subset=[COL_PARAMETER])
+        .drop_duplicates(subset=[COL_PARAMETER])
+        .set_index(COL_PARAMETER)[COL_UNIT]
+        .to_dict()
+    )
+
+    rows = []
+    unknown_parameters = set()
+    for station, param_values in am_classifications.items():
+        for param_id, classification in param_values.items():
+            if param_id not in unit_lookup:
+                unknown_parameters.add(param_id)
+                continue
+            rows.append(
+                {
+                    COL_STATION: station,
+                    COL_DATE: default_date,
+                    COL_FRACTION: "",
+                    COL_PARAMETER: param_id,
+                    COL_LQ: "",
+                    COL_RESULT: classification,
+                    COL_UNIT: unit_lookup[param_id],
+                }
+            )
+
+    am_rows = pd.DataFrame(rows, columns=OUTPUT_COLUMNS)
+    combined_output = pd.concat([reference_output, am_rows], ignore_index=True)
+
+    if verbose:
+        print(f"  AM parameters available in mapping: {sorted(unit_lookup.keys())}")
+        if unknown_parameters:
+            print(
+                f"  ! {len(unknown_parameters)} parameter ID(s) in am_classifications "
+                f"not found in am_mapping (reported = AM), skipped: "
+                f"{sorted(unknown_parameters)}"
+            )
+        print(f"  > {len(am_rows):,} AM row(s) created from {len(am_classifications):,} station(s)")
+        for _, row in am_rows.iterrows():
+            print(
+                f"    - {row[COL_STATION]} | {row[COL_PARAMETER]} = {row[COL_RESULT]}"
+            )
+        print_data_summary(
+            "Output",
+            summarize_dataframe(
+                combined_output,
+                combination_cols=ISC_COMBINATION_COLS,
+                combination_label=ISC_COMBINATION_LABEL,
+            ),
+            combination_label=ISC_COMBINATION_LABEL,
+        )
+        print_row_change(
+            len(reference_output),
+            len(combined_output),
+            reason="AM biological quality rows appended",
+        )
+
+    return combined_output
+
+
+def set_nv_for_parameter_ids(
+    df: pd.DataFrame,
+    parameter_ids: list[str | int] | None,
+    *,
+    parameter_col: str = COL_PARAMETER,
+    result_col: str = COL_RESULT,
+) -> pd.DataFrame:
+    """Set Resultaat to NV for rows whose parameter ID is in parameter_ids."""
+    if not parameter_ids:
+        return df
+
+    if parameter_col not in df.columns:
+        raise KeyError(f"Missing required column: {parameter_col}")
+    if result_col not in df.columns:
+        raise KeyError(f"Missing required column: {result_col}")
+
+    normalized_ids = {str(value).strip() for value in parameter_ids if pd.notna(value)}
+    if not normalized_ids:
+        return df
+
+    out = df.copy()
+    param_values = out[parameter_col].astype("string").str.strip()
+    mask = param_values.isin(normalized_ids)
+    out.loc[mask, result_col] = "NV"
+
+    print_step_header("Apply forced NV parameter IDs")
+    print(f"  > Configured parameter IDs: {sorted(normalized_ids)}")
+    print(f"  > {int(mask.sum()):,} row(s) set to 'NV'")
+
+    return out
 
 
 def transform_chlorophyll_to_isc_format(
@@ -1093,7 +1769,14 @@ def transform_chlorophyll_to_isc_format(
     )
     df[COL_RESULT] = format_result_series(df["ResultValue"])
     df[COL_PARAMETER] = str(parameter_info["uid"].values[0])
-    df[COL_UNIT] = "µg/L"
+    # Normalize common mojibake so chlorophyll rows match existing ISC unit values.
+    df[COL_UNIT] = "\u00b5g/L"
+    df[COL_UNIT] = (
+        df[COL_UNIT]
+        .astype("string")
+        .str.replace("Âµ", "\u00b5", regex=False)
+        .str.strip()
+    )
 
     return df[OUTPUT_COLUMNS]
 
@@ -1120,7 +1803,7 @@ def load_and_filter_chlorophyll_data(
                 "PARAMETRE": "Chlorophylle a",
                 "n° CAS nr": "479-61-8",
                 "Unieke identificatie gemeten parameter": "Chlorofyl a",
-                "Unieke eenheidsidentificatie": "µg/L",
+                "Unieke eenheidsidentificatie": "\u00b5g/L",
                 "ComponentName": "CHLFa",
             }
         ]
@@ -1147,43 +1830,102 @@ def load_and_filter_chlorophyll_data(
     if len(chlorophyll_year) == 0:
         print(f"  ! No chlorophyll data found for {target_year}")
     else:
-        print_data_summary("Output", summarize_dataframe(chlorophyll_year))
+        print_data_summary(
+            "Output",
+            summarize_dataframe(
+                chlorophyll_year,
+                combination_cols=ISC_COMBINATION_COLS,
+                combination_label=ISC_COMBINATION_LABEL,
+            ),
+            combination_label=ISC_COMBINATION_LABEL,
+        )
 
     return chlorophyll_year
 
 
-def combine_and_finalize_output(
+def combine_harmonized_and_chlorophyll(
     harmonized_output: pd.DataFrame,
     chlorophyll_year: pd.DataFrame,
-    not_measured_mapping: pd.DataFrame,
-    *,
-    measured_data_with_combinations: pd.DataFrame | None = None,
-    measured_mapping: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
-    """Append chlorophyll and NM rows, with step summaries."""
-    print_step_header("Combine harmonized data with chlorophyll", step=13)
-    print_data_summary("Harmonized measurements", summarize_dataframe(harmonized_output))
-    print_data_summary("Chlorophyll", summarize_dataframe(chlorophyll_year))
+    """Append chlorophyll rows to the harmonized measurement output."""
+    print_step_header("Combine harmonized data with chlorophyll", step=12)
+    print_data_summary(
+        "Harmonized measurements",
+        summarize_dataframe(
+            harmonized_output,
+            combination_cols=ISC_COMBINATION_COLS,
+            combination_label=ISC_COMBINATION_LABEL,
+        ),
+        combination_label=ISC_COMBINATION_LABEL,
+    )
+    print_data_summary(
+        "Chlorophyll",
+        summarize_dataframe(
+            chlorophyll_year,
+            combination_cols=ISC_COMBINATION_COLS,
+            combination_label=ISC_COMBINATION_LABEL,
+        ),
+        combination_label=ISC_COMBINATION_LABEL,
+    )
 
     output_with_chlorophyll = pd.concat(
         [harmonized_output, chlorophyll_year],
         ignore_index=True,
     )
-    print_data_summary("Combined", summarize_dataframe(output_with_chlorophyll))
+    print_data_summary(
+        "Combined",
+        summarize_dataframe(
+            output_with_chlorophyll,
+            combination_cols=ISC_COMBINATION_COLS,
+            combination_label=ISC_COMBINATION_LABEL,
+        ),
+        combination_label=ISC_COMBINATION_LABEL,
+    )
     print_row_change(
         len(harmonized_output),
         len(output_with_chlorophyll),
         reason="chlorophyll rows appended",
     )
 
-    print_step_header("Create not-measured (NM) rows", step=14)
-    not_measured_rows = create_not_measured_rows(
+    return output_with_chlorophyll
+
+
+def create_not_measured_and_finalize(
+    output_with_chlorophyll: pd.DataFrame,
+    not_measured_mapping: pd.DataFrame,
+    *,
+    measured_mapping: pd.DataFrame | None = None,
+) -> pd.DataFrame:
+    """Create global + local NM rows and finalize output.
+
+    Note: forced-NV parameter IDs (SNV) are applied earlier in the pipeline,
+    right after ``format_result_values``, alongside the aquocode-99 NV logic.
+    """
+    global_not_measured_rows = create_not_measured_global_rows(
         not_measured_mapping,
         output_with_chlorophyll,
-        verbose=False,
+        verbose=True,
     )
-    print(f"  > {len(not_measured_rows):,} NM rows created from parameter mapping")
-    print(f"  > Each row has Resultaat = 'NM' with empty station, fraction, and date")
+
+    if measured_mapping is not None:
+        print_step_header("Missing ISC combinations per station (local NM)", step=14)
+        local_not_measured_rows = create_not_measured_local_rows(
+            output_with_chlorophyll,
+            measured_mapping,
+            verbose=True,
+        )
+    else:
+        local_not_measured_rows = pd.DataFrame(columns=OUTPUT_COLUMNS)
+
+    not_measured_rows = pd.concat(
+        [global_not_measured_rows, local_not_measured_rows],
+        ignore_index=True,
+    )
+    print(
+        f"\n  > {len(global_not_measured_rows):,} global NM rows + "
+        f"{len(local_not_measured_rows):,} local NM rows = "
+        f"{len(not_measured_rows):,} total NM rows"
+    )
 
     final_output = pd.concat(
         [output_with_chlorophyll, not_measured_rows],
@@ -1193,17 +1935,21 @@ def combine_and_finalize_output(
     final_output = standardize_output_dtypes(final_output)
 
     print_step_header("Final dataset ready", step=15)
-    print_data_summary("Final dataset", summarize_dataframe(final_output))
+    print_data_summary(
+        "Final dataset",
+        summarize_dataframe(
+            final_output,
+            combination_cols=ISC_COMBINATION_COLS,
+            combination_label=ISC_COMBINATION_LABEL,
+        ),
+        combination_label=ISC_COMBINATION_LABEL,
+    )
     print(f"  > Measured + chlorophyll rows: {len(output_with_chlorophyll):,}")
     print(f"  > NM rows appended: {len(not_measured_rows):,}")
-
-    if measured_data_with_combinations is not None and measured_mapping is not None:
-        print_station_combination_report(
-            measured_data_with_combinations,
-            chlorophyll_year,
-            measured_mapping,
-            not_measured_mapping,
-        )
+    print(
+        "  > Per-station missing combinations were already reported and filled as "
+        "local NM rows above"
+    )
 
     return final_output
 
@@ -1241,6 +1987,8 @@ def export_final_output(
 def run_harmonization_pipeline(
     target_year: int,
     repo_root: Path | None = None,
+    nv_parameter_ids: list[str | int] | None = None,
+    am_classifications: dict[str, dict[str, str]] | None = None,
 ) -> pd.DataFrame:
     """Run the full harmonization pipeline and return the final output dataframe."""
     if repo_root is None:
@@ -1271,7 +2019,7 @@ def run_harmonization_pipeline(
         fraction_mapping,
     )
 
-    measured_mapping, not_measured_mapping = split_measured_and_not_measured_parameters(
+    measured_mapping, not_measured_mapping, am_mapping, sk_mapping, snv_mapping = split_measured_and_not_measured_parameters(
         parameter_mapping
     )
 
@@ -1286,15 +2034,9 @@ def run_harmonization_pipeline(
 
     harmonized_compressed, _, _ = aggregate_compound_parameters(
         harmonized,
-        source_param_ids=["1551", "1339", "1340"],
-        source_ops=["+", "-", "-"],
-        target_param_id="1319",
-        remove_source_rows=False,
-    )
-    harmonized_compressed, _, _ = aggregate_compound_parameters(
-        harmonized_compressed,
         source_param_ids=["1283", "1629", "1630"],
         source_ops=["+", "+", "+"],
+        source_fractions=["EB", "EB", "EB"],
         target_param_id="1774",
         remove_source_rows=False,
     )
@@ -1302,44 +2044,46 @@ def run_harmonization_pipeline(
         harmonized_compressed,
         source_param_ids=["1103", "1181", "1173", "1207"],
         source_ops=["+", "+", "+", "+"],
+        source_fractions=["EB", "EB", "EB", "EB"],
         target_param_id="5534",
-        remove_source_rows=False,
-    )
-    harmonized_compressed, _, _ = aggregate_compound_parameters(
-        harmonized_compressed,
-        source_param_ids=["1200", "1201", "1202", "1203"],
-        source_ops=["+", "+", "+", "+"],
-        target_param_id="5537",
         remove_source_rows=False,
     )
     harmonized_compressed, _, _ = aggregate_compound_parameters(
         harmonized_compressed,
         source_param_ids=["6561a", "6561b"],
         source_ops=["+", "+"],
+        source_fractions=["EB", "EB"],
         target_param_id="6561",
         remove_source_rows=True,
     )
-    harmonized_compressed, _, _ = aggregate_compound_parameters(
-        harmonized_compressed,
-        source_param_ids=["1197", "1198"],
-        source_ops=["+", "+"],
-        target_param_id="7706",
-        remove_source_rows=False,
-    )
 
     harmonized_for_report = sort_by_station_parameter_date(harmonized_compressed)
-    harmonized_output = select_output_columns(
-        format_result_values(harmonized_for_report)
+    formatted_output = format_result_values(harmonized_for_report)
+    formatted_output = set_nv_for_parameter_ids(
+        formatted_output,
+        get_snv_parameter_ids(snv_mapping) + list(nv_parameter_ids or []),
     )
+    harmonized_output = select_output_columns(formatted_output)
 
     chlorophyll_path = data_dir / "SCHAARVODDL + SASVGT_CHLfa_2023-2025.xlsx"
     chlorophyll_year = load_and_filter_chlorophyll_data(chlorophyll_path, target_year)
 
-    final_output = combine_and_finalize_output(
+    output_with_chlorophyll = combine_harmonized_and_chlorophyll(
         harmonized_output,
         chlorophyll_year,
+    )
+
+    if am_classifications:
+        output_with_chlorophyll = create_am_biological_quality_rows(
+            am_classifications,
+            am_mapping,
+            output_with_chlorophyll,
+            default_date=f"31/12/{target_year}",
+        )
+
+    final_output = create_not_measured_and_finalize(
+        output_with_chlorophyll,
         not_measured_mapping,
-        measured_data_with_combinations=harmonized_for_report,
         measured_mapping=measured_mapping,
     )
 
